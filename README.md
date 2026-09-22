@@ -73,6 +73,7 @@ The central recovery question is:
 8. [LK / META / fastboot](docs/08-lk-meta-fastboot.md) — ongoing
 9. [Recovery decision tree](docs/09-recovery-decision-tree.md)
 10. [eMMC variant notes](docs/10-emmc-variant.md)
+11. [Raw-NAND variant notes](docs/11-nand-variant.md)
 
 ## Safety model
 
@@ -102,4 +103,4 @@ This is an engineering/recovery reference, not a generic one-command flashing gu
 
 The DA/BootROM and Preloader META investigations are mature enough to document. LK/META remains active because it may matter for devices that reach LK or early Linux but have no usable network, ADB, Telnet, or web interface.
 
-The eMMC reference is currently a metadata/header/hash characterization. Full `rootfs_a` and `rootfs_b` images will be backed up and transferred separately.
+The eMMC reference now includes live GPT, boot-control, filesystem and A/B hash characterization across multiple observed production builds; full `rootfs_a` and `rootfs_b` images are still pending transfer. The raw-NAND reference now includes NAND-aware A/B acquisition results, ECC/bad-block behavior, modem-image comparison, and the experimentally reproduced 1.8 V UART instrumentation failure.

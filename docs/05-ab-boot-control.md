@@ -38,7 +38,19 @@ A: priority 15, retry 2, successful_boot 1, up_type 0
 B: priority  0, retry 0, successful_boot 0, up_type 0
 ```
 
-B was therefore not a valid boot candidate on that particular unit despite containing a factory-looking rootfs. This must not be generalized to another router.
+B was therefore not a valid boot candidate on that particular NAND unit despite containing a factory-looking rootfs. This must not be generalized to another router.
+
+## eMMC observation
+
+A separately observed eMMC X17M has the same logical record at `/dev/mmcblk0p1 + 0x800`:
+
+```text
+00 41 42 30 00 00 00 00 0f 02 01 00 00 00 00 00
+```
+
+This parses to A = priority 15, retry 2, successful_boot 1, up_type 0; B = all zero. The vendor boot-done service independently reported `FLASH_TYPE=emmc`, `is_ab_partition=1`, and `current_slot=_a`.
+
+This is evidence that the observed NAND and eMMC builds share the logical A/B record format. It is **not** evidence that their physical metadata-writing procedures are interchangeable.
 
 ## Rollback behavior
 
@@ -54,7 +66,7 @@ The exact production retry-counter lifecycle remains unresolved.
 
 ## Safety
 
-Do not treat `misc` as a one-byte slot flag. It is redundant NAND metadata with eraseblock-aware update behavior.
+Do not treat `misc` as a one-byte slot flag. On NAND it is redundant metadata with eraseblock-aware update behavior. On the observed eMMC unit the record is in GPT partition `misc` at offset `0x800`; NAND write procedures must not be transferred to eMMC.
 
 ## UNRESOLVED
 

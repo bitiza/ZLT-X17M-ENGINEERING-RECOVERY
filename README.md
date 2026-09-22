@@ -8,18 +8,12 @@ This repository documents a read-only-first investigation of recovery paths for 
 
 ## Scope
 
-The main reference platform is the NAND-based ZLT X17M variant:
+Two storage variants are now directly characterized and must be treated separately:
 
-- MediaTek MT6890 family
-- 1 GiB raw NAND
-- 4 KiB page / 256 KiB eraseblock
-- A/B boot layout
-- OpenWrt-based Linux userspace
-- secure boot / DAA enabled
-- Preloader META reachable
-- LK present with limited diagnostic fastboot surface
+- **NAND reference:** MediaTek MT6890 family, 1 GiB raw NAND, 4 KiB page / 256 KiB eraseblock, MTD/UBI/JFFS2.
+- **eMMC reference:** MediaTek MT6890 family, 7,818,182,656-byte user area (15,269,888 × 512-byte sectors), 50 GPT partitions, plus separate 4 MiB boot0 and boot1 hardware areas.
 
-Some findings also reference an 8 GiB eMMC X17M variant, but storage layouts must not be assumed interchangeable.
+Both use A/B firmware naming and OpenWrt-based userspace, but offsets, sizes, storage semantics, and recovery procedures must not be assumed interchangeable. The characterized eMMC sample reports model `33BGAX` and boots slot A from `/dev/mmcblk0p28`.
 
 ## Recovery model
 
@@ -78,6 +72,7 @@ The central recovery question is:
 7. [Linux META](docs/07-linux-meta.md)
 8. [LK / META / fastboot](docs/08-lk-meta-fastboot.md) — ongoing
 9. [Recovery decision tree](docs/09-recovery-decision-tree.md)
+10. [eMMC variant notes](docs/10-emmc-variant.md)
 
 ## Safety model
 
@@ -106,3 +101,5 @@ This is an engineering/recovery reference, not a generic one-command flashing gu
 ## Current status
 
 The DA/BootROM and Preloader META investigations are mature enough to document. LK/META remains active because it may matter for devices that reach LK or early Linux but have no usable network, ADB, Telnet, or web interface.
+
+The eMMC reference is currently a metadata/header/hash characterization. Full `rootfs_a` and `rootfs_b` images will be backed up and transferred separately.

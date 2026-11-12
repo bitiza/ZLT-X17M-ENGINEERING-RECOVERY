@@ -1,6 +1,6 @@
 # NAND Firmware Repacking, Headroom Budgeting & In-Field Flashing
 
-Status: Fully characterized and validated across Firmware builds v28 through v34.
+Status: Fully characterized and validated across Firmware builds v28 through v35.
 
 ## FACTS
 
@@ -11,7 +11,7 @@ Status: Fully characterized and validated across Firmware builds v28 through v34
 - **Partition Capacity Ceiling:** Exactly **67,108,864 bytes (64.0 MiB)**.
 - **Critical Safety Constraint:** Writing an image exceeding 64 MiB overwrites adjacent MTD partitions (`rootfs_data` on slot A, `loader_ext_a` on slot B), causing catastrophic unrecoverable bricking.
 
-### Firmware Budgeting History (v30–v34)
+### Firmware Budgeting History (v30–v35)
 
 | Build | Raw Size (Bytes) | Size (MiB) | Headroom Below 64 MiB | Key Changes |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19,7 +19,8 @@ Status: Fully characterized and validated across Firmware builds v28 through v34
 | **v31** | 47,738,880 | 45.53 MiB | 19,369,984 bytes (18.47 MiB) | TR-069 & TR-369 stacks purged (-7.25 MiB raw) |
 | **v32** | 47,738,880 | 45.53 MiB | 19,369,984 bytes (18.47 MiB) | WhatsApp/VoIP UDP unblocked, QoS deployed |
 | **v33** | 47,738,880 | 45.53 MiB | 19,369,984 bytes (18.47 MiB) | Script error silencing & vendor typo fixes |
-| **v34** | 47,738,880 | 45.53 MiB | 19,369,984 bytes (18.47 MiB) | Full vendor script audit, cron_master & sip_alg fixes |
+| **v34** | 47,738,880 | 45.53 MiB | 19,369,984 bytes (18.47 MiB) | Full vendor script audit, cron_master & sip_alg fixes (Flashed live) |
+| **v35** | 47,738,880 | 45.53 MiB | 19,369,984 bytes (18.47 MiB) | Dormant code pruned, 100% POSIX compliance, TCP Fast Open, DNS cache 4k (Ready) |
 
 ### Build and Repacking Toolchain
 

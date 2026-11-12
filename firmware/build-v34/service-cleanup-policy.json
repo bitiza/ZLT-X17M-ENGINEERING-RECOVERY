@@ -1,0 +1,34 @@
+{
+  "disabled_boot_services": [
+    "aee_aed",
+    "mnld",
+    "lppe_service",
+    "speech_daemon",
+    "audio-ctrl-service",
+    "libmodem_afe_service",
+    "ght-slic",
+    "ddns"
+  ],
+  "disabled_boot_links": {
+    "etc/rc.d/K46mnld": "../init.d/mnld",
+    "etc/rc.d/S53lppe_service": "../init.d/lppe_service",
+    "etc/rc.d/S53mnld": "../init.d/mnld",
+    "etc/rc.d/S55speech_daemon": "../init.d/speech_daemon",
+    "etc/rc.d/S56libmodem_afe_service": "../init.d/libmodem_afe_service",
+    "etc/rc.d/S57audio-ctrl-service": "../init.d/audio-ctrl-service",
+    "etc/rc.d/S94ght-slic": "../init.d/ght-slic",
+    "etc/rc.d/S95aee_aed": "../init.d/aee_aed",
+    "etc/rc.d/S95ddns": "../init.d/ddns",
+    "etc/rc.d/K10ddns": "../init.d/ddns"
+  },
+  "modified_scripts": [
+    "etc/init.d/atcid",
+    "etc/init.d/tz_powerkey_test"
+  ],
+  "preserve": [
+    "adbd_usb",
+    "meta_tst",
+    "tz_phone"
+  ],
+  "mtbf": "No active process or factory-start marker observed; vendor script is unchanged."
+}

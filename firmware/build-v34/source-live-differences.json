@@ -1,0 +1,10 @@
+[
+  "etc/config/firewall",
+  "etc/config/network",
+  "etc/firewall.user",
+  "etc/init.d/log",
+  "usr/bin/xray-adblock-sync",
+  "usr/bin/xray-generate-config",
+  "usr/bin/xray-natfix",
+  "usr/bin/xray-policy-restore"
+]

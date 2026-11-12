@@ -2,6 +2,17 @@
 
 ## `rootfs_bozax17_v34_pruned_vendor_fixes_sanitized.img`
 
+Companion build metadata for this image lives in [`build-v34/`](build-v34/):
+
+| File | Contents |
+|------|----------|
+| `source-manifest.json` | Per-file SHA-256/mode manifest of the source rootfs |
+| `pruning-plan.json` | Packages and paths removed from the vendor rootfs |
+| `image-deletions.json` | Exact paths deleted when composing the image |
+| `image-boot-links.json` | Sysvinit boot links created in `etc/rc.d/` |
+| `service-cleanup-policy.json` | Boot services intentionally disabled |
+| `source-live-differences.json` | Files whose contents diverge from the live device source |
+
 Custom-built rootfs for the ZLT X17M (MT6890, NAND variant), derived from build v34
 (`rootfs_bozax17_v34_pruned_vendor_fixes`, 2026-11-12). SquashFS 4.0, xz compressed,
 262144-byte blocks, all-root.

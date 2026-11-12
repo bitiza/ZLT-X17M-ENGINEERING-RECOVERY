@@ -60,6 +60,10 @@ The central recovery question is:
 - LK contains internal image-loading code, but the currently identified fastboot endpoint lacks upload/boot/flash/erase commands.
 - Linux META exposes a powerful `meta_tst` framework on a sufficiently healthy boot, but is unavailable when userspace never reaches the USB gadget stage.
 - UART on the NAND platform is a **1.8 V logic domain**. An electrically unsuitable UART adapter reproduced false NAND-initialization failures on a known-good router.
+- **CCCI Baseband IPC Inviolability:** Unilateral user-space restarts of `/usr/bin/dialer` or AT injection desynchronize MediaTek T750 CCCI shared-memory queues; `x17m_external.sh` must remain a passive state reflector and modem recovery requires a full SoC reset.
+- **TR-069 & TR-369 Stacks:** Completely removable (45 files, ~7.25 MiB raw pruned) without impacting cellular baseband operation or carrier APN negotiation, fully remediating CVE-2026-2035703.
+- **Vendor Script Remnants:** Vendor rootfs contains multi-generational artifacts (hardcoded Linux 4.4 modules in `sip_alg.sh`, missing `/usr/bin/cron_master`, missing `thermal_intf`, and dormant JD Logistics `jingdongwuliu` services).
+- **VoIP Quality of Service:** WhatsApp and real-time voice calls require unblocked UDP forwarding and DSCP `EF` (`0x2e`) prioritization in `mangle` to bypass cellular bufferbloat while retaining strict `XRAY_DNS` redirection.
 
 ## Documentation
 
@@ -74,6 +78,11 @@ The central recovery question is:
 9. [Recovery decision tree](docs/09-recovery-decision-tree.md)
 10. [eMMC variant notes](docs/10-emmc-variant.md)
 11. [Raw-NAND variant notes](docs/11-nand-variant.md)
+12. [Cellular modem and CCCI architecture](docs/12-cellular-modem-and-ccci.md)
+13. [TR-069 & TR-369 remediation (CVE-2026-2035703)](docs/13-tr069-tr369-remediation.md)
+14. [Vendor scripts and middleware audit](docs/14-vendor-scripts-and-middleware-audit.md)
+15. [VoIP QoS and DNS hardening](docs/15-voip-qos-and-dns-hardening.md)
+16. [NAND firmware repacking and flashing](docs/16-nand-firmware-repacking-and-flashing.md)
 
 ## Safety model
 

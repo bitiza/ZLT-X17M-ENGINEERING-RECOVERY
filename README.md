@@ -84,6 +84,8 @@ The central recovery question is:
 15. [VoIP QoS and DNS hardening](docs/15-voip-qos-and-dns-hardening.md)
 16. [NAND firmware repacking and flashing](docs/16-nand-firmware-repacking-and-flashing.md)
 
+Supplementary: [Research report archive](research/README.md) — verbatim workspace reports (recovery audit, fastboot investigation, 8 GB/eMMC failure analysis, work log, variant comparison) not yet distilled into the numbered chapters.
+
 ## Safety model
 
 The research uses a conservative workflow:

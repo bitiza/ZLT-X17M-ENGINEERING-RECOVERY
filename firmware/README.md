@@ -1,5 +1,24 @@
 # Firmware images
 
+## `rootfs_bozax17_v35_pruned_optimized.img`
+
+Build v35 (2026-11-12) — image not yet published; build metadata only:
+
+| File | Contents |
+|------|----------|
+| `build-v35/source-manifest.json` | Per-file SHA-256/mode manifest of the source rootfs |
+| `build-v35/pruning-plan.json` | Packages and paths removed from the vendor rootfs |
+| `build-v35/image-deletions.json` | Exact paths deleted when composing the image |
+| `build-v35/image-boot-links.json` | Sysvinit boot links created in `etc/rc.d/` |
+| `build-v35/service-cleanup-policy.json` | Boot services intentionally disabled |
+| `build-v35/source-live-differences.json` | Files whose contents diverge from the live device source |
+| `build-v35/reports/build-manifest.json` | Final image hash, size, partition limit, and headroom |
+| `build-v35/reports/pruning-validation.json` | 20-point post-build validation checklist (all passed) |
+| `build-v35/reports/package-dependencies.json` | Tool/package dependency check (dnsmasq 2.89-2, simple-adblock 1.8.8-1) |
+| `build-v35/reports/expected-inventory.json` | Per-file metadata inventory of all 7,244 image files |
+
+Per `reports/build-manifest.json`: image SHA-256 `37ddd143308be78af940b0a14deeb7cf95e08a31f19709cdd6aeed61560bb35e`, 47,738,880 bytes, 64 MiB partition limit, ~18.5 MiB headroom. `router_modified: false`, `flashed: false`.
+
 ## `rootfs_bozax17_v34_pruned_vendor_fixes_sanitized.img`
 
 Companion build metadata for this image lives in [`build-v34/`](build-v34/):

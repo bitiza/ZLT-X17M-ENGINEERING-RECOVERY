@@ -1,0 +1,837 @@
+[
+  {
+    "path": "etc/config/collectd",
+    "sha256": "cda0744d4895bf60ad375cd12aafb01bbb3ffd37339866af16a6dae348e6f705",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/config/ddns",
+    "sha256": "5eaa6dea93466fd620655609ec88cfd98194aac9ab14c5dca796a8be224f3083",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/config/dhcp",
+    "sha256": "a09fcd7868c6dfb7cc4539b04352a0b8467dd976337d78ef74bf03b7d57c76f0",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/config/firewall",
+    "sha256": "2d8c6375a34462189094be8050a4e6c2722f594005715502cb54acd673e5bb18",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/config/luci_statistics",
+    "sha256": "1b8fbed3ce4dfd9ab13d6c3dc316b6c542fc9a2394b93dabbf4598e8b02c154a",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/config/network",
+    "sha256": "a42b5c008bdae7075434d3198ac495dc3ae08fc11063e46b208da9397cb8164f",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/config/simple-adblock",
+    "sha256": "b37013d4fb652dc8a84d27ed83509319d7a7253c1fc9aedc8f53cc4e0ca0c72a",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/firewall.user",
+    "sha256": "bb1d27b614bb3b2f354dd20f14697f319994f7bcb670a4874f6c4fa04e70e7fe",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/hotplug.d/iface/20-firewall",
+    "sha256": "230576e7903648544e8355a9cb021c2f4671723fe1ec1104f4c3449e4648cdb4",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/hotplug.d/iface/99-xray-protect",
+    "sha256": "b0067184165435051e0808244b4ac57fa8ad05d16031e89629200981b708b5c7",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/atcid",
+    "sha256": "f4595f2518271cfe54f35eef941f12a43374ff9e6ce130c2c7ce9dfa91ad0cac",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/dnsmasq",
+    "sha256": "1b2bc050f38336db0d5a15099d27d70a93895f4456dd738149467234a0408cff",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/firewall",
+    "sha256": "48855ee61deb168c3132872f8057fdfe3d770c2ef788efb106a28f84eca23d14",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/log",
+    "sha256": "7ccb703c2e892f704ed0e4af260196f072c2d082de42e3440ec2bdd3b63ed792",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/log_controld",
+    "sha256": "03d8546bff50b64c9335e5b1d004ff7b3cc513a7fdb92fad75715027eb559233",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/network",
+    "sha256": "edb4d5b2abea23efc3a1b300deec71ab68c3177208d0840cf7f3b031c48e5068",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/power_daemon",
+    "sha256": "bb78504f4513732b4cfef73a2aa08ffb5f05dd9e268e109611a961f597041f03",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/simple-adblock",
+    "sha256": "393d9f6b5ab4c3097f098f2997ad827ecccee2ba922a9d2df27a62ace1148cb9",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/sshtun",
+    "sha256": "a3573862a458faf104dc9d2a184afde79386d12369ab8191badbe118ef9bc429",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/sys_monitor",
+    "sha256": "69f221bde93667a5554b75905f7c5cba6bbd324fa1b6a71c181dfe0274134cbb",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/tz_powerkey_test",
+    "sha256": "ecd12c7449297e511c3fc2b59acd69331b2e3aac85096def6a2ac500fcdca5d4",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/tzproc",
+    "sha256": "6c04c4ffda2e39363b57ad43798af898adf275c4a4bdfd7bb64fdbbe52b7ce62",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/vpn_mgr",
+    "sha256": "993379ec16489a133033c3da4b283472a85f2a96cc33af780aa70db73f43c69e",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-dhcp-trial-rollback",
+    "sha256": "c69e1cbc86b0728cf9c870feb33c405956a4d7331794c7f8bd574f82c94fc171",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-firewall-trial-rollback",
+    "sha256": "2110013ed67d0c7e548321c8326ca58c57d6f8c7c3480eb68c09be00a42913ba",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-lan-trial-rollback",
+    "sha256": "0dbec221ee73055e8b796c09f704104b9ad110f9b7983848af9e9e2f27ec9428",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-lan-trial-watch",
+    "sha256": "8aeb44f38d9f6eed37979b870b43bc5b520572748810ebc6985500547664d1ed",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-netifd",
+    "sha256": "089b57e08bdc276789c4aa508fee1625b269280dfd505e54ddf0d41ed382e2f0",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-netifd-trial-rollback",
+    "sha256": "c048b905135bcd5ed5fe140be96b03c2021b126f36948a432f74e80ca3f484fa",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/x17m-netifd-watchdog",
+    "sha256": "5aa6f73a047f4b6d8df03f90926b0ff9c903f1586522a3d2a67d9d914ad48458",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray",
+    "sha256": "d5f6680a35926172e57e1327612d009a96808f7df3b4bea56ed2e9cc6957cf7a",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray-adblock",
+    "sha256": "ddae8f98c6586e4f163a2855519249ae43e1fdf4e02ff80340d5a346c4f21872",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray-dns",
+    "sha256": "0d72b0a60b016bc0e1068766a24215962f8b3ee5b51621ffa2963708dc233d0d",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray-natfix",
+    "sha256": "a739e4a9a47fbe452f2fac686c9bb0142e4f88be6f01dea0d6e0282d658123b3",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray-protect",
+    "sha256": "da73b9ab70bbd1f4a844a39c81c1e7643f2fcac5dd235966cc39026d7b3668fd",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray-time",
+    "sha256": "c7e6e3d7a35d3e70eb7bdbbf2a569dff439d54395fa7ac9393876b1ca27c0ffc",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/xray-udp-block",
+    "sha256": "b63eaab35a832eadd592bcff5994a6f77eef18285efb520937fcd28067eae0e7",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/init.d/zmtk_boot_done",
+    "sha256": "8ce398512770c6938171dd9b844b3b38f0f43e0c841605f9ee5343ff0eb45168",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/iptables_config",
+    "sha256": "03558e229c4a7ac46a8f098731ace64e96d25dd331115af08e9f115e310c2c74",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/iptables_config_ip_masquerade",
+    "sha256": "82d8e50c311a2426fbf7cb601d78fdea874ab8fce215ddae796c9478a27b403d",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/iptables_restore_all",
+    "sha256": "cbec84255122e46f0980e147862dea0a0e83063704e0a19a9c09af76f1b4bcd4",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/modules-disabled/30-dns_trap_mgr",
+    "sha256": "e4b6715de9047c6783ba8b343164be10e93ffe6b63ab0f13d3bc8a92acc78444",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/rc.local",
+    "sha256": "681c01d0edf7f52873099e9f7a056a747d2e250522dccc1ca858b36aa1d31d5e",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/ddos.sh",
+    "sha256": "3482315470a4aaaa0eecf3f2c89a47df6bdc8a3f91e2ca48d2e29f4653be1f1e",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/dropbear_sw.sh",
+    "sha256": "0cc3634e2388c5121c91f97608970f93b479bdff2a9cd204ad174a045409009c",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/easymesh_pbc.sh",
+    "sha256": "c92fa53bdd88536bf26e5b9255ee9323e3dbcaae8482c3868f1cffc42a9f75f2",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/easymeshd_start.sh",
+    "sha256": "88b4cc5234f1989d91a4a3eb0b8c1c374c790aaec76aa6b194f7313dc5f42ced",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/firewall_level.sh",
+    "sha256": "82780bd5a154b8116d1e9dcc960c79b75ef1400004bd81f2ba272260130fbc57",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/tzscript/fota_start.sh",
+    "sha256": "8ddf7de80e8d019c71acd4d66f923f665b948f60b9f6847991be188e36d4aa71",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/modem_log_sw.sh",
+    "sha256": "638d0e4e69acc15ecc5f3f7ba94616f0a550f4db100e58cf6ee370fde9a7ed51",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/remote_start.sh",
+    "sha256": "cbfa01b4d999bec51f662ebe8a88a99ac4b57219dbde715c39e239dc4c47e687",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/routemanger_start.sh",
+    "sha256": "30dc2104804a05183980d52b0fe1b12021b960af8d9975004ee27e23cd023640",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/tzscript/sip_alg.sh",
+    "sha256": "85829f87aee4689bdd69dcfbe7b3c8bc2f3c5b3dc44b3d72a560ecd73eb89b0d",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/start_temp_mode.sh",
+    "sha256": "0f9ab0ba885abf0187cc215dad44268edcc3ebff79a62740d3fedb509b25be64",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/start_voice.sh",
+    "sha256": "39e54693d689ea9c8cb9a482b88cb5c3cc011ba74c898ed09943521636ff52d5",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/temperature_control.sh",
+    "sha256": "b2ff551ef7aa2a4a0a8a4db7c42caac142ddfee624008b2b58baa51d8502a367",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/utnd_sw.sh",
+    "sha256": "643e7fbe58fb94e8db7316e6bbe164dffd13044b8ba827cb1b85673a32fe957d",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/wifi_calibrate_check.sh",
+    "sha256": "b59e866195d3db7c2b75e4462bcfb2639d611d76bb815c1453d1fb7f60d3966c",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/tzscript/wps_trigger.sh",
+    "sha256": "9ca32878d6b144dbd16126d86b592db87003ac539b8fe8bb7a1000a23b068ae7",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/uci-defaults/95-xray-transport",
+    "sha256": "ff1131aec11fc1ece6ee2c968af12b2f179fae814eae51f773a48a3264500ac2",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/x17m-dhcp-candidate/SHA256SUMS",
+    "sha256": "6f7b23fdb3c955c439757e8ecefae66c872b824b1c6304c95e4e4658e01dfad4",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/x17m-dhcp-candidate/dhcp",
+    "sha256": "97fe27c871965e0444dc9f9753379c7aeb5c54c544a7729276c698c6bae0e720",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/x17m-dhcp-candidate/vendor-dhcp.sha256",
+    "sha256": "241dfde3a1ba4a4d6c821fe70b79a3e04db46f500a081e6ac201cd5dbd81e7b1",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/x17m-disabled-hooks/99-xray-protect.before-fw-validation-20261106",
+    "sha256": "bd27e01585b8f8516cbfd948d0106e127d37f3c02c9b2cca0b0a1737a7aa3c29",
+    "mode": "0o755"
+  },
+  {
+    "path": "etc/x17m-native-dhcp",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/x17m-native-firewall",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/x17m-native-netifd",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/x17m-netifd-candidate/network",
+    "sha256": "a42b5c008bdae7075434d3198ac495dc3ae08fc11063e46b208da9397cb8164f",
+    "mode": "0o600"
+  },
+  {
+    "path": "etc/xray/adblock-local.conf",
+    "sha256": "3a57990e33395949b074f6b58feaed2338058a8de314757d88e40d8e98575142",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/xray/bootstrap-dns.json",
+    "sha256": "0b5c0afdb42eba7dc40ced4a3cdaf7656dcd5692d42be054a844f5356f7c93f0",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/xray/dns.json",
+    "sha256": "81d7e0de6911c23420069d69e342fd3a5c4dcfd2d995ce07512d67ab127b03cf",
+    "mode": "0o644"
+  },
+  {
+    "path": "etc/xray/last-good-time",
+    "sha256": "a5d160f2e7b5ed7942fffee476a10778cdb6d7d17bd1f2e9680cbbe2303e68cd",
+    "mode": "0o644"
+  },
+  {
+    "path": "lib/netifd/proto/x17m_external.sh",
+    "sha256": "7a54e1f1373fad4b9cde814354adb1b06c445315b39cb29f8aa04c43e5134ec5",
+    "mode": "0o755"
+  },
+  {
+    "path": "sbin/arp_neigh_loop",
+    "sha256": "92dfffe08d5ebff1b9c9657f0285c73b0182b30560b3857b9840202dfe0e45f3",
+    "mode": "0o755"
+  },
+  {
+    "path": "sbin/logread",
+    "sha256": "da58ba739a64ea89107bd5dd5a69ef15a3e64db3f8af87916f8bc4e5efee028f",
+    "mode": "0o755"
+  },
+  {
+    "path": "tzwww/js/dashboard/dashboard.js",
+    "sha256": "59b5dbc5f9682a27ced68b461dffba7f015abd95e2012214a3e0b2e9abde6790",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/home.js",
+    "sha256": "d9937a4a294753ac3018b6fc1fb9c49c950ee3a6390a68719da3f09a211f2358",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/deviceInfo.js",
+    "sha256": "29cd399c1fcf054999766a6a2e629d322b7b0693c693f63ca025862ee082f1aa",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/dhcpConnected.js",
+    "sha256": "91514718a030439bec394741f213e6721e35975886c3943722f46e411a770826",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/lan_info.js",
+    "sha256": "1c357748f1f7ea12b5af54fb8274fd500f006e651933694732ebd5488817ead8",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/lan_info1.js",
+    "sha256": "ec0eb46f6c1f71429c441e2aea2205b6a580a923b1e08bbdaa65eecfaa39676c",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/lan_info2.js",
+    "sha256": "e5ceb53f781c2e2287b9e4c8b3115404c43442f5ef34b4dbde3d68533b2c1df8",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/ponInfo.js",
+    "sha256": "6b6bbf7021b85c7a0d4387d1cc967c6609e1edc99bc38d93c1c9a0b0ba3c0f9d",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/sysInfo.js",
+    "sha256": "74835e88b9725ce1fedfe669faf2d3d2ea0d254f7ff9155b72ae7a38404496b4",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wan_info.js",
+    "sha256": "1746cb16fa407beb35a227f619e6f646f4dea7d6eadc07d8bb1a0d3ac61aedbb",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi24g1_info.js",
+    "sha256": "af9f1fa22502ffcfd7f2cc2b35806fc64d4d71c58599af61ef0b371c76370094",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi24g2_info.js",
+    "sha256": "84775f39e789e102fa5bce5e44b70d622849beb841499b525e4c2b2f6259bb14",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi24g3_info.js",
+    "sha256": "87376a14619f30f1f9c367fa43644ad5a1e4af7931b8c6071a299e0806edbc82",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi24g4_info.js",
+    "sha256": "661cd1b1e014de43ccc74d1df5b91009f536e7c38195c03f508262724e779cd9",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi24g_info.js",
+    "sha256": "9638ab1016ac810217d2c7ad406685c397029c7691602ad6d66cf33238d4dc70",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi5g1_info.js",
+    "sha256": "36dace2bdcd38e13d3058da7a933fc94cbdb49d5e8e92a1e1c0f113ddc509ad5",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi5g2_info.js",
+    "sha256": "5fed202f8fc47d1e3222419ebcc96f9452c924ac17e866fdcf999552a22b5da0",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi5g3_info.js",
+    "sha256": "0d5a0ac6152bfb590de3a89e458197cfa9af4febc4922109a058de4c2885a58b",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi5g4_info.js",
+    "sha256": "af0f14cd818a1b9d1e09a22c0a97d8b4bf78be5971f523ed289878024e9fbbf6",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi5g_info.js",
+    "sha256": "c45f44f09a7ed86201dfc5573aad509c3658513be947c9796c7a32e713ad6474",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi6g1_info.js",
+    "sha256": "e43a4a9cde03c0e36cf361bf97cb0dd587650e8b5963ccba0c0939a073176cf3",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi6g2_info.js",
+    "sha256": "b4ff6148bff0159c946775e96718eb22f3294a86a42eb99ada5d63a842eb7987",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi6g3_info.js",
+    "sha256": "f3fa72f062340a2fb92a298994add6c6b7cb4a1d200e67c7770694bd31b0d493",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wifi6g_info.js",
+    "sha256": "d4a6a687142a832b04cccdbf84071fcc4d73f8dc7b1a506417c325770d815e64",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wired_wan.js",
+    "sha256": "23fe5454fb1170454e3a344449dcf2a49ed1dd8fcf442db42c29731654de362b",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wireless5gConnected.js",
+    "sha256": "c9ad23da88aa1a444bd052685dcc5eaefe4dba0abc67e651f58c9aa2249fdf97",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wireless6gConnected.js",
+    "sha256": "743c42f6f2713af6fc91281f59a26da06749a6df3a94f696d32967a057722f7f",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wirelessConnected.js",
+    "sha256": "70bfb157e8ad486343bd21520788f0ca70e8e2ca061ed7859f8119fe7ef6f1ec",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/info/wlan_wan.js",
+    "sha256": "dc5432af5cfb9bf0daa2049e209b584a542c8681f4a354d65f71e50ea1dbbce8",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/js/main.js",
+    "sha256": "f70b0d35840e382e888952aa53144b4f9b207876bd13d9ada1bc8bd38891faeb",
+    "mode": "0o644"
+  },
+  {
+    "path": "tzwww/mobile_web/js/index.js",
+    "sha256": "cdf1d0ee848b57a1b6442abebdf3577d5cc693594585ee70d07d6af4c009e372",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/bin/dhgate",
+    "sha256": "d7c3bedd6f2ae40d06f86d5ce9a236a811fca212a9e47b0e8512af8bd9e08485",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/fibo_sleep.sh",
+    "sha256": "833574b31d9e1ae2b1f05e6793e69da803824babb9a33bf7734c76faffe317fa",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/lan_mgr",
+    "sha256": "24e4a2bd5d63984bf26acedbfb39efc281a326812b9b8b504698a96ab29e6058",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/sshtun",
+    "sha256": "5babaa57f90c369fffd4dd0255b08e8a195cf703e40b336c2952f828a5efa828",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/sshtun-proxy",
+    "sha256": "929c402dac947ffa52b69a2c5bf3ee768e6cb02754cabe36cce6ef13d1af27fd",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/x17m-iface-watch",
+    "sha256": "af4c250256fcdd7ba649d6398cc0858e580cc0c5cce3c175279796377875c44c",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/x17m-voip-qos",
+    "sha256": "f4b9f33a0e9143fa11bc11bb5ca47176cc6147fa6aa968ccb9e66d4fc2bf1c1a",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-adblock-sync",
+    "sha256": "3b68350754a0e17dd4bcaa155db50359ad8650cd5813d8ce6a09b660c15362ee",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-check-status",
+    "sha256": "761c2c029b72ee1bdad844282f4fd3da3cb743aab493cf57e2d2b9fd70fee477",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-dns-config",
+    "sha256": "6904d085c107763702cc8ff580edb324f5edd5ebd17258e817d1d7cfdfd2dfd4",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-dns-control",
+    "sha256": "b7490d183d30955dfb0e3eb99cb3a5cf3967c15f3c390b7a8eef04e632e5b162",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-forward-lock",
+    "sha256": "9858232c44a3fb0843ed51c37a7296845140faa4da7f670abfe21cdb1e5d3f7d",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-generate-config",
+    "sha256": "c7e8bc9360252cb0b30b409313a83036faa26a3edfae2657a33cbf8d910f564a",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-guard",
+    "sha256": "95c6b2cea9af4c6b4f53e0e8b13b31a784e6684106018ad13357b76f5e76a9d5",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-guard-stats",
+    "sha256": "cd39a93c3aa9875564d4202c69493cf74da9fbfff21dd9d6b49a802755df9179",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-natfix",
+    "sha256": "597ede37f418e5261c7e1379d9d109d2ab9cf76ef0c834cef12dd65ca2deb2b3",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-policy-restore",
+    "sha256": "aafed10b35403020a311d08e31b010b9bd40452007a6e0c35ec4f70257f72696",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-probe",
+    "sha256": "1a413c248874876e006d0313f8e5b9677b35606d16bf79b6e5ff15e01c96b09b",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-reload-gate",
+    "sha256": "b1a46dfd85ada0d98d789315fe8e36c54357ba135ce9f9cd2253db449f84a9b3",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-time",
+    "sha256": "a0663168e69e2b62c1b63901f033531b6cc83929ba3c8e647ad91226dd99e843",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-time-daemon",
+    "sha256": "97b97255c42f71f7de30048b93acf756635d447f187f449d9fb1e4fcd41c4c46",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-udp-block",
+    "sha256": "60b45124a6c7a2af22d80ef3d6919e4001a65f823c4c018d6a62be332119076d",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/bin/xray-watchdog",
+    "sha256": "91f12b8150263353600f59fd901613166113278226a2e0dc35babb2d11c020fa",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/lib/lua/luci/controller/simple-adblock.lua",
+    "sha256": "e300d64f709c9e9d46bc3790c12260f8f2b432c5c3e93a03066d996a821efadf",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/controller/xray.lua",
+    "sha256": "b3700284a09026f88d2ce5c494cd91357d389ba63432417dbc91f629600f545d",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/model/cbi/simple-adblock.lua",
+    "sha256": "3487d0bde28c1c7d8758da048b1fd24dce65345b122f1b12673fdec3be2f7697",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/model/cbi/xray/settings.lua",
+    "sha256": "c3d80ee3f6df97bddd2688e22f0953c33314e69b532c5c737b49261ea5c0d177",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/model/network/proto_x17m_external.lua",
+    "sha256": "e310cc74f5d4c261f0114212df62802aae9109b66d8c5e44fa53b5d6411a59e6",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/view/simple-adblock/buttons.htm",
+    "sha256": "28ced78a213214207e6da105a41ac2b8ca6ef9e5e35b74d4b7abc69f44b3d340",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/view/simple-adblock/css.htm",
+    "sha256": "3458f84ddc717cf3558acd8db12ca4431151393006fc989fa349999bba9d4a35",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/view/simple-adblock/error.htm",
+    "sha256": "a90bcdb7ef42a58e5935d5a7d5ed4a798c77a77d05b5c6b4da832648e2e6c8ad",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/view/simple-adblock/js.htm",
+    "sha256": "028e0a19a0ddf9ef73594f358b12e8a029a184eebc40ba1b2326a5c9280ee603",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/view/simple-adblock/status.htm",
+    "sha256": "2673f585d09c88308b313ab44d72cae82e3f99bd94824441972ca774aa1ca1f8",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/lua/luci/view/xray/status.htm",
+    "sha256": "0da40cb7a6ddc26c22b94c4264ddc015b2b33d65d4578be685a51a84fe5ad378",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/opkg/info/luci-app-simple-adblock.control",
+    "sha256": "99340e649acff0ae1495ae7ea0ed0c82c35752417175e719eda1351175dc2a6b",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/opkg/info/luci-app-simple-adblock.list",
+    "sha256": "e1120e2a4a6bc0cba4f4c9d90b75c8d08b8a12ae931f9238a3a34c57bba1b39f",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/opkg/info/simple-adblock.control",
+    "sha256": "1c9d92e01d17ef7ff11c178f68b5cbb53598eea77e3ce26fca72fb45b150c17b",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/lib/opkg/info/simple-adblock.list",
+    "sha256": "e84667e51c486f3040d0f8f0733deab049c63d44bfde5357cc460119e3ffe186",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/libexec/dnsmasq",
+    "sha256": "c4d59757ea22d2011f5d2a74ad9e9d59c0c2ab722367fbb4848e37ff4f67bc64",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/lan_mgr.vendor-original",
+    "sha256": "4d851547cce0d91d0219f024b9b184a83e3ad6d21584f5088ada16439d482ee1",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m/logd",
+    "sha256": "f454cebf86030731280fe3a99c85c626bf1b8238dfc4a6b278fc5c3bda106bcb",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-dhcp-bridge",
+    "sha256": "cd3384006075ed2e81ea12206736abf30da496ba454dc3b5ada428ca5c6a74c5",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-dhcp-transition",
+    "sha256": "006d177c905f7ba239ec113f58a8b688b2211c9238d5335f993e6726acaa2d44",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-external-state",
+    "sha256": "944783f21bdddd0f0224cfe1e18a3476e9a6538c5d19ebdfb183ded94eb8ed4c",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-firewall-transition",
+    "sha256": "4c0cbcd1659eea40ecc50eb829abca5b5ffa61d08946e79d4423a25a1762ce48",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-lan-trial",
+    "sha256": "fbf14087b2358ca9d2e6a989be579e16ae9ae73d1081c781eaed0e2c552d22d4",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-local-resolver-sync",
+    "sha256": "d764ac88d8480ae9c5cd97463f75b66bca5ee9a32dfce616cfb775f147439565",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-netifd-coexist",
+    "sha256": "405d75b86db6dd2c5587ad0d34d3a9b5b97652824dc5c1983772413566dd0d0e",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-netifd-health",
+    "sha256": "de64241fe4cd157548a302a8e34a225ec533d815db5d343a0970b45fd5bd3102",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-netifd-stop-orphans",
+    "sha256": "8aaf05e1db6c386e0dc1e6dff4290359b4f260a34c9044208d305f63ac99b8f6",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-netifd-transition",
+    "sha256": "a9047375fb6d451a44decc68dcfdc4284338bf6ea3ad64818274a00bffe63497",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/x17m-netifd-watchdog",
+    "sha256": "9808c4afe0104d606286434746cc50d22f53f44610b482fb83cfd8039fbde5f1",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/xray-lan-dns-port",
+    "sha256": "54fa091e2f1b684cdf028ac9b037f34449c0b7c1b4c4f5987a8b6a6e291f6a21",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/libexec/xray-vpn-wanted",
+    "sha256": "77b1d6ca17376b339f86191458fff47f555b6167006c8832be77fd09e7a9c81f",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/sbin/dnsmasq",
+    "sha256": "ee9dd5ac8018f29399b932f4ef8ca48fbd0f171ff55efe72844db3afa59bc374",
+    "mode": "0o755"
+  },
+  {
+    "path": "usr/share/luci/menu.d/luci-app-simple-adblock.json",
+    "sha256": "00b67a3875fbf11690a747701946c691e17be352013cad7a162a186a15dbb3cc",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/share/luci/menu.d/zz-x17m-ui-cleanup.json",
+    "sha256": "8882855391a52723ed815ba8f9f31eddcf75e0b9736bbd6f35d3006b65d4a659",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/share/rpcd/acl.d/luci-app-simple-adblock.json",
+    "sha256": "7d7681f71fd7848908d007df4ec0c1b0826fb1408e6ddf5ed8aa8a4d70419ae7",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/share/simple-adblock/seed.servers",
+    "sha256": "16d64400d5ea63adeab62a87d5ea50f26ff9d44630015843280211a91d0f8107",
+    "mode": "0o644"
+  },
+  {
+    "path": "usr/share/x17m-logd/LICENSE",
+    "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+    "mode": "0o644"
+  },
+  {
+    "path": "www/luci-static/resources/protocol/x17m_external.js",
+    "sha256": "1313b1ca13fb2c559851f1596570b11323a31ab5ed469d1c40da02334272a922",
+    "mode": "0o644"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "required_rootfs_paths_present": true,
+  "recommended_tools": {
+    "usr/bin/gawk": true,
+    "usr/libexec/grep-gnu": true,
+    "usr/libexec/sed-gnu": false,
+    "usr/libexec/sort-coreutils": false
+  },
+  "installed_dnsmasq": "2.89-2",
+  "simple_adblock": "1.8.8-1",
+  "external_data_dependencies_preserved": true
+}

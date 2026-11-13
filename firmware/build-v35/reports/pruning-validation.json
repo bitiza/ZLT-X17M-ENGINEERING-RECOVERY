@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "planned_files_removed": true,
+    "modem_factory_and_gnss_preserved": true,
+    "primary_busybox_preserved": true,
+    "wireless_package_record_removed": true,
+    "statistics_dependency_adjusted": true,
+    "audio_library_package_retained": true,
+    "no_new_missing_elf_libraries": true,
+    "target_collectd_configuration_parses": true,
+    "correct_lan_wan_monitoring": true,
+    "wireless_plugin_disabled_and_absent": true,
+    "approved_menu_cleanup_in_image": true,
+    "logread_executes_cleanly": true,
+    "vendor_boot_scripts_guarded": true,
+    "tr069_tr369_completely_removed": true,
+    "voip_qos_script_present": true,
+    "clean_boot_scripts_hardened": true,
+    "dormant_services_pruned": true,
+    "tcp_fastopen_configured": true,
+    "dnsmasq_cache_expanded": true,
+    "log_controld_guarded": true
+  },
+  "all_passed": true,
+  "new_missing_libraries": [],
+  "router_modified": false,
+  "flashed": false
+}

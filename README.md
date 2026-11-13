@@ -4,7 +4,7 @@ Engineering notes, protocol analysis, and recovery research for the MediaTek MT6
 
 This repository documents a read-only-first investigation of recovery paths for devices that still reach BootROM/Preloader/LK but have damaged Linux rootfs, overlay, or networking/userspace. The emphasis is on separating **proven behavior** from **inference**, and on avoiding destructive operations until the boot/storage state is understood.
 
-> **Status:** work in progress. LK/META investigation is still ongoing.
+> **Status:** work in progress. The LK fastboot static phase is complete (2026-10-20); live entry/activation remains the open item.
 
 ## Scope
 
@@ -33,7 +33,7 @@ Preloader
    v
 LK
    |
-   +-- META / boot-mode handling      <-- ongoing investigation
+   +-- META / boot-mode handling      <-- static analysis done; live entry unverified
    +-- AEE / MRDUMP
    \-- limited fastboot
    |
@@ -74,7 +74,7 @@ The central recovery question is:
 5. [A/B boot control](docs/05-ab-boot-control.md)
 6. [Preloader recovery surfaces](docs/06-preloader-recovery-surfaces.md)
 7. [Linux META](docs/07-linux-meta.md)
-8. [LK / META / fastboot](docs/08-lk-meta-fastboot.md) — ongoing
+8. [LK / META / fastboot](docs/08-lk-meta-fastboot.md) — revised 2026-11-13
 9. [Recovery decision tree](docs/09-recovery-decision-tree.md)
 10. [eMMC variant notes](docs/10-emmc-variant.md)
 11. [Raw-NAND variant notes](docs/11-nand-variant.md)
@@ -112,6 +112,6 @@ This is an engineering/recovery reference, not a generic one-command flashing gu
 
 ## Current status
 
-The DA/BootROM and Preloader META investigations are mature enough to document. LK/META remains active because it may matter for devices that reach LK or early Linux but have no usable network, ADB, Telnet, or web interface.
+The DA/BootROM and Preloader META investigations are mature enough to document. The LK fastboot static phase is now complete: limited fastboot is compiled into both LK engines (diagnostics only, no flash/download), but live entry and USB endpoint exposure remain unverified — that is the open item for devices that reach LK or early Linux but have no usable network, ADB, Telnet, or web interface.
 
 The eMMC reference now includes live GPT, boot-control, filesystem and A/B hash characterization across multiple observed production builds; full `rootfs_a` and `rootfs_b` images are still pending transfer. The raw-NAND reference now includes NAND-aware A/B acquisition results, ECC/bad-block behavior, modem-image comparison, and the experimentally reproduced 1.8 V UART instrumentation failure.

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd00_preloader.img",
+    "size": 4194304,
+    "sha256": "5152173ee3f604dcd65edaa199812703f97acd391cb7a0d9c27ab9a5568567f5"
+  },
+  {
+    "path": "/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd01_preloader_backup.img",
+    "size": 2097152,
+    "sha256": "d74f5ea5ce12b4d8a4cd211a0e917deadd77ccf9bc363965f12b3d5581722fa5"
+  },
+  {
+    "path": "/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd25_lk_a.img",
+    "size": 2097152,
+    "sha256": "a757f40b3c7da58167c56cde10728768196f42e53a8c10c49e6de97fd9ef1b5e"
+  },
+  {
+    "path": "/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd39_lk_b.img",
+    "size": 2097152,
+    "sha256": "a757f40b3c7da58167c56cde10728768196f42e53a8c10c49e6de97fd9ef1b5e"
+  },
+  {
+    "path": "/home/kali/Desktop/x17m/preloaders/preloader_evb6890v1_64_cpe.bin",
+    "size": 242972,
+    "sha256": "a49724d7e1ca74098b1dd7c104d9aacb375b4d874f9a3378d6a6dde585f419aa"
+  },
+  {
+    "path": "/home/kali/Desktop/x17m/preloaders/preloader_evb6890v1_64_cpe_nand.bin",
+    "size": 2097152,
+    "sha256": "a814ad353e927b8d51ac083d571cdb4987e9472b20b528179de3fcc40241dd69"
+  },
+  {
+    "path": "/home/kali/Desktop/x17m/preloaders/preloader_backup",
+    "size": 2097152,
+    "sha256": "50910170c27294ca3db36dc75c49df597b699a5135d551013694d32cca890fdf"
+  },
+  {
+    "path": "/home/kali/Desktop/x17m/preloaders/mtd0_preloader.bin",
+    "size": 4194304,
+    "sha256": "0f59889f3a11410fce4cea6fabab22b94a0d113e02c1d6fbbbe7f23c1205d950"
+  }
+]

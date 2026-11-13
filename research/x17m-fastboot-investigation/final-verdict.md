@@ -1,0 +1,25 @@
+# Final verdict
+
+Assessment completed 2026-10-20 using existing artifacts and records only. No new device contact or disruptive operation occurred. The detailed conclusions are strongest for the hashed September 2025 1 GiB NAND backup; current bench and eMMC conclusions retain their own provenance.
+
+1. **Does the ZLT X17M bootloader contain Fastboot functionality? — CONFIRMED.** The NAND LK partition contains a normal LK engine with instruction-backed command registrations and a separate AEE LK engine/USB transport. The recent, different-build bench boot also logs a Fastboot app waiting for an event. This is actual executable functionality, not merely chipset inference or unused string vocabulary. See [static analysis](fastboot-static-analysis.md).
+
+2. **Is Fastboot enabled, disabled, unreachable, or absent? — CONFIRMED compiled; UNKNOWN usable runtime activation.** It is present and conditionally initialized. In the reviewed normal boot log the task waits while Linux boots; no active endpoint is demonstrated. Evidence does not justify “disabled,” “permanently unreachable,” or “absent.” Conventional firmware-flashing Fastboot is **NOT SUPPORTED** in the analyzed images; `set_active:` is a refusal stub.
+
+3. **If present, what is its entry mechanism? — PROBABLE candidates, none confirmed end to end.** Preloader `FASTBOOT` -> `TOOBTSAF` selection is the leading candidate. ADB `reboot bootloader` has a traced target-string syscall path and a matching DT reboot-reason declaration. The exact event producer, normal/AEE selection and final USB activation remain **UNKNOWN**. No reviewed UART menu/button procedure is established. See [entry points](boot-mode-entry-points.md).
+
+4. **Does the device expose a compatible USB Fastboot interface? — CONFIRMED compiled configuration; UNKNOWN live exposure.** AEE is configured for `0e8d:201c`, interface `ff/42/03`, two bulk endpoints. No successful enumeration/command response from that endpoint is present in the reviewed evidence. Its configuration must not be assigned automatically to normal LK. See [USB analysis](usb-protocol-analysis.md).
+
+5. **Does firmware contain another bootloader download protocol? — CONFIRMED.** MTK BootROM/preloader DA transfer/authorization exists; tested DAs were rejected. Preloader boot selectors and Linux META are also present. **UNKNOWN:** an authorized usable full-device restore route. Linux META depends on Linux and is not an independent bootloader replacement for Fastboot.
+
+6. **Is any Fastboot-related interface gated by security checks? — UNKNOWN for Fastboot-specific authorization; CONFIRMED boot/download security.** SBC/DAA, rejected DA uploads and image-certificate verification are documented at their respective stages. No evidence proves those same checks gate Fastboot enumeration/getvar. Missing unlock/flash handlers are a compiled capability limit, not a measured Android lock state. See [security](security-restrictions.md).
+
+7. **Can Fastboot be entered without permanently modifying firmware? — PROBABLE in design, UNKNOWN demonstrated on this device/build.** A preloader mode selector and reason-register restart could permit entry without a firmware patch. Their exact deployed behavior, automatic writes and exit path must be verified before calling either safe or reversible. No persistent modification is proposed.
+
+8. **What is the safest next experiment? — Current-state inspection.** List already connected ADB/USB/Fastboot devices, inspect descriptors, and collect bounded state reads only if Linux is already accessible. Correlate build identity, deployed adbd, kernel reboot-mode binding and gadget state. If already bootlooping, passively correlate UART/USB without initiating another reset. Only query Fastboot if it is already enumerated. See [verification plan](safe-verification-plan.md).
+
+9. **What are the risks? — Low but nonzero for inspection; material for entry tests.** Read operations can hang or expose identifiers; UART attachment has electrical risks; VM/cable issues can yield false negatives. Bootloader timers can reset even during observation. A later selector/reboot test can interrupt WAN, halt boot or require an unvalidated exit, and boot firmware may update metadata automatically. No selector/reboot is approved or executed here. See [risk assessment](recovery-risk-assessment.md).
+
+10. **What must be established before bootloader modification? — Independent recovery first.** Exact deployed image/board identity; complete verified per-device backups and correct NAND/OOB handling; tested vendor-authorized recovery independent of Linux; secure-boot/signature requirements; a concrete change with a tested rollback plan; and explicit authorization. None of these is supplied merely by detecting a Fastboot string or possessing backups.
+
+The practical result is a **confirmed limited Fastboot implementation, with compiled AEE USB support and unproven safe runtime entry**, not a firmware recovery solution. The investigation can conclude on that evidence without attempting entry or modifying the device.

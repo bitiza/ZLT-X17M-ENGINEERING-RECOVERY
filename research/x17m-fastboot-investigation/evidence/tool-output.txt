@@ -1,0 +1,12 @@
+$ file /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd00_preloader.img /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd01_preloader_backup.img /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd25_lk_a.img /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd39_lk_b.img
+/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd00_preloader.img:        data
+/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd01_preloader_backup.img: data
+/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd25_lk_a.img:             data
+/home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd39_lk_b.img:             data
+exit=0
+$ readelf -h /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd25_lk_a.img
+readelf: Error: Not an ELF file - it has the wrong magic bytes at the start
+exit=1
+$ objdump -f /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd25_lk_a.img
+objdump: /home/kali/Desktop/bozax17/backups/x17m-1gb-20260921-061524/logical/mtd25_lk_a.img: file format not recognized
+exit=1

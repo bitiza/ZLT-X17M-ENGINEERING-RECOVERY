@@ -1,0 +1,65 @@
+[
+  {
+    "archive": "zlt x17m dumps/zlt x17m_8gb_model_dumps.zip",
+    "member": "23.lk_a.img",
+    "size": 1048576,
+    "sha256": "c19d64b7e41766aeee05ae394436a4537197e4876f5aba28e257bc7325050baf",
+    "terms": {
+      "getvar:": [
+        "0x7dd87"
+      ],
+      "download:": [],
+      "flash:": [],
+      "erase:": [],
+      "oem mrdump": [
+        "0x7d660"
+      ],
+      "FASTBOOT": [
+        "0x7d62c",
+        "0x7d645"
+      ],
+      "TOOBTSAF": []
+    }
+  },
+  {
+    "archive": "zlt x17m dumps/zlt x17m_8gb_model_dumps.zip",
+    "member": "36.lk_b.img",
+    "size": 1048576,
+    "sha256": "fc8b60a9c1b4f46b97876d8d44c7f07c94811c2faba713e4152f0088cfcd512c",
+    "terms": {
+      "getvar:": [
+        "0x7de17"
+      ],
+      "download:": [],
+      "flash:": [],
+      "erase:": [],
+      "oem mrdump": [
+        "0x7d6f0"
+      ],
+      "FASTBOOT": [
+        "0x7d6bc",
+        "0x7d6d5"
+      ],
+      "TOOBTSAF": []
+    }
+  },
+  {
+    "archive": "zlt x17m dumps/zlt x17m_8gb_model_dumps.zip",
+    "member": "mmcblk0boot0.bin",
+    "size": 4194304,
+    "sha256": "68a999377a7631125f3408bec6da15221f0882f58f4c337424d8ffdae20ed66b",
+    "terms": {
+      "getvar:": [],
+      "download:": [],
+      "flash:": [],
+      "erase:": [],
+      "oem mrdump": [],
+      "FASTBOOT": [
+        "0x30822"
+      ],
+      "TOOBTSAF": [
+        "0x3082b"
+      ]
+    }
+  }
+]

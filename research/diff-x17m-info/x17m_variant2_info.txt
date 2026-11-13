@@ -1,0 +1,2314 @@
+===== DATE =====
+Tue Sep 22 15:00:19 UTC 2026
+
+===== IDENTITY =====
+uid=0(root) gid=0(root) groups=1004,1007,1011,1015,1028,3001,3002,3003,3006
+DISTRIB_ID='OpenWrt'
+DISTRIB_RELEASE='21.02.7'
+DISTRIB_REVISION='r0-28f76043'
+DISTRIB_TARGET='gem6xxx/evb6890v1_64_cpe'
+DISTRIB_ARCH='aarch64_cortex-a55_neon-vfpv4'
+DISTRIB_DESCRIPTION='OpenWrt 21.02.7 r16847-f8282da11e'
+DISTRIB_TAINTS='no-all busybox'
+NAME="OpenWrt"
+VERSION="21.02.7"
+ID="openwrt"
+ID_LIKE="lede openwrt"
+PRETTY_NAME="OpenWrt 21.02.7"
+VERSION_ID="21.02.7"
+HOME_URL="https://openwrt.org/"
+BUG_URL="https://bugs.openwrt.org/"
+SUPPORT_URL="https://forum.openwrt.org/"
+BUILD_ID="r0-28f76043"
+OPENWRT_BOARD="gem6xxx/evb6890v1_64_cpe"
+OPENWRT_ARCH="aarch64_cortex-a55_neon-vfpv4"
+OPENWRT_TAINTS="no-all busybox"
+OPENWRT_DEVICE_MANUFACTURER="OpenWrt"
+OPENWRT_DEVICE_MANUFACTURER_URL="https://openwrt.org/"
+OPENWRT_DEVICE_PRODUCT="Generic"
+OPENWRT_DEVICE_REVISION="v0"
+OPENWRT_RELEASE="OpenWrt 21.02.7 r16847-f8282da11e"
+Linux OpenWrt 5.4.238 #0 SMP Tue Sep 9 08:22:52 2025 aarch64 GNU/Linux
+aarch64
+Linux version 5.4.238 (likeqiang@s50-Precision-3640-Tower) (gcc version 9.3.0 (OpenWrt GCC 9.3.0 r0-28f76043)) #0 SMP Tue Sep 9 08:22:52 2025
+
+===== KERNEL CMDLINE =====
+console=tty0 console=ttyS0,921600n1 		init=/etc/preinit root=/dev/mtdblock29 		loglevel=8 		androidboot.selinux=permissive androidboot.hardware=mt6890 		initcall_debug=1 page_owner=on earlycon=uart8250,mmio32,0x11002000 console=ttyS0,921600n1 mtk_printk_ctrl.disable_uart=0 ramoops.mem_address=0x42880000 ramoops.mem_size=0xe0000 ramoops.pmsg_size=0x10000 ramoops.console_size=0x40000 bootslot=a  bootprof.pl_t=1759 bootprof.logo_t=0 bootprof.lk_t=5633
+
+===== CPU =====
+processor	: 0
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+
+===== MEMORY =====
+MemTotal:         645724 kB
+MemFree:          355700 kB
+MemAvailable:     406084 kB
+Buffers:           16544 kB
+Cached:            72080 kB
+SwapCached:            0 kB
+Active:            74536 kB
+Inactive:          43632 kB
+Active(anon):      33064 kB
+Inactive(anon):      732 kB
+Active(file):      41472 kB
+Inactive(file):    42900 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        230396 kB
+SwapFree:         230396 kB
+Dirty:                 8 kB
+Writeback:             0 kB
+AnonPages:         29064 kB
+Mapped:            23556 kB
+Shmem:              4252 kB
+KReclaimable:      22132 kB
+Slab:              81840 kB
+SReclaimable:      22132 kB
+SUnreclaim:        59708 kB
+KernelStack:        5708 kB
+PageTables:         1296 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      553256 kB
+Committed_AS:      65000 kB
+VmallocTotal:   262930368 kB
+VmallocUsed:       30304 kB
+VmallocChunk:          0 kB
+Percpu:             1184 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+              total        used        free      shared  buff/cache   available
+Mem:         645724      179268      355700        4252      110756      406084
+Swap:        230396           0      230396
+
+===== DEVICE TREE MODEL =====
+MediaTek evb6890v1_64_cpe
+
+--- compatible ---
+mediatek,evb6890v1_64_cpe
+mediatek,mt6890
+
+===== DEVICE TREE CHOSEN =====
+--- /proc/device-tree/chosen/aee,enable ---
+full
+--- /proc/device-tree/chosen/atag,boot ---
+--- /proc/device-tree/chosen/atag,chipid ---
+--- /proc/device-tree/chosen/atag,devinfo ---
+=e,Ueo,R
+Othg
+--- /proc/device-tree/chosen/boardid ---
+--- /proc/device-tree/chosen/bootargs ---
+console=tty0 console=ttyS0,921600n1 		init=/etc/preinit root=/dev/mtdblock29 		loglevel=8 		androidboot.selinux=permissive androidboot.hardware=mt6890 		initcall_debug=1 page_owner=on earlycon=uart8250,mmio32,0x11002000 console=ttyS0,921600n1 mtk_printk_ctrl.disable_uart=0 ramoops.mem_address=0x42880000 ramoops.mem_size=0xe0000 ramoops.pmsg_size=0x10000 ramoops.console_size=0x40000 bootslot=a  bootprof.pl_t=1759 bootprof.logo_t=0 bootprof.lk_t=5633
+--- /proc/device-tree/chosen/bt_mac ---
+NULL
+--- /proc/device-tree/chosen/fibo_sn ---
+CNL9RT0D4H
+--- /proc/device-tree/chosen/imei ---
+861321071910713
+--- /proc/device-tree/chosen/log_store ---
+--- /proc/device-tree/chosen/mac0 ---
+REDACTED-MAC-79
+--- /proc/device-tree/chosen/mac1 ---
+REDACTED-MAC-65
+--- /proc/device-tree/chosen/mrdump,cblock ---
+--- /proc/device-tree/chosen/mrdump,ddr_rsv ---
+--- /proc/device-tree/chosen/mrdump,lk ---
+MRDUMP10
+--- /proc/device-tree/chosen/name ---
+chosen
+--- /proc/device-tree/chosen/ram_console ---
+--- /proc/device-tree/chosen/rootfs,hashvallist ---
+--- /proc/device-tree/chosen/rootfs,postdata ---
+--- /proc/device-tree/chosen/rootfs,predata ---
+Some-State1
+Mediatek0
+150604031444Z
+350604031444Z051
+Some-State1
+Mediatek0
+?,!_
+{U4	
+GW9[?]S
+f9rb
+QP(+
+--- /proc/device-tree/chosen/rootfs,pubk ---
+?,!_
+{U4	
+GW9[?]S
+f9rb
+QP(+
+--- /proc/device-tree/chosen/rootfs,sigval ---
+pE0\
+0h&[
+>M/<
+ Nwh
+--- /proc/device-tree/chosen/sn ---
+NULL
+--- /proc/device-tree/chosen/wifi_mac0 ---
+NULL
+--- /proc/device-tree/chosen/wifi_mac1 ---
+NULL
+--- /proc/device-tree/chosen/wifi_mac2 ---
+NULL
+
+===== /PROC/MTD =====
+dev:    size   erasesize  name
+mtd0: 00400000 00040000 "preloader"
+mtd1: 00200000 00040000 "preloader_backup"
+mtd2: 00100000 00040000 "proinfo"
+mtd3: 00100000 00040000 "misc"
+mtd4: 00100000 00040000 "para"
+mtd5: 01400000 00040000 "expdb"
+mtd6: 02000000 00040000 "nvcfg"
+mtd7: 02000000 00040000 "nvdata"
+mtd8: 00800000 00040000 "protect1"
+mtd9: 00800000 00040000 "protect2"
+mtd10: 00800000 00040000 "mcf1_a"
+mtd11: 00800000 00040000 "mcf2_a"
+mtd12: 00800000 00040000 "mcf1_b"
+mtd13: 00800000 00040000 "mcf2_b"
+mtd14: 00100000 00040000 "seccfg"
+mtd15: 00200000 00040000 "boot_para"
+mtd16: 02000000 00040000 "nvram"
+mtd17: 05000000 00040000 "md1img_a"
+mtd18: 00a00000 00040000 "md1dsp_a"
+mtd19: 00100000 00040000 "spmfw_a"
+mtd20: 00100000 00040000 "pi_img_a"
+mtd21: 00100000 00040000 "dpm_a"
+mtd22: 00100000 00040000 "medmcu_a"
+mtd23: 00200000 00040000 "sspm_a"
+mtd24: 00200000 00040000 "mcupm_a"
+mtd25: 00200000 00040000 "lk_a"
+mtd26: 00100000 00040000 "tee_a"
+mtd27: 02000000 00040000 "boot_a"
+mtd28: 00100000 00040000 "rootfs_sig_a"
+mtd29: 04000000 00040000 "rootfs_a"
+mtd30: 00840000 00040000 "rootfs_data"
+mtd31: 05000000 00040000 "md1img_b"
+mtd32: 00a00000 00040000 "md1dsp_b"
+mtd33: 00100000 00040000 "spmfw_b"
+mtd34: 00100000 00040000 "pi_img_b"
+mtd35: 00100000 00040000 "dpm_b"
+mtd36: 00100000 00040000 "medmcu_b"
+mtd37: 00200000 00040000 "sspm_b"
+mtd38: 00200000 00040000 "mcupm_b"
+mtd39: 00200000 00040000 "lk_b"
+mtd40: 00100000 00040000 "tee_b"
+mtd41: 02000000 00040000 "boot_b"
+mtd42: 00100000 00040000 "rootfs_sig_b"
+mtd43: 04000000 00040000 "rootfs_b"
+mtd44: 00100000 00040000 "loader_ext_a"
+mtd45: 00100000 00040000 "loader_ext_b"
+mtd46: 00400000 00040000 "fibo_para"
+mtd47: 01400000 00040000 "user_config"
+mtd48: 00400000 00040000 "productinfo"
+mtd49: 02000000 00040000 "fibonv"
+mtd50: 18480000 00040000 "user_data"
+mtd51: 00080000 00040000 "pmt"
+
+===== BLOCK DEVICES =====
+major minor  #blocks  name
+
+   1        0       4096 ram0
+ 254        0     230400 zram0
+  31        0       4096 mtdblock0
+  31        1       2048 mtdblock1
+  31        2       1024 mtdblock2
+  31        3       1024 mtdblock3
+  31        4       1024 mtdblock4
+  31        5      20480 mtdblock5
+  31        6      32768 mtdblock6
+  31        7      32768 mtdblock7
+  31        8       8192 mtdblock8
+  31        9       8192 mtdblock9
+  31       10       8192 mtdblock10
+  31       11       8192 mtdblock11
+  31       12       8192 mtdblock12
+  31       13       8192 mtdblock13
+  31       14       1024 mtdblock14
+  31       15       2048 mtdblock15
+  31       16      32768 mtdblock16
+  31       17      81920 mtdblock17
+  31       18      10240 mtdblock18
+  31       19       1024 mtdblock19
+  31       20       1024 mtdblock20
+  31       21       1024 mtdblock21
+  31       22       1024 mtdblock22
+  31       23       2048 mtdblock23
+  31       24       2048 mtdblock24
+  31       25       2048 mtdblock25
+  31       26       1024 mtdblock26
+  31       27      32768 mtdblock27
+  31       28       1024 mtdblock28
+  31       29      65536 mtdblock29
+  31       30       8448 mtdblock30
+  31       31      81920 mtdblock31
+  31       32      10240 mtdblock32
+  31       33       1024 mtdblock33
+  31       34       1024 mtdblock34
+  31       35       1024 mtdblock35
+  31       36       1024 mtdblock36
+  31       37       2048 mtdblock37
+  31       38       2048 mtdblock38
+  31       39       2048 mtdblock39
+  31       40       1024 mtdblock40
+  31       41      32768 mtdblock41
+  31       42       1024 mtdblock42
+  31       43      65536 mtdblock43
+  31       44       1024 mtdblock44
+  31       45       1024 mtdblock45
+  31       46       4096 mtdblock46
+  31       47      20480 mtdblock47
+  31       48       4096 mtdblock48
+  31       49      32768 mtdblock49
+  31       50     397824 mtdblock50
+  31       51        512 mtdblock51
+
+--- /sys/class/block ---
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 loop0 -> ../../devices/virtual/block/loop0
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock0 -> ../../devices/platform/11005000.nfi/mtd/mtd0/mtdblock0
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock1 -> ../../devices/platform/11005000.nfi/mtd/mtd1/mtdblock1
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock10 -> ../../devices/platform/11005000.nfi/mtd/mtd10/mtdblock10
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock11 -> ../../devices/platform/11005000.nfi/mtd/mtd11/mtdblock11
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock12 -> ../../devices/platform/11005000.nfi/mtd/mtd12/mtdblock12
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock13 -> ../../devices/platform/11005000.nfi/mtd/mtd13/mtdblock13
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock14 -> ../../devices/platform/11005000.nfi/mtd/mtd14/mtdblock14
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock15 -> ../../devices/platform/11005000.nfi/mtd/mtd15/mtdblock15
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock16 -> ../../devices/platform/11005000.nfi/mtd/mtd16/mtdblock16
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock17 -> ../../devices/platform/11005000.nfi/mtd/mtd17/mtdblock17
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock18 -> ../../devices/platform/11005000.nfi/mtd/mtd18/mtdblock18
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock19 -> ../../devices/platform/11005000.nfi/mtd/mtd19/mtdblock19
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock2 -> ../../devices/platform/11005000.nfi/mtd/mtd2/mtdblock2
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock20 -> ../../devices/platform/11005000.nfi/mtd/mtd20/mtdblock20
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock21 -> ../../devices/platform/11005000.nfi/mtd/mtd21/mtdblock21
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock22 -> ../../devices/platform/11005000.nfi/mtd/mtd22/mtdblock22
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock23 -> ../../devices/platform/11005000.nfi/mtd/mtd23/mtdblock23
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock24 -> ../../devices/platform/11005000.nfi/mtd/mtd24/mtdblock24
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock25 -> ../../devices/platform/11005000.nfi/mtd/mtd25/mtdblock25
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock26 -> ../../devices/platform/11005000.nfi/mtd/mtd26/mtdblock26
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock27 -> ../../devices/platform/11005000.nfi/mtd/mtd27/mtdblock27
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock28 -> ../../devices/platform/11005000.nfi/mtd/mtd28/mtdblock28
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock29 -> ../../devices/platform/11005000.nfi/mtd/mtd29/mtdblock29
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock3 -> ../../devices/platform/11005000.nfi/mtd/mtd3/mtdblock3
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock30 -> ../../devices/platform/11005000.nfi/mtd/mtd30/mtdblock30
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock31 -> ../../devices/platform/11005000.nfi/mtd/mtd31/mtdblock31
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock32 -> ../../devices/platform/11005000.nfi/mtd/mtd32/mtdblock32
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock33 -> ../../devices/platform/11005000.nfi/mtd/mtd33/mtdblock33
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock34 -> ../../devices/platform/11005000.nfi/mtd/mtd34/mtdblock34
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock35 -> ../../devices/platform/11005000.nfi/mtd/mtd35/mtdblock35
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock36 -> ../../devices/platform/11005000.nfi/mtd/mtd36/mtdblock36
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock37 -> ../../devices/platform/11005000.nfi/mtd/mtd37/mtdblock37
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock38 -> ../../devices/platform/11005000.nfi/mtd/mtd38/mtdblock38
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock39 -> ../../devices/platform/11005000.nfi/mtd/mtd39/mtdblock39
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock4 -> ../../devices/platform/11005000.nfi/mtd/mtd4/mtdblock4
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock40 -> ../../devices/platform/11005000.nfi/mtd/mtd40/mtdblock40
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock41 -> ../../devices/platform/11005000.nfi/mtd/mtd41/mtdblock41
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock42 -> ../../devices/platform/11005000.nfi/mtd/mtd42/mtdblock42
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock43 -> ../../devices/platform/11005000.nfi/mtd/mtd43/mtdblock43
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock44 -> ../../devices/platform/11005000.nfi/mtd/mtd44/mtdblock44
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock45 -> ../../devices/platform/11005000.nfi/mtd/mtd45/mtdblock45
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock46 -> ../../devices/platform/11005000.nfi/mtd/mtd46/mtdblock46
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock47 -> ../../devices/platform/11005000.nfi/mtd/mtd47/mtdblock47
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock48 -> ../../devices/platform/11005000.nfi/mtd/mtd48/mtdblock48
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock49 -> ../../devices/platform/11005000.nfi/mtd/mtd49/mtdblock49
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock5 -> ../../devices/platform/11005000.nfi/mtd/mtd5/mtdblock5
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock50 -> ../../devices/platform/11005000.nfi/mtd/mtd50/mtdblock50
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock51 -> ../../devices/platform/11005000.nfi/mtd/mtd51/mtdblock51
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock6 -> ../../devices/platform/11005000.nfi/mtd/mtd6/mtdblock6
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock7 -> ../../devices/platform/11005000.nfi/mtd/mtd7/mtdblock7
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock8 -> ../../devices/platform/11005000.nfi/mtd/mtd8/mtdblock8
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 mtdblock9 -> ../../devices/platform/11005000.nfi/mtd/mtd9/mtdblock9
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 ram0 -> ../../devices/virtual/block/ram0
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 zram0 -> ../../devices/virtual/block/zram0
+
+--- /dev/block ---
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 boot -> /dev/block/boot_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 boot_a -> /dev/mtdblock27
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 boot_b -> /dev/mtdblock41
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 boot_para -> /dev/mtdblock15
+lrwxrwxrwx    1 root     root            16 Jan  1  2010 dpm -> /dev/block/dpm_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 dpm_a -> /dev/mtdblock21
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 dpm_b -> /dev/mtdblock35
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 expdb -> /dev/mtdblock5
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 fibo_para -> /dev/mtdblock46
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 fibonv -> /dev/mtdblock49
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 lk -> /dev/block/lk_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 lk_a -> /dev/mtdblock25
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 lk_b -> /dev/mtdblock39
+lrwxrwxrwx    1 root     root            23 Jan  1  2010 loader_ext -> /dev/block/loader_ext_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 loader_ext_a -> /dev/mtdblock44
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 loader_ext_b -> /dev/mtdblock45
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 mcf1 -> /dev/block/mcf1_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcf1_a -> /dev/mtdblock10
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcf1_b -> /dev/mtdblock12
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 mcf2 -> /dev/block/mcf2_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcf2_a -> /dev/mtdblock11
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcf2_b -> /dev/mtdblock13
+lrwxrwxrwx    1 root     root            18 Jan  1  2010 mcupm -> /dev/block/mcupm_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcupm_a -> /dev/mtdblock24
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcupm_b -> /dev/mtdblock38
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 md1dsp -> /dev/block/md1dsp_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1dsp_a -> /dev/mtdblock18
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1dsp_b -> /dev/mtdblock32
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 md1img -> /dev/block/md1img_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1img_a -> /dev/mtdblock17
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1img_b -> /dev/mtdblock31
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 medmcu -> /dev/block/medmcu_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 medmcu_a -> /dev/mtdblock22
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 medmcu_b -> /dev/mtdblock36
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 misc -> /dev/mtdblock3
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 nvcfg -> /dev/mtdblock6
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 nvdata -> /dev/mtdblock7
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 nvram -> /dev/mtdblock16
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 para -> /dev/mtdblock4
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 pi_img -> /dev/block/pi_img_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 pi_img_a -> /dev/mtdblock20
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 pi_img_b -> /dev/mtdblock34
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 pmt -> /dev/mtdblock51
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 preloader -> /dev/mtdblock0
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 preloader_backup -> /dev/mtdblock1
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 productinfo -> /dev/mtdblock48
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 proinfo -> /dev/mtdblock2
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 protect1 -> /dev/mtdblock8
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 protect2 -> /dev/mtdblock9
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 rootfs -> /dev/block/rootfs_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_a -> /dev/mtdblock29
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_b -> /dev/mtdblock43
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_data -> /dev/mtdblock30
+lrwxrwxrwx    1 root     root            23 Jan  1  2010 rootfs_sig -> /dev/block/rootfs_sig_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_sig_a -> /dev/mtdblock28
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_sig_b -> /dev/mtdblock42
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 seccfg -> /dev/mtdblock14
+lrwxrwxrwx    1 root     root            18 Jan  1  2010 spmfw -> /dev/block/spmfw_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 spmfw_a -> /dev/mtdblock19
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 spmfw_b -> /dev/mtdblock33
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 sspm -> /dev/block/sspm_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 sspm_a -> /dev/mtdblock23
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 sspm_b -> /dev/mtdblock37
+lrwxrwxrwx    1 root     root            16 Jan  1  2010 tee -> /dev/block/tee_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 tee_a -> /dev/mtdblock26
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 tee_b -> /dev/mtdblock40
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 user_config -> /dev/mtdblock47
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 user_data -> /dev/mtdblock50
+
+--- mmc devices ---
+
+--- mtd devices ---
+crw-------    1 root     root       90,   0 Jan  1  2010 /dev/mtd0
+crw-------    1 root     root       90,   1 Jan  1  2010 /dev/mtd0ro
+crw-------    1 root     root       90,   2 Jan  1  2010 /dev/mtd1
+crw-------    1 root     root       90,  20 Jan  1  2010 /dev/mtd10
+crw-------    1 root     root       90,  21 Jan  1  2010 /dev/mtd10ro
+crw-------    1 root     root       90,  22 Jan  1  2010 /dev/mtd11
+crw-------    1 root     root       90,  23 Jan  1  2010 /dev/mtd11ro
+crw-------    1 root     root       90,  24 Jan  1  2010 /dev/mtd12
+crw-------    1 root     root       90,  25 Jan  1  2010 /dev/mtd12ro
+crw-------    1 root     root       90,  26 Jan  1  2010 /dev/mtd13
+crw-------    1 root     root       90,  27 Jan  1  2010 /dev/mtd13ro
+crw-------    1 root     root       90,  28 Jan  1  2010 /dev/mtd14
+crw-------    1 root     root       90,  29 Jan  1  2010 /dev/mtd14ro
+crw-------    1 root     root       90,  30 Jan  1  2010 /dev/mtd15
+crw-------    1 root     root       90,  31 Jan  1  2010 /dev/mtd15ro
+crw-------    1 root     root       90,  32 Jan  1  2010 /dev/mtd16
+crw-------    1 root     root       90,  33 Jan  1  2010 /dev/mtd16ro
+crw-------    1 root     root       90,  34 Jan  1  2010 /dev/mtd17
+crw-------    1 root     root       90,  35 Jan  1  2010 /dev/mtd17ro
+crw-------    1 root     root       90,  36 Jan  1  2010 /dev/mtd18
+crw-------    1 root     root       90,  37 Jan  1  2010 /dev/mtd18ro
+crw-------    1 root     root       90,  38 Jan  1  2010 /dev/mtd19
+crw-------    1 root     root       90,  39 Jan  1  2010 /dev/mtd19ro
+crw-------    1 root     root       90,   3 Jan  1  2010 /dev/mtd1ro
+crw-------    1 root     root       90,   4 Jan  1  2010 /dev/mtd2
+crw-------    1 root     root       90,  40 Jan  1  2010 /dev/mtd20
+crw-------    1 root     root       90,  41 Jan  1  2010 /dev/mtd20ro
+crw-------    1 root     root       90,  42 Jan  1  2010 /dev/mtd21
+crw-------    1 root     root       90,  43 Jan  1  2010 /dev/mtd21ro
+crw-------    1 root     root       90,  44 Jan  1  2010 /dev/mtd22
+crw-------    1 root     root       90,  45 Jan  1  2010 /dev/mtd22ro
+crw-------    1 root     root       90,  46 Jan  1  2010 /dev/mtd23
+crw-------    1 root     root       90,  47 Jan  1  2010 /dev/mtd23ro
+crw-------    1 root     root       90,  48 Jan  1  2010 /dev/mtd24
+crw-------    1 root     root       90,  49 Jan  1  2010 /dev/mtd24ro
+crw-------    1 root     root       90,  50 Jan  1  2010 /dev/mtd25
+crw-------    1 root     root       90,  51 Jan  1  2010 /dev/mtd25ro
+crw-------    1 root     root       90,  52 Jan  1  2010 /dev/mtd26
+crw-------    1 root     root       90,  53 Jan  1  2010 /dev/mtd26ro
+crw-------    1 root     root       90,  54 Jan  1  2010 /dev/mtd27
+crw-------    1 root     root       90,  55 Jan  1  2010 /dev/mtd27ro
+crw-------    1 root     root       90,  56 Jan  1  2010 /dev/mtd28
+crw-------    1 root     root       90,  57 Jan  1  2010 /dev/mtd28ro
+crw-------    1 root     root       90,  58 Jan  1  2010 /dev/mtd29
+crw-------    1 root     root       90,  59 Jan  1  2010 /dev/mtd29ro
+crw-------    1 root     root       90,   5 Jan  1  2010 /dev/mtd2ro
+crw-------    1 root     root       90,   6 Jan  1  2010 /dev/mtd3
+crw-------    1 root     root       90,  60 Jan  1  2010 /dev/mtd30
+crw-------    1 root     root       90,  61 Jan  1  2010 /dev/mtd30ro
+crw-------    1 root     root       90,  62 Jan  1  2010 /dev/mtd31
+crw-------    1 root     root       90,  63 Jan  1  2010 /dev/mtd31ro
+crw-------    1 root     root       90,  64 Jan  1  2010 /dev/mtd32
+crw-------    1 root     root       90,  65 Jan  1  2010 /dev/mtd32ro
+crw-------    1 root     root       90,  66 Jan  1  2010 /dev/mtd33
+crw-------    1 root     root       90,  67 Jan  1  2010 /dev/mtd33ro
+crw-------    1 root     root       90,  68 Jan  1  2010 /dev/mtd34
+crw-------    1 root     root       90,  69 Jan  1  2010 /dev/mtd34ro
+crw-------    1 root     root       90,  70 Jan  1  2010 /dev/mtd35
+crw-------    1 root     root       90,  71 Jan  1  2010 /dev/mtd35ro
+crw-------    1 root     root       90,  72 Jan  1  2010 /dev/mtd36
+crw-------    1 root     root       90,  73 Jan  1  2010 /dev/mtd36ro
+crw-------    1 root     root       90,  74 Jan  1  2010 /dev/mtd37
+crw-------    1 root     root       90,  75 Jan  1  2010 /dev/mtd37ro
+crw-------    1 root     root       90,  76 Jan  1  2010 /dev/mtd38
+crw-------    1 root     root       90,  77 Jan  1  2010 /dev/mtd38ro
+crw-------    1 root     root       90,  78 Jan  1  2010 /dev/mtd39
+crw-------    1 root     root       90,  79 Jan  1  2010 /dev/mtd39ro
+crw-------    1 root     root       90,   7 Jan  1  2010 /dev/mtd3ro
+crw-------    1 root     root       90,   8 Jan  1  2010 /dev/mtd4
+crw-------    1 root     root       90,  80 Jan  1  2010 /dev/mtd40
+crw-------    1 root     root       90,  81 Jan  1  2010 /dev/mtd40ro
+crw-------    1 root     root       90,  82 Jan  1  2010 /dev/mtd41
+crw-------    1 root     root       90,  83 Jan  1  2010 /dev/mtd41ro
+crw-------    1 root     root       90,  84 Jan  1  2010 /dev/mtd42
+crw-------    1 root     root       90,  85 Jan  1  2010 /dev/mtd42ro
+crw-------    1 root     root       90,  86 Jan  1  2010 /dev/mtd43
+crw-------    1 root     root       90,  87 Jan  1  2010 /dev/mtd43ro
+crw-------    1 root     root       90,  88 Jan  1  2010 /dev/mtd44
+crw-------    1 root     root       90,  89 Jan  1  2010 /dev/mtd44ro
+crw-------    1 root     root       90,  90 Jan  1  2010 /dev/mtd45
+crw-------    1 root     root       90,  91 Jan  1  2010 /dev/mtd45ro
+crw-------    1 root     root       90,  92 Jan  1  2010 /dev/mtd46
+crw-------    1 root     root       90,  93 Jan  1  2010 /dev/mtd46ro
+crw-------    1 root     root       90,  94 Jan  1  2010 /dev/mtd47
+crw-------    1 root     root       90,  95 Jan  1  2010 /dev/mtd47ro
+crw-------    1 root     root       90,  96 Jan  1  2010 /dev/mtd48
+crw-------    1 root     root       90,  97 Jan  1  2010 /dev/mtd48ro
+crw-------    1 root     root       90,  98 Jan  1  2010 /dev/mtd49
+crw-------    1 root     root       90,  99 Jan  1  2010 /dev/mtd49ro
+crw-------    1 root     root       90,   9 Jan  1  2010 /dev/mtd4ro
+crw-------    1 root     root       90,  10 Jan  1  2010 /dev/mtd5
+crw-------    1 root     root       90, 100 Jan  1  2010 /dev/mtd50
+crw-------    1 root     root       90, 101 Jan  1  2010 /dev/mtd50ro
+crw-------    1 root     root       90, 102 Jan  1  2010 /dev/mtd51
+crw-------    1 root     root       90, 103 Jan  1  2010 /dev/mtd51ro
+crw-------    1 root     root       90,  11 Jan  1  2010 /dev/mtd5ro
+crw-------    1 root     root       90,  12 Jan  1  2010 /dev/mtd6
+crw-------    1 root     root       90,  13 Jan  1  2010 /dev/mtd6ro
+crw-------    1 root     root       90,  14 Jan  1  2010 /dev/mtd7
+crw-------    1 root     root       90,  15 Jan  1  2010 /dev/mtd7ro
+crw-------    1 root     root       90,  16 Jan  1  2010 /dev/mtd8
+crw-------    1 root     root       90,  17 Jan  1  2010 /dev/mtd8ro
+crw-------    1 root     root       90,  18 Jan  1  2010 /dev/mtd9
+crw-------    1 root     root       90,  19 Jan  1  2010 /dev/mtd9ro
+brw-------    1 root     root       31,   0 Jan  1  2010 /dev/mtdblock0
+brw-------    1 root     root       31,   1 Jan  1  2010 /dev/mtdblock1
+brw-------    1 root     root       31,  10 Jan  1  2010 /dev/mtdblock10
+brw-------    1 root     root       31,  11 Jan  1  2010 /dev/mtdblock11
+brw-------    1 root     root       31,  12 Jan  1  2010 /dev/mtdblock12
+brw-------    1 root     root       31,  13 Jan  1  2010 /dev/mtdblock13
+brw-------    1 root     root       31,  14 Jan  1  2010 /dev/mtdblock14
+brw-------    1 root     root       31,  15 Jan  1  2010 /dev/mtdblock15
+brw-------    1 root     root       31,  16 Jan  1  2010 /dev/mtdblock16
+brw-------    1 root     root       31,  17 Jan  1  2010 /dev/mtdblock17
+brw-------    1 root     root       31,  18 Jan  1  2010 /dev/mtdblock18
+brw-------    1 root     root       31,  19 Jan  1  2010 /dev/mtdblock19
+brw-------    1 root     root       31,   2 Jan  1  2010 /dev/mtdblock2
+brw-------    1 root     root       31,  20 Jan  1  2010 /dev/mtdblock20
+brw-------    1 root     root       31,  21 Jan  1  2010 /dev/mtdblock21
+brw-------    1 root     root       31,  22 Jan  1  2010 /dev/mtdblock22
+brw-------    1 root     root       31,  23 Jan  1  2010 /dev/mtdblock23
+brw-------    1 root     root       31,  24 Jan  1  2010 /dev/mtdblock24
+brw-------    1 root     root       31,  25 Jan  1  2010 /dev/mtdblock25
+brw-------    1 root     root       31,  26 Jan  1  2010 /dev/mtdblock26
+brw-------    1 root     root       31,  27 Jan  1  2010 /dev/mtdblock27
+brw-------    1 root     root       31,  28 Jan  1  2010 /dev/mtdblock28
+brw-------    1 root     root       31,  29 Jan  1  2010 /dev/mtdblock29
+brw-------    1 root     root       31,   3 Jan  1  2010 /dev/mtdblock3
+brw-------    1 root     root       31,  30 Jan  1  2010 /dev/mtdblock30
+brw-------    1 root     root       31,  31 Jan  1  2010 /dev/mtdblock31
+brw-------    1 root     root       31,  32 Jan  1  2010 /dev/mtdblock32
+brw-------    1 root     root       31,  33 Jan  1  2010 /dev/mtdblock33
+brw-------    1 root     root       31,  34 Jan  1  2010 /dev/mtdblock34
+brw-------    1 root     root       31,  35 Jan  1  2010 /dev/mtdblock35
+brw-------    1 root     root       31,  36 Jan  1  2010 /dev/mtdblock36
+brw-------    1 root     root       31,  37 Jan  1  2010 /dev/mtdblock37
+brw-------    1 root     root       31,  38 Jan  1  2010 /dev/mtdblock38
+brw-------    1 root     root       31,  39 Jan  1  2010 /dev/mtdblock39
+brw-------    1 root     root       31,   4 Jan  1  2010 /dev/mtdblock4
+brw-------    1 root     root       31,  40 Jan  1  2010 /dev/mtdblock40
+brw-------    1 root     root       31,  41 Jan  1  2010 /dev/mtdblock41
+brw-------    1 root     root       31,  42 Jan  1  2010 /dev/mtdblock42
+brw-------    1 root     root       31,  43 Jan  1  2010 /dev/mtdblock43
+brw-------    1 root     root       31,  44 Jan  1  2010 /dev/mtdblock44
+brw-------    1 root     root       31,  45 Jan  1  2010 /dev/mtdblock45
+brw-------    1 root     root       31,  46 Jan  1  2010 /dev/mtdblock46
+brw-------    1 root     root       31,  47 Jan  1  2010 /dev/mtdblock47
+brw-------    1 root     root       31,  48 Jan  1  2010 /dev/mtdblock48
+brw-------    1 root     root       31,  49 Jan  1  2010 /dev/mtdblock49
+brw-------    1 root     root       31,   5 Jan  1  2010 /dev/mtdblock5
+brw-------    1 root     root       31,  50 Jan  1  2010 /dev/mtdblock50
+brw-------    1 root     root       31,  51 Jan  1  2010 /dev/mtdblock51
+brw-------    1 root     root       31,   6 Jan  1  2010 /dev/mtdblock6
+brw-------    1 root     root       31,   7 Jan  1  2010 /dev/mtdblock7
+brw-------    1 root     root       31,   8 Jan  1  2010 /dev/mtdblock8
+brw-------    1 root     root       31,   9 Jan  1  2010 /dev/mtdblock9
+
+/dev/mtd:
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 boot_a -> /dev/mtd27
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 boot_b -> /dev/mtd41
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 boot_para -> /dev/mtd15
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 dpm_a -> /dev/mtd21
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 dpm_b -> /dev/mtd35
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 expdb -> /dev/mtd5
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 fibo_para -> /dev/mtd46
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 fibonv -> /dev/mtd49
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 lk_a -> /dev/mtd25
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 lk_b -> /dev/mtd39
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 loader_ext_a -> /dev/mtd44
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 loader_ext_b -> /dev/mtd45
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mcf1_a -> /dev/mtd10
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mcf1_b -> /dev/mtd12
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mcf2_a -> /dev/mtd11
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mcf2_b -> /dev/mtd13
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mcupm_a -> /dev/mtd24
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mcupm_b -> /dev/mtd38
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 md1dsp_a -> /dev/mtd18
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 md1dsp_b -> /dev/mtd32
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 md1img_a -> /dev/mtd17
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 md1img_b -> /dev/mtd31
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 medmcu_a -> /dev/mtd22
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 medmcu_b -> /dev/mtd36
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 misc -> /dev/mtd3
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd0 -> /dev/mtd0
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd1 -> /dev/mtd1
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd10 -> /dev/mtd10
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd11 -> /dev/mtd11
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd12 -> /dev/mtd12
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd13 -> /dev/mtd13
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd14 -> /dev/mtd14
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd15 -> /dev/mtd15
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd16 -> /dev/mtd16
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd17 -> /dev/mtd17
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd18 -> /dev/mtd18
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd19 -> /dev/mtd19
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd2 -> /dev/mtd2
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd20 -> /dev/mtd20
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd21 -> /dev/mtd21
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd22 -> /dev/mtd22
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd23 -> /dev/mtd23
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd24 -> /dev/mtd24
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd25 -> /dev/mtd25
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd26 -> /dev/mtd26
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd27 -> /dev/mtd27
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd28 -> /dev/mtd28
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd29 -> /dev/mtd29
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd3 -> /dev/mtd3
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd30 -> /dev/mtd30
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd31 -> /dev/mtd31
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd32 -> /dev/mtd32
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd33 -> /dev/mtd33
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd34 -> /dev/mtd34
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd35 -> /dev/mtd35
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd36 -> /dev/mtd36
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd37 -> /dev/mtd37
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd38 -> /dev/mtd38
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd39 -> /dev/mtd39
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd4 -> /dev/mtd4
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd40 -> /dev/mtd40
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd41 -> /dev/mtd41
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd42 -> /dev/mtd42
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd43 -> /dev/mtd43
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd44 -> /dev/mtd44
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd45 -> /dev/mtd45
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd46 -> /dev/mtd46
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd47 -> /dev/mtd47
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd48 -> /dev/mtd48
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd49 -> /dev/mtd49
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd5 -> /dev/mtd5
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd50 -> /dev/mtd50
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 mtd51 -> /dev/mtd51
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd6 -> /dev/mtd6
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd7 -> /dev/mtd7
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd8 -> /dev/mtd8
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 mtd9 -> /dev/mtd9
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 nvcfg -> /dev/mtd6
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 nvdata -> /dev/mtd7
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 nvram -> /dev/mtd16
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 para -> /dev/mtd4
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 pi_img_a -> /dev/mtd20
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 pi_img_b -> /dev/mtd34
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 pmt -> /dev/mtd51
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 preloader -> /dev/mtd0
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 preloader_backup -> /dev/mtd1
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 productinfo -> /dev/mtd48
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 proinfo -> /dev/mtd2
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 protect1 -> /dev/mtd8
+lrwxrwxrwx    1 root     root             9 Jan  1  2010 protect2 -> /dev/mtd9
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 rootfs_a -> /dev/mtd29
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 rootfs_b -> /dev/mtd43
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 rootfs_data -> /dev/mtd30
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 rootfs_sig_a -> /dev/mtd28
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 rootfs_sig_b -> /dev/mtd42
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 seccfg -> /dev/mtd14
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 spmfw_a -> /dev/mtd19
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 spmfw_b -> /dev/mtd33
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 sspm_a -> /dev/mtd23
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 sspm_b -> /dev/mtd37
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 tee_a -> /dev/mtd26
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 tee_b -> /dev/mtd40
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 user_config -> /dev/mtd47
+lrwxrwxrwx    1 root     root            10 Jan  1  2010 user_data -> /dev/mtd50
+
+===== MOUNTS =====
+/dev/root /rom squashfs ro,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,noatime 0 0
+sysfs /sys sysfs rw,nosuid,nodev,noexec,noatime 0 0
+cgroup2 /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noatime,size=308236k,nr_inodes=77059 0 0
+/dev/mtdblock30 /overlay jffs2 rw,noatime 0 0
+overlayfs:/overlay / overlay rw,noatime,lowerdir=/,upperdir=/overlay/upper,workdir=/overlay/work 0 0
+tmpfs /dev tmpfs rw,nosuid,relatime,size=512k,nr_inodes=77059,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,mode=600,ptmxmode=000 0 0
+/dev/block/nvcfg /mnt/vendor/nvcfg yaffs2 rw,nosuid,nodev,noatime,nodiratime 0 0
+/dev/block/nvdata /mnt/vendor/nvdata yaffs2 rw,nosuid,nodev,noatime,nodiratime 0 0
+/dev/block/nvram /mnt/vendor/nvram yaffs2 rw,nosuid,nodev,noatime,nodiratime 0 0
+/dev/block/protect1 /mnt/vendor/protect_f yaffs2 rw,nosuid,nodev,noatime,nodiratime 0 0
+/dev/block/protect2 /mnt/vendor/protect_s yaffs2 rw,nosuid,nodev,noatime,nodiratime 0 0
+/dev/block/mcf1 /mnt/vendor/mdota jffs2 rw,relatime 0 0
+/dev/block/mcf2 /mnt/vendor/mdota2 jffs2 rw,relatime 0 0
+/dev/block/user_config /mnt/data yaffs2 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/productinfo /productinfo yaffs2 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/ubi1_1 /data ubifs rw,relatime,assert=read-only,ubi=1,vol=1 0 0
+/dev/block/fibonv /mnt/vendor/fibonv yaffs2 rw,nosuid,nodev,noatime,nodiratime 0 0
+debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,noatime 0 0
+none /sys/fs/bpf bpf rw,nosuid,nodev,noexec,noatime,mode=700 0 0
+pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,noatime 0 0
+tracefs /sys/kernel/debug/tracing tracefs rw,nosuid,nodev,noexec,noatime 0 0
+none /config configfs rw,nosuid,nodev,noexec,relatime 0 0
+
+===== DF =====
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                55.8M     55.8M         0 100% /rom
+tmpfs                   301.0M      4.2M    296.8M   1% /tmp
+/dev/mtdblock30           8.3M    948.0K      7.3M  11% /overlay
+overlayfs:/overlay        8.3M    948.0K      7.3M  11% /
+tmpfs                   512.0K         0    512.0K   0% /dev
+/dev/block/nvcfg         31.9M      2.3M     29.6M   7% /mnt/vendor/nvcfg
+/dev/block/nvdata        31.9M     19.2M     12.7M  60% /mnt/vendor/nvdata
+/dev/block/nvram         31.9M      9.4M     22.5M  30% /mnt/vendor/nvram
+/dev/block/protect1       8.0M      1.7M      6.2M  22% /mnt/vendor/protect_f
+/dev/block/protect2       8.0M      1.7M      6.3M  22% /mnt/vendor/protect_s
+/dev/block/mcf1           8.0M    784.0K      7.2M  10% /mnt/vendor/mdota
+/dev/block/mcf2           8.0M    828.0K      7.2M  10% /mnt/vendor/mdota2
+/dev/block/user_config
+                         19.9M      2.6M     17.3M  13% /mnt/data
+/dev/block/productinfo
+                          4.0M      1.6M      2.4M  39% /productinfo
+/dev/ubi1_1             347.1M      3.7M    338.6M   1% /data
+/dev/block/fibonv        31.9M      2.3M     29.6M   7% /mnt/vendor/fibonv
+Filesystem           Type       1K-blocks      Used Available Use% Mounted on
+/dev/root            squashfs       57088     57088         0 100% /rom
+tmpfs                tmpfs         308236      4288    303948   1% /tmp
+/dev/mtdblock30      jffs2           8448       948      7500  11% /overlay
+overlayfs:/overlay   overlay         8448       948      7500  11% /
+tmpfs                tmpfs            512         0       512   0% /dev
+/dev/block/nvcfg     yaffs2         32640      2320     30320   7% /mnt/vendor/nvcfg
+/dev/block/nvdata    yaffs2         32640     19648     12992  60% /mnt/vendor/nvdata
+/dev/block/nvram     yaffs2         32640      9648     22992  30% /mnt/vendor/nvram
+/dev/block/protect1  yaffs2          8160      1776      6384  22% /mnt/vendor/protect_f
+/dev/block/protect2  yaffs2          8160      1760      6400  22% /mnt/vendor/protect_s
+/dev/block/mcf1      jffs2           8192       784      7408  10% /mnt/vendor/mdota
+/dev/block/mcf2      jffs2           8192       828      7364  10% /mnt/vendor/mdota2
+/dev/block/user_config
+                     yaffs2         20400      2712     17688  13% /mnt/data
+/dev/block/productinfo
+                     yaffs2          4080      1596      2484  39% /productinfo
+/dev/ubi1_1          ubifs         355388      3780    346772   1% /data
+/dev/block/fibonv    yaffs2         32640      2316     30324   7% /mnt/vendor/fibonv
+
+===== MTD SYSFS =====
+
+--- /sys/class/mtd/mtd0 ---
+name:        preloader
+size:        4194304
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd0ro ---
+
+--- /sys/class/mtd/mtd1 ---
+name:        preloader_backup
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd10 ---
+name:        mcf1_a
+size:        8388608
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd10ro ---
+
+--- /sys/class/mtd/mtd11 ---
+name:        mcf2_a
+size:        8388608
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd11ro ---
+
+--- /sys/class/mtd/mtd12 ---
+name:        mcf1_b
+size:        8388608
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd12ro ---
+
+--- /sys/class/mtd/mtd13 ---
+name:        mcf2_b
+size:        8388608
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd13ro ---
+
+--- /sys/class/mtd/mtd14 ---
+name:        seccfg
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd14ro ---
+
+--- /sys/class/mtd/mtd15 ---
+name:        boot_para
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd15ro ---
+
+--- /sys/class/mtd/mtd16 ---
+name:        nvram
+size:        33554432
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd16ro ---
+
+--- /sys/class/mtd/mtd17 ---
+name:        md1img_a
+size:        83886080
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd17ro ---
+
+--- /sys/class/mtd/mtd18 ---
+name:        md1dsp_a
+size:        10485760
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd18ro ---
+
+--- /sys/class/mtd/mtd19 ---
+name:        spmfw_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd19ro ---
+
+--- /sys/class/mtd/mtd1ro ---
+
+--- /sys/class/mtd/mtd2 ---
+name:        proinfo
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd20 ---
+name:        pi_img_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd20ro ---
+
+--- /sys/class/mtd/mtd21 ---
+name:        dpm_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd21ro ---
+
+--- /sys/class/mtd/mtd22 ---
+name:        medmcu_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd22ro ---
+
+--- /sys/class/mtd/mtd23 ---
+name:        sspm_a
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd23ro ---
+
+--- /sys/class/mtd/mtd24 ---
+name:        mcupm_a
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd24ro ---
+
+--- /sys/class/mtd/mtd25 ---
+name:        lk_a
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd25ro ---
+
+--- /sys/class/mtd/mtd26 ---
+name:        tee_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd26ro ---
+
+--- /sys/class/mtd/mtd27 ---
+name:        boot_a
+size:        33554432
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd27ro ---
+
+--- /sys/class/mtd/mtd28 ---
+name:        rootfs_sig_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd28ro ---
+
+--- /sys/class/mtd/mtd29 ---
+name:        rootfs_a
+size:        67108864
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd29ro ---
+
+--- /sys/class/mtd/mtd2ro ---
+
+--- /sys/class/mtd/mtd3 ---
+name:        misc
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd30 ---
+name:        rootfs_data
+size:        8650752
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd30ro ---
+
+--- /sys/class/mtd/mtd31 ---
+name:        md1img_b
+size:        83886080
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd31ro ---
+
+--- /sys/class/mtd/mtd32 ---
+name:        md1dsp_b
+size:        10485760
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd32ro ---
+
+--- /sys/class/mtd/mtd33 ---
+name:        spmfw_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd33ro ---
+
+--- /sys/class/mtd/mtd34 ---
+name:        pi_img_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd34ro ---
+
+--- /sys/class/mtd/mtd35 ---
+name:        dpm_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd35ro ---
+
+--- /sys/class/mtd/mtd36 ---
+name:        medmcu_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd36ro ---
+
+--- /sys/class/mtd/mtd37 ---
+name:        sspm_b
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd37ro ---
+
+--- /sys/class/mtd/mtd38 ---
+name:        mcupm_b
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd38ro ---
+
+--- /sys/class/mtd/mtd39 ---
+name:        lk_b
+size:        2097152
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd39ro ---
+
+--- /sys/class/mtd/mtd3ro ---
+
+--- /sys/class/mtd/mtd4 ---
+name:        para
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd40 ---
+name:        tee_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd40ro ---
+
+--- /sys/class/mtd/mtd41 ---
+name:        boot_b
+size:        33554432
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd41ro ---
+
+--- /sys/class/mtd/mtd42 ---
+name:        rootfs_sig_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd42ro ---
+
+--- /sys/class/mtd/mtd43 ---
+name:        rootfs_b
+size:        67108864
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd43ro ---
+
+--- /sys/class/mtd/mtd44 ---
+name:        loader_ext_a
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd44ro ---
+
+--- /sys/class/mtd/mtd45 ---
+name:        loader_ext_b
+size:        1048576
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd45ro ---
+
+--- /sys/class/mtd/mtd46 ---
+name:        fibo_para
+size:        4194304
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd46ro ---
+
+--- /sys/class/mtd/mtd47 ---
+name:        user_config
+size:        20971520
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd47ro ---
+
+--- /sys/class/mtd/mtd48 ---
+name:        productinfo
+size:        4194304
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd48ro ---
+
+--- /sys/class/mtd/mtd49 ---
+name:        fibonv
+size:        33554432
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd49ro ---
+
+--- /sys/class/mtd/mtd4ro ---
+
+--- /sys/class/mtd/mtd5 ---
+name:        expdb
+size:        20971520
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd50 ---
+name:        user_data
+size:        407371776
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd50ro ---
+
+--- /sys/class/mtd/mtd51 ---
+name:        pmt
+size:        524288
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd51ro ---
+
+--- /sys/class/mtd/mtd5ro ---
+
+--- /sys/class/mtd/mtd6 ---
+name:        nvcfg
+size:        33554432
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd6ro ---
+
+--- /sys/class/mtd/mtd7 ---
+name:        nvdata
+size:        33554432
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd7ro ---
+
+--- /sys/class/mtd/mtd8 ---
+name:        protect1
+size:        8388608
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd8ro ---
+
+--- /sys/class/mtd/mtd9 ---
+name:        protect2
+size:        8388608
+erasesize:   262144
+writesize:   4096
+oobsize:     64
+type:        nand
+flags:       0x400
+
+--- /sys/class/mtd/mtd9ro ---
+
+===== NAND SYSFS =====
+--- /sys/devices/platform/11005000.nfi/bb_worn_total
+0
+--- /sys/devices/platform/11005000.nfi/bb_total
+5
+--- /sys/devices/platform/11005000.nfi/bbt_goodblocks
+4
+--- /sys/devices/platform/11005000.nfi/nand_name
+NM4888KSPAXAI
+--- /sys/devices/platform/11005000.nfi/bb_factory_total
+5
+--- /sys/devices/platform/11005000.nfi/nand_ids
+762691a398
+--- /sys/firmware/devicetree/base/audio_sram@11211000/block_size
+   
+===== UBI =====
+dev:    size   erasesize  name
+mtd0: 00400000 00040000 "preloader"
+mtd1: 00200000 00040000 "preloader_backup"
+mtd2: 00100000 00040000 "proinfo"
+mtd3: 00100000 00040000 "misc"
+mtd4: 00100000 00040000 "para"
+mtd5: 01400000 00040000 "expdb"
+mtd6: 02000000 00040000 "nvcfg"
+mtd7: 02000000 00040000 "nvdata"
+mtd8: 00800000 00040000 "protect1"
+mtd9: 00800000 00040000 "protect2"
+mtd10: 00800000 00040000 "mcf1_a"
+mtd11: 00800000 00040000 "mcf2_a"
+mtd12: 00800000 00040000 "mcf1_b"
+mtd13: 00800000 00040000 "mcf2_b"
+mtd14: 00100000 00040000 "seccfg"
+mtd15: 00200000 00040000 "boot_para"
+mtd16: 02000000 00040000 "nvram"
+mtd17: 05000000 00040000 "md1img_a"
+mtd18: 00a00000 00040000 "md1dsp_a"
+mtd19: 00100000 00040000 "spmfw_a"
+mtd20: 00100000 00040000 "pi_img_a"
+mtd21: 00100000 00040000 "dpm_a"
+mtd22: 00100000 00040000 "medmcu_a"
+mtd23: 00200000 00040000 "sspm_a"
+mtd24: 00200000 00040000 "mcupm_a"
+mtd25: 00200000 00040000 "lk_a"
+mtd26: 00100000 00040000 "tee_a"
+mtd27: 02000000 00040000 "boot_a"
+mtd28: 00100000 00040000 "rootfs_sig_a"
+mtd29: 04000000 00040000 "rootfs_a"
+mtd30: 00840000 00040000 "rootfs_data"
+mtd31: 05000000 00040000 "md1img_b"
+mtd32: 00a00000 00040000 "md1dsp_b"
+mtd33: 00100000 00040000 "spmfw_b"
+mtd34: 00100000 00040000 "pi_img_b"
+mtd35: 00100000 00040000 "dpm_b"
+mtd36: 00100000 00040000 "medmcu_b"
+mtd37: 00200000 00040000 "sspm_b"
+mtd38: 00200000 00040000 "mcupm_b"
+mtd39: 00200000 00040000 "lk_b"
+mtd40: 00100000 00040000 "tee_b"
+mtd41: 02000000 00040000 "boot_b"
+mtd42: 00100000 00040000 "rootfs_sig_b"
+mtd43: 04000000 00040000 "rootfs_b"
+mtd44: 00100000 00040000 "loader_ext_a"
+mtd45: 00100000 00040000 "loader_ext_b"
+mtd46: 00400000 00040000 "fibo_para"
+mtd47: 01400000 00040000 "user_config"
+mtd48: 00400000 00040000 "productinfo"
+mtd49: 02000000 00040000 "fibonv"
+mtd50: 18480000 00040000 "user_data"
+mtd51: 00080000 00040000 "pmt"
+UBI version:                    1
+Count of UBI devices:           1
+UBI control device major/minor: 10:52
+Present UBI devices:            ubi1
+
+ubi1
+Volumes count:                           1
+Logical eraseblock size:                 253952 bytes, 248.0 KiB
+Total amount of logical eraseblocks:     1551 (393879552 bytes, 375.6 MiB)
+Amount of available logical eraseblocks: 0 (0 bytes)
+Maximum count of volumes                 128
+Count of bad physical eraseblocks:       3
+Count of reserved physical eraseblocks:  5
+Current maximum erase counter value:     3
+Minimum input/output unit size:          4096 bytes
+Character device major/minor:            507:0
+Present volumes:                         1
+
+Volume ID:   1 (on ubi1)
+Type:        dynamic
+Alignment:   1
+Size:        1542 LEBs (391593984 bytes, 373.4 MiB)
+State:       OK
+Name:        user_data
+Character device major/minor: 507:2
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 ubi1 -> ../../devices/virtual/ubi/ubi1
+lrwxrwxrwx    1 root     root             0 Sep 22 15:00 ubi1_1 -> ../../devices/virtual/ubi/ubi1/ubi1_1
+-r--r--r--    1 root     root          4096 Jan  1  2010 version
+--- /sys/class/ubi/ubi1 ---
+dev=507:0
+eraseblock_size=253952
+total_eraseblocks=1551
+avail_eraseblocks=0
+bad_peb_count=3
+reserved_for_bad=5
+--- /sys/class/ubi/ubi1_1 ---
+name=user_data
+dev=507:2
+
+===== MMC / EMMC SYSFS =====
+
+===== NETWORK INTERFACES =====
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+ccmni14:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni7:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni18:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  eth1:  188557    1805    0    0    0     0          0         0  2796074    2444    0    0    0     0       0          0
+ccmni11:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni5:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni15:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni3:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni20:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni19:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni1:   29184     138    0    0    0     0          0         0    36898     312    0    0    0     0       0          0
+ccmni12:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni8:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+erspan0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  eth0:       0       0    0    0    0     0          0         0     2634       8    0    0    0     0       0          0
+ccmni16:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni6:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni13:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+   br0:  162691    1796    0    0    0     0          0       110  2708928    1059    0    0    0     0       0          0
+ccmni4:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+    lo:  110802    1365    0    0    0     0          0         0   110802    1365    0    0    0     0       0          0
+ccmni17:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ tunl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  gre0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni10:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni2:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+gretap0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+rndis0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni9:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6gre0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet 127.0.0.1/32 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ccmni0: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-69 brd ff:ff:ff:ff:ff:ff
+3: ccmni1: <BROADCAST,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether REDACTED-MAC-61 brd ff:ff:ff:ff:ff:ff
+    inet 10.157.136.62/30 brd 10.157.136.63 scope global ccmni1
+       valid_lft forever preferred_lft forever
+4: ccmni2: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-74 brd ff:ff:ff:ff:ff:ff
+5: ccmni3: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-72 brd ff:ff:ff:ff:ff:ff
+6: ccmni4: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-71 brd ff:ff:ff:ff:ff:ff
+7: ccmni5: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-67 brd ff:ff:ff:ff:ff:ff
+8: ccmni6: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-59 brd ff:ff:ff:ff:ff:ff
+9: ccmni7: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-63 brd ff:ff:ff:ff:ff:ff
+10: ccmni8: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-56 brd ff:ff:ff:ff:ff:ff
+11: ccmni9: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-58 brd ff:ff:ff:ff:ff:ff
+12: ccmni10: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-57 brd ff:ff:ff:ff:ff:ff
+13: ccmni11: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-55 brd ff:ff:ff:ff:ff:ff
+14: ccmni12: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-78 brd ff:ff:ff:ff:ff:ff
+15: ccmni13: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-75 brd ff:ff:ff:ff:ff:ff
+16: ccmni14: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-77 brd ff:ff:ff:ff:ff:ff
+17: ccmni15: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-60 brd ff:ff:ff:ff:ff:ff
+18: ccmni16: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-70 brd ff:ff:ff:ff:ff:ff
+19: ccmni17: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-73 brd ff:ff:ff:ff:ff:ff
+20: ccmni18: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-62 brd ff:ff:ff:ff:ff:ff
+21: ccmni19: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-80 brd ff:ff:ff:ff:ff:ff
+22: ccmni20: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-66 brd ff:ff:ff:ff:ff:ff
+23: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-76 brd ff:ff:ff:ff:ff:ff
+24: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master br0 state UP group default qlen 1000
+    link/ether REDACTED-MAC-64 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::da42:f7ff:fe60:38cf/64 scope link 
+       valid_lft forever preferred_lft forever
+25: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+26: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN group default qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+27: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+28: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+29: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN group default qlen 1000
+    link/tunnel6 :: brd ::
+31: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN group default qlen 1000
+    link/gre6 :: brd ::
+32: rndis0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether REDACTED-MAC-68 brd ff:ff:ff:ff:ff:ff
+33: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether REDACTED-MAC-64 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.1/24 brd 192.168.1.255 scope global br0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::da42:f7ff:fe60:38cf/64 scope link 
+       valid_lft forever preferred_lft forever
+default dev ccmni1 table 17000 scope link 
+192.168.1.0/24 dev br0 table 17000 scope link 
+default dev ccmni1 scope link 
+10.157.136.60/30 dev ccmni1 proto kernel scope link src 10.157.136.62 
+192.168.1.0/24 dev br0 proto kernel scope link src 192.168.1.1 
+broadcast 10.157.136.60 dev ccmni1 table local proto kernel scope link src 10.157.136.62 
+local 10.157.136.62 dev ccmni1 table local proto kernel scope host src 10.157.136.62 
+broadcast 10.157.136.63 dev ccmni1 table local proto kernel scope link src 10.157.136.62 
+broadcast 127.0.0.0 dev lo table local proto kernel scope link src 127.0.0.1 
+local 127.0.0.0/8 dev lo table local proto kernel scope host src 127.0.0.1 
+local 127.0.0.1 dev lo table local proto kernel scope host src 127.0.0.1 
+broadcast 127.255.255.255 dev lo table local proto kernel scope link src 127.0.0.1 
+broadcast 192.168.1.0 dev br0 table local proto kernel scope link src 192.168.1.1 
+local 192.168.1.1 dev br0 table local proto kernel scope host src 192.168.1.1 
+broadcast 192.168.1.255 dev br0 table local proto kernel scope link src 192.168.1.1 
+default dev ccmni1 table 17000 metric 1024 pref medium
+fe80::/64 dev br0 proto kernel metric 256 pref medium
+fe80::/64 dev eth1 proto kernel metric 256 pref medium
+default dev ccmni1 metric 64 pref medium
+local ::1 dev lo table local proto kernel metric 0 pref medium
+anycast fe80:: dev br0 table local proto kernel metric 0 pref medium
+anycast fe80:: dev eth1 table local proto kernel metric 0 pref medium
+local fe80::da42:f7ff:fe60:38cf dev br0 table local proto kernel metric 0 pref medium
+local fe80::da42:f7ff:fe60:38cf dev eth1 table local proto kernel metric 0 pref medium
+multicast ff00::/8 dev br0 table local proto kernel metric 256 pref medium
+multicast ff00::/8 dev eth1 table local proto kernel metric 256 pref medium
+multicast ff00::/8 dev ccmni1 table local proto kernel metric 256 pref medium
+
+===== USB =====
+lrwxrwxrwx    1 root     root             0 Jan  1  2010 11201000.usb -> ../../devices/platform/11201000.usb/udc/11201000.usb
+
+===== PROCESSES =====
+  PID USER       VSZ STAT COMMAND
+    1 root      1832 S    /sbin/procd
+    2 root         0 SW   [kthreadd]
+    3 root         0 IW<  [rcu_gp]
+    4 root         0 IW<  [rcu_par_gp]
+    5 root         0 IW   [kworker/0:0-pm]
+    6 root         0 IW<  [kworker/0:0H-kb]
+    7 root         0 IW   [kworker/u8:0-ev]
+    8 root         0 IW<  [mm_percpu_wq]
+    9 root         0 SW   [ksoftirqd/0]
+   10 root         0 IW   [rcu_sched]
+   11 root         0 SW   [migration/0]
+   12 root         0 SW   [cpuhp/0]
+   13 root         0 SW   [cpuhp/1]
+   14 root         0 SW   [migration/1]
+   15 root         0 SW   [ksoftirqd/1]
+   16 root         0 IW   [kworker/1:0-eve]
+   17 root         0 IW<  [kworker/1:0H-kb]
+   18 root         0 SW   [cpuhp/2]
+   19 root         0 SW   [migration/2]
+   20 root         0 SW   [ksoftirqd/2]
+   21 root         0 IW   [kworker/2:0-eve]
+   22 root         0 IW<  [kworker/2:0H-kb]
+   23 root         0 SW   [cpuhp/3]
+   24 root         0 SW   [migration/3]
+   25 root         0 SW   [ksoftirqd/3]
+   26 root         0 IW   [kworker/3:0-eve]
+   27 root         0 IW<  [kworker/3:0H-kb]
+   28 root         0 IW<  [netns]
+   29 root         0 IW   [kworker/u8:1-ev]
+   34 root         0 IW   [kworker/1:1-eve]
+   38 root         0 IW   [kworker/u8:2-ev]
+   41 root         0 SW   [kworker/3:1+eve]
+   53 root         0 IW   [kworker/2:1-eve]
+   66 root         0 IW   [kworker/0:1-pm]
+  177 root         0 SW   [irq/15-event_0]
+  178 root         0 SW   [irq/15-event_1]
+  179 root         0 SW   [irq/15-event_2]
+  180 root         0 SW   [irq/15-event_3]
+  181 root         0 SW   [irq/15-event_4]
+  182 root         0 SW   [irq/249-rcs_irq]
+  189 root         0 SW   [irq/16-event_0]
+  190 root         0 SW   [irq/16-event_1]
+  191 root         0 SW   [irq/16-event_2]
+  192 root         0 SW   [irq/16-event_3]
+  193 root         0 SW   [irq/16-event_4]
+  554 root         0 IW   [kworker/u8:3-ev]
+  646 root         0 IW   [kworker/u8:4-ev]
+  647 root         0 SW   [oom_reaper]
+  648 root         0 IW<  [writeback]
+  650 root         0 SW   [kcompactd0]
+  651 root         0 SWN  [ksmd]
+  652 root         0 SWN  [khugepaged]
+  692 root         0 IW<  [kintegrityd]
+  694 root         0 IW<  [kblockd]
+  695 root         0 IW<  [blkcg_punt_bio]
+  717 root         0 IW<  [tpm_dev_wq]
+  724 root         0 IW<  [kworker/u9:0-rx]
+  725 root         0 IW<  [pool_reload_wor]
+  728 root         0 SW   [hf_manager]
+  731 root         0 SW   [pd_dbg_info]
+  733 root         0 IW<  [SSPM_WQ]
+  735 root         0 IW<  [sspm_ts_wq]
+  763 root         0 IW<  [devfreq_wq]
+  778 root         0 SW   [watchdogd]
+  831 root         0 SW   [kswapd0]
+  920 root         0 IW<  [kthrotld]
+  995 root         0 IW<  [ged_notify_sw_v]
+ 1000 root         0 SW   [mali-simple-pow]
+ 1001 root         0 IW<  [kbase_event]
+ 1003 root         0 IW<  [kbase_job_fault]
+ 1004 root         0 IW<  [kworker/u9:1-rx]
+ 1005 root         0 IW<  [mali_aeewp]
+ 1018 root         0 SW   [irq/346-amms_ir]
+ 1032 root         0 SW   [ccci_fsm1]
+ 1033 root         0 DW   [ccci_poll1]
+ 1043 root         0 SW   [ccci_sys]
+ 1051 root         0 SW   [ccci_ctrl]
+ 1102 root         0 SW   [ccci_rpc_k]
+ 1118 root         0 IW<  [ccmni0_rx_q_wor]
+ 1122 root         0 IW<  [ccmni1_rx_q_wor]
+ 1126 root         0 IW<  [ccmni2_rx_q_wor]
+ 1130 root         0 IW<  [ccmni3_rx_q_wor]
+ 1134 root         0 IW<  [ccmni4_rx_q_wor]
+ 1138 root         0 IW<  [ccmni5_rx_q_wor]
+ 1142 root         0 IW<  [ccmni6_rx_q_wor]
+ 1146 root         0 IW<  [ccmni7_rx_q_wor]
+ 1150 root         0 IW<  [ccmni8_rx_q_wor]
+ 1154 root         0 IW<  [ccmni9_rx_q_wor]
+ 1158 root         0 IW<  [ccmni10_rx_q_wo]
+ 1162 root         0 IW<  [ccmni11_rx_q_wo]
+ 1166 root         0 IW<  [ccmni12_rx_q_wo]
+ 1170 root         0 IW<  [ccmni13_rx_q_wo]
+ 1174 root         0 IW<  [ccmni14_rx_q_wo]
+ 1178 root         0 IW<  [ccmni15_rx_q_wo]
+ 1182 root         0 IW<  [ccmni16_rx_q_wo]
+ 1186 root         0 IW<  [ccmni17_rx_q_wo]
+ 1190 root         0 IW<  [ccmni18_rx_q_wo]
+ 1194 root         0 IW<  [ccmni19_rx_q_wo]
+ 1198 root         0 IW<  [ccmni20_rx_q_wo]
+ 1235 root         0 IW<  [mt-wdk]
+ 1236 root         0 DW   [wdtk-0]
+ 1237 root         0 DW   [wdtk-1]
+ 1238 root         0 DW   [wdtk-2]
+ 1239 root         0 DW   [wdtk-3]
+ 1362 root         0 IW<  [nvme-wq]
+ 1364 root         0 IW<  [nvme-reset-wq]
+ 1366 root         0 IW<  [nvme-delete-wq]
+ 1638 root         0 SW   [spi0]
+ 1644 root         0 SW   [spi1]
+ 1646 root         0 SW   [spi2]
+ 1650 root         0 SW   [spi3]
+ 1680 root         0 IW<  [vfio-irqfd-clea]
+ 1682 root         0 DW   [isr_count_polli]
+ 1782 root         0 SW   [sspm_to_thermal]
+ 1784 root         0 SW   [sspm_to_thermal]
+ 1798 root         0 IW   [kworker/3:2-eve]
+ 1801 root         0 SW   [irq/44-11240000]
+ 1808 root         0 SW   [irq/310-1032000]
+ 1809 root         0 IW   [kworker/3:3-rcu]
+ 1810 root         0 IW<  [wq_ring0]
+ 1811 root         0 SW   [irq/311-1032000]
+ 1812 root         0 IW<  [wq_ring1]
+ 1813 root         0 SW   [irq/312-1032000]
+ 1814 root         0 IW<  [wq_ring2]
+ 1815 root         0 SW   [irq/313-1032000]
+ 1816 root         0 IW<  [wq_ring3]
+ 1856 root         0 IW   [kworker/0:2-eve]
+ 1934 root         0 IW<  [ipv6_addrconf]
+ 1946 root         0 IW<  [SCP_WQ]
+ 1948 root         0 IW<  [SCP_LOG_WQ]
+ 1949 root         0 IW<  [SCP_RESET_WQ]
+ 1950 root         0 IW<  [SCP_DELAY_RESET]
+ 1951 root         0 IW   [kworker/0:3-eve]
+ 1963 root         0 IW   [kworker/0:4-pm]
+ 1969 root         0 IW<  [extcon_usb]
+ 1995 root         0 IW<  [kworker/3:1H-kb]
+ 1996 root         0 IW<  [kworker/0:1H-kb]
+ 1997 root         0 IW<  [kworker/2:1H-kb]
+ 1998 root         0 IW<  [kworker/1:1H-kb]
+ 2004 root         0 IW   [kworker/1:2-pm]
+ 2053 root         0 SW   [conninfra_cored]
+ 2054 root         0 SW   [conninfra_cb]
+ 2055 root         0 SW   [sub_bt_thrd]
+ 2056 root         0 SW   [sub_fm_thrd]
+ 2057 root         0 SW   [sub_gps_thrd]
+ 2058 root         0 SW   [sub_wifi_thrd]
+ 2059 root         0 SW   [sub_conninfra_t]
+ 2063 root         0 IW   [kworker/1:3]
+ 2071 root         0 SW   [gps_kctrld]
+ 2072 root         0 SW   [irq/352-gps_da0]
+ 2073 root         0 SW   [irq/353-gps_nd0]
+ 2074 root         0 SW   [irq/354-gps_mb0]
+ 2075 root         0 SW   [irq/355-gps_da1]
+ 2076 root         0 SW   [irq/356-gps_nd1]
+ 2077 root         0 SW   [irq/357-gps_mb1]
+ 2078 root         0 SW   [irq/358-gps_dma]
+ 2136 root         0 SWN  [jffs2_gcd_mtd30]
+ 2703 ubus      1300 S    /sbin/ubusd
+ 3961 root         0 SW   [ubi_bgt1d]
+ 3964 root         0 SW   [yaffs-bg-1]
+ 3965 root         0 SW   [yaffs-bg-1]
+ 3966 root         0 SW   [yaffs-bg-1]
+ 3967 root         0 SW   [yaffs-bg-1]
+ 3968 root         0 SW   [yaffs-bg-1]
+ 3969 root         0 SWN  [jffs2_gcd_mtd10]
+ 3970 root         0 SWN  [jffs2_gcd_mtd11]
+ 3971 root         0 SW   [yaffs-bg-1]
+ 3972 root         0 SW   [yaffs-bg-1]
+ 3974 root         0 SW   [ubifs_bgt1_1]
+ 3975 root         0 SW   [yaffs-bg-1]
+ 4069 root      1888 S    /usr/bin/ccci_fsd 0 2 0
+ 4114 root      1324 S    /usr/bin/ccci_mdinit 0
+ 4153 root         0 IW<  [kworker/2:2H]
+ 4160 root      1740 S    /usr/bin/aqrd -L 255
+ 4195 root         0 IW<  [rx0_worker]
+ 4196 root         0 IW<  [rx1_worker]
+ 4197 root         0 IW<  [rx2_worker]
+ 4198 root         0 IW<  [rx3_worker]
+ 4199 root         0 IW<  [rx4_worker]
+ 4200 root         0 IW<  [rx5_worker]
+ 4201 root         0 IW<  [rx6_worker]
+ 4202 root         0 IW<  [rx7_worker]
+ 4203 root         0 IW<  [rx8_worker]
+ 4204 root         0 IW<  [rx9_worker]
+ 4205 root         0 IW<  [rx10_worker]
+ 4206 root         0 IW<  [rx11_worker]
+ 4207 root         0 IW<  [rx12_worker]
+ 4208 root         0 IW<  [rx13_worker]
+ 4209 root         0 IW<  [rx14_worker]
+ 4210 root         0 IW<  [rx15_worker]
+ 4211 root         0 IW<  [ccci_dpmaif_rx0]
+ 4212 root         0 SW   [dpmaif_rx_push]
+ 4213 root         0 IW<  [md1_tx0_worker]
+ 4214 root         0 IW<  [md1_tx1_worker]
+ 4215 root         0 IW<  [md1_tx2_worker]
+ 4216 root         0 IW<  [md1_tx3_worker]
+ 4217 root         0 IW<  [kworker/3:2H]
+ 4246 root      1040 S    /sbin/urngd
+ 4339 root         0 IW<  [cryptodev_queue]
+ 4357 root         0 IW<  [uether]
+ 4358 root         0 IW<  [uether_rx1]
+ 4359 root         0 IW<  [uether_rps]
+ 4427 root         0 SW   [fw2apccci_ctrl_]
+ 4428 root         0 SW   [apccci2fw_task]
+ 4589 logd      3264 S    /sbin/logd -S 2048
+ 4649 root      2240 S    /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+ 4687 root         0 IW<  [kworker/u9:2-rx]
+ 4760 root      3852 S    /usr/bin/mtk_netagent
+ 4921 root      1492 S    /usr/sbin/crond -f -c /etc/crontabs -l 5
+ 4973 root      3360 S    /usr/bin/lppe_service
+ 5032 root     14480 S    /usr/bin/mnld
+ 5085 root      1652 S    /usr/bin/scd 1 1 1
+ 5140 root      8528 S    /usr/bin/speech_daemon
+ 5185 root      2916 S    /usr/bin/libmodem-afe-ctrl-server-bin
+ 5230 root      6232 S    /usr/bin/audio-ctrl-service
+ 5428 root         0 IW<  [kworker/1:2H-kb]
+ 5900 root      3604 S    /sbin/aee_aed
+ 5973 root      1300 S    /usr/bin/atci_service
+ 6207 root      1688 S    /usr/bin/log_controld
+ 6455 root      9152 S    /usr/bin/mdlcfgd
+ 7188 root      8836 S    /usr/bin/flagd
+ 7232 root      8780 S    /usr/bin/log_backup_daemon
+ 7326 root      9300 S    /usr/bin/firewalltools
+ 7345 root      5220 S    /usr/bin/tz_powerkey_test
+ 7397 root      9264 S    /usr/bin/gpiod
+ 7401 root      1488 S    {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.sh
+ 7417 root      2340 S    ip -4 monitor neigh
+ 7418 root      1488 S    {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.sh
+ 7471 root      9484 S    /usr/bin/lan_mgr
+ 7531 root      8956 S    /usr/bin/flow_control
+ 7679 root      8968 S    /usr/bin/cron_controller
+ 7895 root     10896 S    /usr/bin/configtools -i br0
+ 7945 root      9220 S    /usr/bin/tzphonebook
+ 7947 admin     1420 S    dnsmasq -C /tmp/dnsmasq.conf -x /tmp/dnsmasq.pid
+ 7983 root         0 IW<  [kworker/0:2H]
+ 8045 root         0 IW   [kworker/3:4]
+ 9334 root     10740 S    /usr/bin/dialer
+ 9394 root      9616 S    /usr/bin/sms_mgr
+ 9448 root      9424 S    /usr/bin/lanrecord
+ 9526 root      8864 S    /usr/bin/rt_agent
+ 9741 root      8512 S    /usr/bin/tz_phone
+10045 root      8896 S    /usr/bin/mini_httpd -C /tmp/mini_httpd.conf
+10050 root      9104 S    /usr/bin/mini_httpd -C /tmp/mini_httpd_s.conf
+10057 root      3516 S    /usr/bin/atcid
+10355 root      9152 S    /usr/bin/vpn_mgr
+10399 root      6228 S    /usr/bin/atcmd_daemon
+10976 root     16940 S    /usr/bin/netcwmpd
+12029 root      4380 SN   /usr/sbin/collectd -C /tmp/collectd.conf -f
+12452 root      1488 S<   /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p cn.pool.ntp.org -p 0.openwrt.pool.ntp.org -p 1.openwrt.
+13234 root      9224 S    /usr/bin/sys_monitor
+13417 root      1504 S    {temperature_con} /bin/sh /etc/tzscript/temperature_control.sh
+13792 root      1820 S    /sbin/adbd_usb
+14032 root      1488 S    {login.sh} /bin/sh /etc/tzscript/login.sh -
+14034 root      1536 S    /bin/sh
+15421 root      1488 S    sleep 1
+15445 root      1488 R    ps w
+  PID USER       VSZ STAT COMMAND
+    1 root      1832 S    /sbin/procd
+    2 root         0 SW   [kthreadd]
+    3 root         0 IW<  [rcu_gp]
+    4 root         0 IW<  [rcu_par_gp]
+    5 root         0 IW   [kworker/0:0-pm]
+    6 root         0 IW<  [kworker/0:0H-kb]
+    7 root         0 IW   [kworker/u8:0-ev]
+    8 root         0 IW<  [mm_percpu_wq]
+    9 root         0 SW   [ksoftirqd/0]
+   10 root         0 IW   [rcu_sched]
+   11 root         0 SW   [migration/0]
+   12 root         0 SW   [cpuhp/0]
+   13 root         0 SW   [cpuhp/1]
+   14 root         0 SW   [migration/1]
+   15 root         0 SW   [ksoftirqd/1]
+   16 root         0 IW   [kworker/1:0-eve]
+   17 root         0 IW<  [kworker/1:0H-kb]
+   18 root         0 SW   [cpuhp/2]
+   19 root         0 SW   [migration/2]
+   20 root         0 SW   [ksoftirqd/2]
+   21 root         0 IW   [kworker/2:0-eve]
+   22 root         0 IW<  [kworker/2:0H-kb]
+   23 root         0 SW   [cpuhp/3]
+   24 root         0 SW   [migration/3]
+   25 root         0 SW   [ksoftirqd/3]
+   26 root         0 IW   [kworker/3:0-eve]
+   27 root         0 IW<  [kworker/3:0H-kb]
+   28 root         0 IW<  [netns]
+   29 root         0 IW   [kworker/u8:1-ev]
+   34 root         0 IW   [kworker/1:1-eve]
+   38 root         0 IW   [kworker/u8:2-ev]
+   41 root         0 SW   [kworker/3:1+eve]
+   53 root         0 IW   [kworker/2:1-eve]
+   66 root         0 IW   [kworker/0:1-pm]
+  177 root         0 SW   [irq/15-event_0]
+  178 root         0 SW   [irq/15-event_1]
+  179 root         0 SW   [irq/15-event_2]
+  180 root         0 SW   [irq/15-event_3]
+  181 root         0 SW   [irq/15-event_4]
+  182 root         0 SW   [irq/249-rcs_irq]
+  189 root         0 SW   [irq/16-event_0]
+  190 root         0 SW   [irq/16-event_1]
+  191 root         0 SW   [irq/16-event_2]
+  192 root         0 SW   [irq/16-event_3]
+  193 root         0 SW   [irq/16-event_4]
+  554 root         0 IW   [kworker/u8:3-ev]
+  646 root         0 IW   [kworker/u8:4-ev]
+  647 root         0 SW   [oom_reaper]
+  648 root         0 IW<  [writeback]
+  650 root         0 SW   [kcompactd0]
+  651 root         0 SWN  [ksmd]
+  652 root         0 SWN  [khugepaged]
+  692 root         0 IW<  [kintegrityd]
+  694 root         0 IW<  [kblockd]
+  695 root         0 IW<  [blkcg_punt_bio]
+  717 root         0 IW<  [tpm_dev_wq]
+  724 root         0 IW<  [kworker/u9:0-rx]
+  725 root         0 IW<  [pool_reload_wor]
+  728 root         0 SW   [hf_manager]
+  731 root         0 SW   [pd_dbg_info]
+  733 root         0 IW<  [SSPM_WQ]
+  735 root         0 IW<  [sspm_ts_wq]
+  763 root         0 IW<  [devfreq_wq]
+  778 root         0 SW   [watchdogd]
+  831 root         0 SW   [kswapd0]
+  920 root         0 IW<  [kthrotld]
+  995 root         0 IW<  [ged_notify_sw_v]
+ 1000 root         0 SW   [mali-simple-pow]
+ 1001 root         0 IW<  [kbase_event]
+ 1003 root         0 IW<  [kbase_job_fault]
+ 1004 root         0 IW<  [kworker/u9:1-rx]
+ 1005 root         0 IW<  [mali_aeewp]
+ 1018 root         0 SW   [irq/346-amms_ir]
+ 1032 root         0 SW   [ccci_fsm1]
+ 1033 root         0 DW   [ccci_poll1]
+ 1043 root         0 SW   [ccci_sys]
+ 1051 root         0 SW   [ccci_ctrl]
+ 1102 root         0 SW   [ccci_rpc_k]
+ 1118 root         0 IW<  [ccmni0_rx_q_wor]
+ 1122 root         0 IW<  [ccmni1_rx_q_wor]
+ 1126 root         0 IW<  [ccmni2_rx_q_wor]
+ 1130 root         0 IW<  [ccmni3_rx_q_wor]
+ 1134 root         0 IW<  [ccmni4_rx_q_wor]
+ 1138 root         0 IW<  [ccmni5_rx_q_wor]
+ 1142 root         0 IW<  [ccmni6_rx_q_wor]
+ 1146 root         0 IW<  [ccmni7_rx_q_wor]
+ 1150 root         0 IW<  [ccmni8_rx_q_wor]
+ 1154 root         0 IW<  [ccmni9_rx_q_wor]
+ 1158 root         0 IW<  [ccmni10_rx_q_wo]
+ 1162 root         0 IW<  [ccmni11_rx_q_wo]
+ 1166 root         0 IW<  [ccmni12_rx_q_wo]
+ 1170 root         0 IW<  [ccmni13_rx_q_wo]
+ 1174 root         0 IW<  [ccmni14_rx_q_wo]
+ 1178 root         0 IW<  [ccmni15_rx_q_wo]
+ 1182 root         0 IW<  [ccmni16_rx_q_wo]
+ 1186 root         0 IW<  [ccmni17_rx_q_wo]
+ 1190 root         0 IW<  [ccmni18_rx_q_wo]
+ 1194 root         0 IW<  [ccmni19_rx_q_wo]
+ 1198 root         0 IW<  [ccmni20_rx_q_wo]
+ 1235 root         0 IW<  [mt-wdk]
+ 1236 root         0 DW   [wdtk-0]
+ 1237 root         0 DW   [wdtk-1]
+ 1238 root         0 DW   [wdtk-2]
+ 1239 root         0 DW   [wdtk-3]
+ 1362 root         0 IW<  [nvme-wq]
+ 1364 root         0 IW<  [nvme-reset-wq]
+ 1366 root         0 IW<  [nvme-delete-wq]
+ 1638 root         0 SW   [spi0]
+ 1644 root         0 SW   [spi1]
+ 1646 root         0 SW   [spi2]
+ 1650 root         0 SW   [spi3]
+ 1680 root         0 IW<  [vfio-irqfd-clea]
+ 1682 root         0 DW   [isr_count_polli]
+ 1782 root         0 SW   [sspm_to_thermal]
+ 1784 root         0 SW   [sspm_to_thermal]
+ 1798 root         0 IW   [kworker/3:2-eve]
+ 1801 root         0 SW   [irq/44-11240000]
+ 1808 root         0 SW   [irq/310-1032000]
+ 1809 root         0 IW   [kworker/3:3-rcu]
+ 1810 root         0 IW<  [wq_ring0]
+ 1811 root         0 SW   [irq/311-1032000]
+ 1812 root         0 IW<  [wq_ring1]
+ 1813 root         0 SW   [irq/312-1032000]
+ 1814 root         0 IW<  [wq_ring2]
+ 1815 root         0 SW   [irq/313-1032000]
+ 1816 root         0 IW<  [wq_ring3]
+ 1856 root         0 IW   [kworker/0:2-eve]
+ 1934 root         0 IW<  [ipv6_addrconf]
+ 1946 root         0 IW<  [SCP_WQ]
+ 1948 root         0 IW<  [SCP_LOG_WQ]
+ 1949 root         0 IW<  [SCP_RESET_WQ]
+ 1950 root         0 IW<  [SCP_DELAY_RESET]
+ 1951 root         0 IW   [kworker/0:3-eve]
+ 1963 root         0 IW   [kworker/0:4-pm]
+ 1969 root         0 IW<  [extcon_usb]
+ 1995 root         0 IW<  [kworker/3:1H-kb]
+ 1996 root         0 IW<  [kworker/0:1H-kb]
+ 1997 root         0 IW<  [kworker/2:1H-kb]
+ 1998 root         0 IW<  [kworker/1:1H-kb]
+ 2004 root         0 IW   [kworker/1:2-pm]
+ 2053 root         0 SW   [conninfra_cored]
+ 2054 root         0 SW   [conninfra_cb]
+ 2055 root         0 SW   [sub_bt_thrd]
+ 2056 root         0 SW   [sub_fm_thrd]
+ 2057 root         0 SW   [sub_gps_thrd]
+ 2058 root         0 SW   [sub_wifi_thrd]
+ 2059 root         0 SW   [sub_conninfra_t]
+ 2063 root         0 IW   [kworker/1:3]
+ 2071 root         0 SW   [gps_kctrld]
+ 2072 root         0 SW   [irq/352-gps_da0]
+ 2073 root         0 SW   [irq/353-gps_nd0]
+ 2074 root         0 SW   [irq/354-gps_mb0]
+ 2075 root         0 SW   [irq/355-gps_da1]
+ 2076 root         0 SW   [irq/356-gps_nd1]
+ 2077 root         0 SW   [irq/357-gps_mb1]
+ 2078 root         0 SW   [irq/358-gps_dma]
+ 2136 root         0 SWN  [jffs2_gcd_mtd30]
+ 2703 ubus      1300 S    /sbin/ubusd
+ 3961 root         0 SW   [ubi_bgt1d]
+ 3964 root         0 SW   [yaffs-bg-1]
+ 3965 root         0 SW   [yaffs-bg-1]
+ 3966 root         0 SW   [yaffs-bg-1]
+ 3967 root         0 SW   [yaffs-bg-1]
+ 3968 root         0 SW   [yaffs-bg-1]
+ 3969 root         0 SWN  [jffs2_gcd_mtd10]
+ 3970 root         0 SWN  [jffs2_gcd_mtd11]
+ 3971 root         0 SW   [yaffs-bg-1]
+ 3972 root         0 SW   [yaffs-bg-1]
+ 3974 root         0 SW   [ubifs_bgt1_1]
+ 3975 root         0 SW   [yaffs-bg-1]
+ 4069 root      1888 S    /usr/bin/ccci_fsd 0 2 0
+ 4114 root      1324 S    /usr/bin/ccci_mdinit 0
+ 4153 root         0 IW<  [kworker/2:2H]
+ 4160 root      1740 S    /usr/bin/aqrd -L 255
+ 4195 root         0 IW<  [rx0_worker]
+ 4196 root         0 IW<  [rx1_worker]
+ 4197 root         0 IW<  [rx2_worker]
+ 4198 root         0 IW<  [rx3_worker]
+ 4199 root         0 IW<  [rx4_worker]
+ 4200 root         0 IW<  [rx5_worker]
+ 4201 root         0 IW<  [rx6_worker]
+ 4202 root         0 IW<  [rx7_worker]
+ 4203 root         0 IW<  [rx8_worker]
+ 4204 root         0 IW<  [rx9_worker]
+ 4205 root         0 IW<  [rx10_worker]
+ 4206 root         0 IW<  [rx11_worker]
+ 4207 root         0 IW<  [rx12_worker]
+ 4208 root         0 IW<  [rx13_worker]
+ 4209 root         0 IW<  [rx14_worker]
+ 4210 root         0 IW<  [rx15_worker]
+ 4211 root         0 IW<  [ccci_dpmaif_rx0]
+ 4212 root         0 SW   [dpmaif_rx_push]
+ 4213 root         0 IW<  [md1_tx0_worker]
+ 4214 root         0 IW<  [md1_tx1_worker]
+ 4215 root         0 IW<  [md1_tx2_worker]
+ 4216 root         0 IW<  [md1_tx3_worker]
+ 4217 root         0 IW<  [kworker/3:2H]
+ 4246 root      1040 S    /sbin/urngd
+ 4339 root         0 IW<  [cryptodev_queue]
+ 4357 root         0 IW<  [uether]
+ 4358 root         0 IW<  [uether_rx1]
+ 4359 root         0 IW<  [uether_rps]
+ 4427 root         0 SW   [fw2apccci_ctrl_]
+ 4428 root         0 SW   [apccci2fw_task]
+ 4589 logd      3264 S    /sbin/logd -S 2048
+ 4649 root      2240 S    /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+ 4687 root         0 IW<  [kworker/u9:2-rx]
+ 4760 root      3852 S    /usr/bin/mtk_netagent
+ 4921 root      1492 S    /usr/sbin/crond -f -c /etc/crontabs -l 5
+ 4973 root      3360 S    /usr/bin/lppe_service
+ 5032 root     14480 S    /usr/bin/mnld
+ 5085 root      1652 S    /usr/bin/scd 1 1 1
+ 5140 root      8528 S    /usr/bin/speech_daemon
+ 5185 root      2916 S    /usr/bin/libmodem-afe-ctrl-server-bin
+ 5230 root      6232 S    /usr/bin/audio-ctrl-service
+ 5428 root         0 IW<  [kworker/1:2H-kb]
+ 5900 root      3604 S    /sbin/aee_aed
+ 5973 root      1300 S    /usr/bin/atci_service
+ 6207 root      1688 S    /usr/bin/log_controld
+ 6455 root      9152 S    /usr/bin/mdlcfgd
+ 7188 root      8836 S    /usr/bin/flagd
+ 7232 root      8780 S    /usr/bin/log_backup_daemon
+ 7326 root      9300 S    /usr/bin/firewalltools
+ 7345 root      5220 S    /usr/bin/tz_powerkey_test
+ 7397 root      9264 S    /usr/bin/gpiod
+ 7401 root      1488 S    {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.s
+ 7417 root      2340 S    ip -4 monitor neigh
+ 7418 root      1488 S    {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.s
+ 7471 root      9484 S    /usr/bin/lan_mgr
+ 7531 root      8956 S    /usr/bin/flow_control
+ 7679 root      8968 S    /usr/bin/cron_controller
+ 7895 root     10896 S    /usr/bin/configtools -i br0
+ 7945 root      9220 S    /usr/bin/tzphonebook
+ 7947 admin     1420 S    dnsmasq -C /tmp/dnsmasq.conf -x /tmp/dnsmasq.pid
+ 7983 root         0 IW<  [kworker/0:2H]
+ 8045 root         0 IW   [kworker/3:4]
+ 9334 root     10740 S    /usr/bin/dialer
+ 9394 root      9616 S    /usr/bin/sms_mgr
+ 9448 root      9424 S    /usr/bin/lanrecord
+ 9526 root      8864 S    /usr/bin/rt_agent
+ 9741 root      8512 S    /usr/bin/tz_phone
+10045 root      8896 S    /usr/bin/mini_httpd -C /tmp/mini_httpd.conf
+10050 root      9104 S    /usr/bin/mini_httpd -C /tmp/mini_httpd_s.conf
+10057 root      3516 S    /usr/bin/atcid
+10355 root      9152 S    /usr/bin/vpn_mgr
+10399 root      6228 S    /usr/bin/atcmd_daemon
+10976 root     16940 S    /usr/bin/netcwmpd
+12029 root      4380 SN   /usr/sbin/collectd -C /tmp/collectd.conf -f
+12452 root      1488 S<   /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p cn
+13234 root      9224 S    /usr/bin/sys_monitor
+13417 root      1504 S    {temperature_con} /bin/sh /etc/tzscript/temperature_
+13792 root      1820 S    /sbin/adbd_usb
+14032 root      1488 S    {login.sh} /bin/sh /etc/tzscript/login.sh -
+14034 root      1536 S    /bin/sh
+15421 root      1488 S    sleep 1
+15446 root      1488 R    ps
+
+===== INIT SCRIPTS =====
+drwxr-xr-x    2 root     root          1553 Sep  9  2025 .
+drwxr-xr-x    1 root     root             0 Sep 22 11:02 ..
+-rwxrwxr-x    1 root     root          2101 Sep  9  2025 0mount_all
+-rwxr-xr-x    1 root     root           297 Sep  9  2025 1nvram_daemon
+-rwxrwxr-x    1 root     root           274 Sep  9  2025 1restore
+-rwxr-xr-x    1 root     root           324 Sep  9  2025 2ccci_fsd
+-rwxr-xr-x    1 root     root           301 Sep  9  2025 3ccci_mdinit
+-rwxr-xr-x    1 root     root          1285 Sep  9  2025 aee_aed
+-rwxr-xr-x    1 root     root           363 Sep  9  2025 aqrd
+-rwxr-xr-x    1 root     root           455 Sep  9  2025 atci_service
+-rwxr-xr-x    1 root     root          3778 Sep  9  2025 atcid
+-rwxr-xr-x    1 root     root           388 Sep  9  2025 atcmd_daemon
+-rwxr-xr-x    1 root     root           505 Sep  9  2025 audio-ctrl-service
+-rwxrwxr-x    1 root     root          1379 Sep  9  2025 boot
+-rwxr-xr-x    1 root     root          9094 Sep  9  2025 collectd
+-rwxr-xr-x    1 root     root           329 Sep  9  2025 configtools
+-rwxr-xr-x    1 root     root           995 Sep  9  2025 cron
+-rwxr-xr-x    1 root     root           337 Sep  9  2025 cron_controller
+-rwxr-xr-x    1 root     root           333 Sep  9  2025 cron_master
+-rwxr-xr-x    1 root     root           405 Sep  9  2025 ddns
+-rwxr-xr-x    1 root     root           307 Sep  9  2025 dialer
+-rwxrwxr-x    1 root     root           263 Sep  9  2025 done
+-rwxr-xr-x    1 root     root           657 Sep  9  2025 fibo_rndis.init
+-rwxr-xr-x    1 root     root          1457 Sep  9  2025 firewall
+-rwxr-xr-x    1 root     root           333 Sep  9  2025 firewalltools
+-rwxr-xr-x    1 root     root           227 Sep  9  2025 firmware.sh
+-rwxr-xr-x    1 root     root           327 Sep  9  2025 flagd
+-rwxr-xr-x    1 root     root           313 Sep  9  2025 flow_control
+-rwxr-xr-x    1 root     root           305 Sep  9  2025 fota
+-rwxr-xr-x    1 root     root           596 Sep  9  2025 ght-slic
+-rwxrwxr-x    1 root     root          1379 Sep  9  2025 gpio_switch
+-rwxr-xr-x    1 root     root           306 Sep  9  2025 gpiod
+-rwxr-xr-x    1 root     root           363 Sep  9  2025 jingdongwuliu
+-rwxr-xr-x    1 root     root           308 Sep  9  2025 lan_mgr
+-rwxr-xr-x    1 root     root           310 Sep  9  2025 lanrecord
+-rwxrwxr-x    1 root     root          3502 Sep  9  2025 led
+-rwxr-xr-x    1 root     root           538 Sep  9  2025 libmodem_afe_service
+-rwxr-xr-x    1 root     root          3036 Sep  9  2025 log
+-rwxr-xr-x    1 root     root           367 Sep  9  2025 log_backup_daemon
+-rwxr-xr-x    1 root     root           869 Sep  9  2025 log_controld
+-rwxr-xr-x    1 root     root           833 Sep  9  2025 lppe_service
+-rwxrwxr-x    1 root     root           652 Sep  9  2025 luci_statistics
+-rwxr-xr-x    1 root     root           216 Sep  9  2025 mac_update
+-rwxr-xr-x    1 root     root           478 Sep  9  2025 macwriter
+-rwxr-xr-x    1 root     root           329 Sep  9  2025 mdlcfgd
+-rwxr-xr-x    1 root     root           433 Sep  9  2025 mdlogger
+-rwxr-xr-x    1 root     root           267 Sep  9  2025 meta_tst
+-rwxr-xr-x    1 root     root           158 Sep  9  2025 mini_httpd
+-rwxr-xr-x    1 root     root          6025 Sep  9  2025 miniupnpd
+-rwxr-xr-x    1 root     root          4049 Sep  9  2025 mipc_wan.init
+-rwxr-xr-x    1 root     root           723 Sep  9  2025 mnld
+-rwxr-xr-x    1 root     root           251 Sep  9  2025 mtk_bridge
+-rwxrwxr-x    1 root     root          1067 Sep  9  2025 mtk_mem
+-rwxr-xr-x    1 root     root           760 Sep  9  2025 mtk_netagent
+-rwxr-xr-x    1 root     root           278 Sep  9  2025 net_monitor
+-rwxr-xr-x    1 root     root           358 Sep  9  2025 netcwmpd
+-rwxrwxr-x    1 root     root          2830 Sep  9  2025 network
+-rwxr-xr-x    1 root     root          3593 Sep  9  2025 omcproxy
+-rwxr-xr-x    1 root     root          6025 Sep  9  2025 openvpn
+-rwxr-xr-x    1 root     root           349 Sep  9  2025 pcm_loopback
+-rwxr-xr-x    1 root     root           197 Sep  9  2025 power_daemon
+-rwxr-xr-x    1 root     root          1137 Sep  9  2025 power_mgr
+-rwxr-xr-x    1 root     root          2947 Sep  9  2025 radvd
+-rwxr-xr-x    1 root     root           358 Sep  9  2025 redTea_SDK
+-rwxr-xr-x    1 root     root           361 Sep  9  2025 routemanger
+-rwxr-xr-x    1 root     root           393 Sep  9  2025 rpcd
+-rwxr-xr-x    1 root     root           722 Sep  9  2025 scd
+-rwxr-xr-x    1 root     root           816 Sep  9  2025 sigma
+-rwxr-xr-x    1 root     root           430 Sep  9  2025 slic_loopback
+-rwxr-xr-x    1 root     root           308 Sep  9  2025 sms_mgr
+-rwxr-xr-x    1 root     root           490 Sep  9  2025 speech_daemon
+-rwxr-xr-x    1 root     root           330 Sep  9  2025 sys_monitor
+-rwxrwxr-x    1 root     root          1212 Sep  9  2025 sysctl
+-rwxrwxr-x    1 root     root           652 Sep  9  2025 sysfixtime
+-rwxr-xr-x    1 root     root          3942 Sep  9  2025 sysntpd
+-rwxrwxr-x    1 root     root          1096 Sep  9  2025 system
+-rwxr-xr-x    1 root     root           309 Sep  9  2025 tz_phone
+-rwxr-xr-x    1 root     root           228 Sep  9  2025 tz_powerkey_test
+-rwxr-xr-x    1 root     root           361 Sep  9  2025 tzphonebook
+-rwxr-xr-x    1 root     root          4165 Sep  9  2025 tzproc
+-rwxrwxr-x    1 root     root          1339 Sep  9  2025 ucitrack
+-rwxr-xr-x    1 root     root          6243 Sep  9  2025 uhttpd
+-rwxrwxr-x    1 root     root           125 Sep  9  2025 umount
+-rwxrwxr-x    1 root     root           239 Sep  9  2025 urandom_seed
+-rwxr-xr-x    1 root     root           220 Sep  9  2025 urngd
+-rwxr-xr-x    1 root     root          5878 Sep  9  2025 usb.init
+-rwxr-xr-x    1 root     root           353 Sep  9  2025 uspad
+-rwxr-xr-x    1 root     root           483 Sep  9  2025 vpn_mgr
+-rwxr-xr-x    1 root     root          5983 Sep  9  2025 vpnbypass
+-rwxr-xr-x    1 root     root           509 Sep  9  2025 wfa_dut
+-rwxr-xr-x    1 root     root           404 Sep  9  2025 xl2tpd
+-rwxrwxr-x    1 root     root          3382 Sep  9  2025 zmtk_boot_done
+drwxr-xr-x    2 root     root          1288 Sep  9  2025 .
+drwxr-xr-x    1 root     root             0 Sep 22 11:02 ..
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 K10collectd -> ../init.d/collectd
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 K10ddns -> ../init.d/ddns
+lrwxrwxrwx    1 root     root            21 Sep  9  2025 K10gpio_switch -> ../init.d/gpio_switch
+lrwxrwxrwx    1 root     root            17 Sep  9  2025 K10openvpn -> ../init.d/openvpn
+lrwxrwxrwx    1 root     root            21 Sep  9  2025 K15firmware.sh -> ../init.d/firmware.sh
+lrwxrwxrwx    1 root     root            19 Sep  9  2025 K15miniupnpd -> ../init.d/miniupnpd
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 K1mdlogger -> ../init.d/mdlogger
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 K46mnld -> ../init.d/mnld
+lrwxrwxrwx    1 root     root            13 Sep  9  2025 K46scd -> ../init.d/scd
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 K473ccci_mdinit -> ../init.d/3ccci_mdinit
+lrwxrwxrwx    1 root     root            19 Sep  9  2025 K482ccci_fsd -> ../init.d/2ccci_fsd
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 K48aqrd -> ../init.d/aqrd
+lrwxrwxrwx    1 root     root            13 Sep  9  2025 K89log -> ../init.d/log
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 K90boot -> ../init.d/boot
+lrwxrwxrwx    1 root     root            20 Sep  9  2025 K90sysfixtime -> ../init.d/sysfixtime
+lrwxrwxrwx    1 root     root            16 Sep  9  2025 K90umount -> ../init.d/umount
+lrwxrwxrwx    1 root     root            20 Sep  9  2025 S000mount_all -> ../init.d/0mount_all
+lrwxrwxrwx    1 root     root            23 Sep  9  2025 S001nvram_daemon -> ../init.d/1nvram_daemon
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S001restore -> ../init.d/1restore
+lrwxrwxrwx    1 root     root            19 Sep  9  2025 S002ccci_fsd -> ../init.d/2ccci_fsd
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S003ccci_mdinit -> ../init.d/3ccci_mdinit
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S00aqrd -> ../init.d/aqrd
+lrwxrwxrwx    1 root     root            20 Sep  9  2025 S00sysfixtime -> ../init.d/sysfixtime
+lrwxrwxrwx    1 root     root            15 Sep  9  2025 S00urngd -> ../init.d/urngd
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S10boot -> ../init.d/boot
+lrwxrwxrwx    1 root     root            16 Sep  9  2025 S11sysctl -> ../init.d/sysctl
+lrwxrwxrwx    1 root     root            13 Sep  9  2025 S12log -> ../init.d/log
+lrwxrwxrwx    1 root     root            20 Sep  9  2025 S12mtk_bridge -> ../init.d/mtk_bridge
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S12rpcd -> ../init.d/rpcd
+lrwxrwxrwx    1 root     root            17 Sep  9  2025 S13mtk_mem -> ../init.d/mtk_mem
+lrwxrwxrwx    1 root     root            21 Sep  9  2025 S15firmware.sh -> ../init.d/firmware.sh
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S22mtk_netagent -> ../init.d/mtk_netagent
+lrwxrwxrwx    1 root     root            23 Sep  9  2025 S30mipc_wan.init -> ../init.d/mipc_wan.init
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S30usb.init -> ../init.d/usb.init
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S50cron -> ../init.d/cron
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S53lppe_service -> ../init.d/lppe_service
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S53mnld -> ../init.d/mnld
+lrwxrwxrwx    1 root     root            13 Sep  9  2025 S53scd -> ../init.d/scd
+lrwxrwxrwx    1 root     root            23 Sep  9  2025 S55speech_daemon -> ../init.d/speech_daemon
+lrwxrwxrwx    1 root     root            30 Sep  9  2025 S56libmodem_afe_service -> ../init.d/libmodem_afe_service
+lrwxrwxrwx    1 root     root            28 Sep  9  2025 S57audio-ctrl-service -> ../init.d/audio-ctrl-service
+lrwxrwxrwx    1 root     root            16 Sep  9  2025 S60xl2tpd -> ../init.d/xl2tpd
+lrwxrwxrwx    1 root     root            25 Sep  9  2025 S79luci_statistics -> ../init.d/luci_statistics
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S80collectd -> ../init.d/collectd
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S80ucitrack -> ../init.d/ucitrack
+lrwxrwxrwx    1 root     root            17 Sep  9  2025 S90openvpn -> ../init.d/openvpn
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S94ght-slic -> ../init.d/ght-slic
+lrwxrwxrwx    1 root     root            21 Sep  9  2025 S94gpio_switch -> ../init.d/gpio_switch
+lrwxrwxrwx    1 root     root            19 Sep  9  2025 S94miniupnpd -> ../init.d/miniupnpd
+lrwxrwxrwx    1 root     root            19 Sep  9  2025 S94vpnbypass -> ../init.d/vpnbypass
+lrwxrwxrwx    1 root     root            17 Sep  9  2025 S95aee_aed -> ../init.d/aee_aed
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S95ddns -> ../init.d/ddns
+lrwxrwxrwx    1 root     root            14 Sep  9  2025 S95done -> ../init.d/done
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S96atci_service -> ../init.d/atci_service
+lrwxrwxrwx    1 root     root            15 Sep  9  2025 S96atcid -> ../init.d/atcid
+lrwxrwxrwx    1 root     root            13 Sep  9  2025 S96led -> ../init.d/led
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S98mdlogger -> ../init.d/mdlogger
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S98meta_tst -> ../init.d/meta_tst
+lrwxrwxrwx    1 root     root            25 Sep  9  2025 S99fibo_rndis.init -> ../init.d/fibo_rndis.init
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S99log_controld -> ../init.d/log_controld
+lrwxrwxrwx    1 root     root            18 Sep  9  2025 S99omcproxy -> ../init.d/omcproxy
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S99power_daemon -> ../init.d/power_daemon
+lrwxrwxrwx    1 root     root            16 Sep  9  2025 S99tzproc -> ../init.d/tzproc
+lrwxrwxrwx    1 root     root            22 Sep  9  2025 S99urandom_seed -> ../init.d/urandom_seed
+lrwxrwxrwx    1 root     root            24 Sep  9  2025 S99zmtk_boot_done -> ../init.d/zmtk_boot_done
+
+===== IMPORTANT BINARIES =====
+--- /bin/busybox ---
+-rwxr-xr-x    1 root     root        595744 Sep  9  2025 /bin/busybox
+37791178b0508bad0b66e470ba7a6454d3467f92bb9e08ec80332958df2b9c65  /bin/busybox
+--- /usr/bin/dialer ---
+-rwxr-xr-x    1 root     root        583800 Sep  9  2025 /usr/bin/dialer
+2f68afca45975c32e53d3ba496b62b9a7a762d4530a7c5a845a8bcaeb14afa18  /usr/bin/dialer
+--- /usr/bin/mtk_netagent ---
+-rwxr-xr-x    1 root     root        158168 Sep  9  2025 /usr/bin/mtk_netagent
+aa297bc2b3852a0c07b26ad382afce568f2bc366e129d3681fb0d946138f7ab7  /usr/bin/mtk_netagent
+--- /usr/bin/meta_tst ---
+-rwxr-xr-x    1 root     root        219128 Sep  9  2025 /usr/bin/meta_tst
+c66ac91fb7490037f680f68da898ba2415e476f5266e237f0fdfc1c0b0a96bc0  /usr/bin/meta_tst
+--- /sbin/firstboot ---
+-rwxrwxr-x    1 root     root          2410 Sep  9  2025 /sbin/firstboot
+d0a5164626057e5e76b047b522aacdee33274d860280f0657d47369cdc0629eb  /sbin/firstboot
+--- /sbin/mtd ---
+-rwxr-xr-x    1 root     root         26312 Sep  9  2025 /sbin/mtd
+1d7a335627a6b69bad969ad88a96296d04d60eb75f3c96803f6b26cac6c002ed  /sbin/mtd
+
+===== VERSION STRINGS =====
+tozed_reseting_sim_card_for_volte
+GSM_RSP_Version
+Profile_Version
+Callback api sdk init state:%d versions:%s
+[dialer] %s: Callback api sdk init state:%d versions:%s
+CGMR get cp version(%s)
+[dialer] %s: CGMR get cp version(%s)
+Get Module Hard Version info failed %d times, just give up..
+[dialer] %s: Get Module Hard Version info failed %d times, just give up..
+tozed_reseting_sim_card_for_volte
+ZLT 
+set user_agent failed, manufacture(%s) user_boardType(%s) user_version(%s), use default user_agent
+[dialer] %s: set user_agent failed, manufacture(%s) user_boardType(%s) user_version(%s), use default user_agent
+fibocom_t750_dialer_get_module_version
+.gnu.version
+.gnu.version_r
+.gnu.version
+.gnu.version_r
+
+===== END =====

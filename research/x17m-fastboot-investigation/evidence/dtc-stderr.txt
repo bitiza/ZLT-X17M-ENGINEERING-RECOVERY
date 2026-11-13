@@ -1,0 +1,78 @@
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (reg_format): /spmi@10026000/mt6330/mt6330rtc/fg_init:reg: property has invalid length (8 bytes) (#address-cells == 2, #size-cells == 1)
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (reg_format): /spmi@10026000/mt6330/mt6330rtc/fg_soc:reg: property has invalid length (8 bytes) (#address-cells == 2, #size-cells == 1)
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (reg_format): /spmi@10026000/mt6330/mt6330rtc/ext_32k:reg: property has invalid length (8 bytes) (#address-cells == 2, #size-cells == 1)
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (reg_format): /spmi@10026000/mt6330/mt6330-led/Isink1:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 1)
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (reg_format): /dbi_panel@0:reg: property has invalid length (4 bytes) (#address-cells == 2, #size-cells == 2)
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /memory: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /interrupt-controller: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /thermal-ntc1: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /thermal-ntc2: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /thermal-ntc3: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /thermal-ntc4: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/mmc0@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/mmc1@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/gps_l1_lna@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/gps_l1_lna@1: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/gps_l1_lna@2: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/gps_l5_lna@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/gps_l5_lna@1: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /pinctrl@10005000/gps_l5_lna@2: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /spmi@10026000/mt6330: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /spmi@10026000/mt6330/mt6330rtc/fg_init: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /spmi@10026000/mt6330/mt6330rtc/fg_soc: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /spmi@10026000/mt6330/mt6330rtc/ext_32k: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /spmi@10026000/mt6330/mt6330-led/Isink1: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /spmi_p@10027000/mt6330_p_regulator: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /cldma_sys_ap: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /mddriver: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /usb@11201000/port/endpoint@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /usb-phy/usb-phy@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /usb-phy@11e30000: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /efuse@11ec0000/data1: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /efuse@11ec0000/u2data: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /efuse@11ec0000/u3data: node has a reg or ranges property, but no unit name
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /rt1711_type_c_port0/port/endpoint@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /gsw@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /extcon_usb/port/endpoint@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_vs_reg): /typec_mux_switch/port/endpoint@0: node has a unit name, but no reg or ranges property
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /cpus/cpu@001: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /cpus/cpu@002: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /cpus/cpu@003: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /performance-controller@0011bc00: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /dvfsp@0011bc00: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /syscon@0d0a0000: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /mtk_lpm/cpupm-sysram@0011b000: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /mtk_lpm/mcusys-ctrl@0c53a000: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /mtk_lpm/lpm_sysram@0011b500: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /chipid@08000000: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /mcupm@0C540000: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /i2c@0x11c40000: unit name should not have leading "0x"
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /i2c@11c41000/msensor@0c: unit name should not have leading 0s
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /dma-controller@0x10217000: unit name should not have leading "0x"
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /iocfg_tl@0x11f00000: unit name should not have leading "0x"
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unit_address_format): /nli_arb@0x11f30000: unit name should not have leading "0x"
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (pci_device_reg): Failed prerequisite 'reg_format'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (pci_device_bus_num): Failed prerequisite 'reg_format'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (simple_bus_reg): Failed prerequisite 'reg_format'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (i2c_bus_reg): Failed prerequisite 'reg_format'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (spi_bus_bridge): /spi0@1100a000: node name for SPI buses should be 'spi'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (spi_bus_bridge): /spi3@11013000: node name for SPI buses should be 'spi'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (spi_bus_reg): Failed prerequisite 'reg_format'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (spi_bus_reg): Failed prerequisite 'spi_bus_bridge'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330rtc/fg_init: Relying on default #address-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330rtc/fg_init: Relying on default #size-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330rtc/fg_soc: Relying on default #address-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330rtc/fg_soc: Relying on default #size-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330rtc/ext_32k: Relying on default #address-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330rtc/ext_32k: Relying on default #size-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330-led/Isink1: Relying on default #address-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_default_addr_size): /spmi@10026000/mt6330/mt6330-led/Isink1: Relying on default #size-cells value
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (avoid_unnecessary_addr_size): Failed prerequisite 'avoid_default_addr_size'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (unique_unit_address): Failed prerequisite 'avoid_default_addr_size'
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /dpmaif@10014000:#interrupt-cells: size is (16), expected multiple of 12
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /i2c@0x11c40000:#interrupt-cells: size is (16), expected multiple of 12
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /i2c@11c41000:#interrupt-cells: size is (16), expected multiple of 12
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /i2c@11c42000:#interrupt-cells: size is (16), expected multiple of 12
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /i2c@11c43000:#interrupt-cells: size is (16), expected multiple of 12
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /i2c@11c44000:#interrupt-cells: size is (16), expected multiple of 12
+/home/kali/Desktop/x17m/x17m-fastboot-investigation/evidence/lk-main.dts: Warning (interrupts_property): /i2c@11c45000:#interrupt-cells: size is (16), expected multiple of 12

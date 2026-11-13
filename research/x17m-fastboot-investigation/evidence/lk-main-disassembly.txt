@@ -1,0 +1,213 @@
+
+# file offsets 0x2c7a..0x2d04
+00002c7a 4ff66b00     movw      r0, #0xf86b
+00002c7e c8f20240     movt      r0, #0x8402
+00002c82 7047         bx        lr
+00002c84 d0b5         push      {r4, r6, r7, lr}
+00002c86 02af         add       r7, sp, #8
+00002c88 41f25404     movw      r4, #0x1054
+00002c8c c8f20544     movt      r4, #0x8405
+00002c90 03e0         b         #0x2c9a
+00002c92 0168         ldr       r1, [r0]
+00002c94 2160         str       r1, [r4]
+00002c96 19f03cfb     bl        #0x1c312
+00002c9a 2068         ldr       r0, [r4]
+00002c9c 0028         cmp       r0, #0
+00002c9e 08bf         it        eq
+00002ca0 d0bd         popeq     {r4, r6, r7, pc}
+00002ca2 f6e7         b         #0x2c92
+00002ca4 f0b5         push      {r4, r5, r6, r7, lr}
+00002ca6 03af         add       r7, sp, #0xc
+00002ca8 4df804bd     str       fp, [sp, #-0x4]!
+00002cac 0646         mov       r6, r0
+00002cae 1020         movs      r0, #0x10
+00002cb0 0c46         mov       r4, r1
+00002cb2 19f0dafa     bl        #0x1c26a
+00002cb6 68b1         cbz       r0, #0x2cd4
+00002cb8 0546         mov       r5, r0
+00002cba 4660         str       r6, [r0, #4]
+00002cbc 3046         mov       r0, r6
+00002cbe 1bf0caf9     bl        #0x1e056
+00002cc2 c5e90204     strd      r0, r4, [r5, #8]
+00002cc6 41f25400     movw      r0, #0x1054
+00002cca c8f20540     movt      r0, #0x8405
+00002cce 0168         ldr       r1, [r0]
+00002cd0 2960         str       r1, [r5]
+00002cd2 0560         str       r5, [r0]
+00002cd4 5df804bb     ldr       fp, [sp], #4
+00002cd8 f0bd         pop       {r4, r5, r6, r7, pc}
+00002cda b0b5         push      {r4, r5, r7, lr}
+00002cdc 02af         add       r7, sp, #8
+00002cde 41f25805     movw      r5, #0x1058
+00002ce2 c8f20545     movt      r5, #0x8405
+00002ce6 2c68         ldr       r4, [r5]
+00002ce8 002c         cmp       r4, #0
+00002cea 08bf         it        eq
+00002cec b0bd         popeq     {r4, r5, r7, pc}
+00002cee a068         ldr       r0, [r4, #8]
+00002cf0 0028         cmp       r0, #0
+00002cf2 18bf         it        ne
+00002cf4 19f00dfb     blne      #0x1c312
+00002cf8 2068         ldr       r0, [r4]
+00002cfa 2860         str       r0, [r5]
+00002cfc 2046         mov       r0, r4
+00002cfe 19f008fb     bl        #0x1c312
+00002d02 f0e7         b         #0x2ce6
+
+# file offsets 0x3360..0x354a
+00003360 f0b5         push      {r4, r5, r6, r7, lr}
+00003362 03af         add       r7, sp, #0xc
+00003364 4df804bd     str       fp, [sp, #-0x4]!
+00003368 86b0         sub       sp, #0x18
+0000336a 4ff6e325     movw      r5, #0xfae3
+0000336e 4ff6ba20     movw      r0, #0xfaba
+00003372 c8f20245     movt      r5, #0x8402
+00003376 c8f20240     movt      r0, #0x8402
+0000337a 2946         mov       r1, r5
+0000337c 5a22         movs      r2, #0x5a
+0000337e 7446         mov       r4, lr
+00003380 1af0e2fa     bl        #0x1d948
+00003384 40f6b036     movw      r6, #0xbb0
+00003388 4ff0ff31     mov.w     r1, #-1
+0000338c c8f20446     movt      r6, #0x8404
+00003390 3046         mov       r0, r6
+00003392 03f02df8     bl        #0x63f0
+00003396 3046         mov       r0, r6
+00003398 03f07ef8     bl        #0x6498
+0000339c 4ff6fb20     movw      r0, #0xfafb
+000033a0 2946         mov       r1, r5
+000033a2 c8f20240     movt      r0, #0x8402
+000033a6 5d22         movs      r2, #0x5d
+000033a8 1af0cefa     bl        #0x1d948
+000033ac 41f28c05     movw      r5, #0x108c
+000033b0 c8f20545     movt      r5, #0x8405
+000033b4 2846         mov       r0, r5
+000033b6 03f023fe     bl        #0x7000
+000033ba 41f6b972     movw      r2, #0x1fb9
+000033be 2846         mov       r0, r5
+000033c0 c8f20142     movt      r2, #0x8401
+000033c4 41f28831     movw      r1, #0x1388
+000033c8 0023         movs      r3, #0
+000033ca 03f0a2fe     bl        #0x7112
+000033ce 18f020fc     bl        #0x1bc12
+000033d2 4ff61e30     movw      r0, #0xfb1e
+000033d6 43f24b31     movw      r1, #0x334b
+000033da c8f20240     movt      r0, #0x8402
+000033de c8f20041     movt      r1, #0x8400
+000033e2 fff75ffc     bl        #0x2ca4
+000033e6 4ff62630     movw      r0, #0xfb26
+000033ea 43f2cf31     movw      r1, #0x33cf
+000033ee c8f20240     movt      r0, #0x8402
+000033f2 c8f20041     movt      r1, #0x8400
+000033f6 fff755fc     bl        #0x2ca4
+000033fa 4ff62d30     movw      r0, #0xfb2d
+000033fe 43f2f331     movw      r1, #0x33f3
+00003402 c8f20240     movt      r0, #0x8402
+00003406 c8f20041     movt      r1, #0x8400
+0000340a fff74bfc     bl        #0x2ca4
+0000340e 4ff63f30     movw      r0, #0xfb3f
+00003412 43f21d41     movw      r1, #0x341d
+00003416 c8f20240     movt      r0, #0x8402
+0000341a c8f20041     movt      r1, #0x8400
+0000341e fff741fc     bl        #0x2ca4
+00003422 4ff64f30     movw      r0, #0xfb4f
+00003426 43f2e541     movw      r1, #0x34e5
+0000342a c8f20240     movt      r0, #0x8402
+0000342e c8f20041     movt      r1, #0x8400
+00003432 fff737fc     bl        #0x2ca4
+00003436 4ff65830     movw      r0, #0xfb58
+0000343a 43f2d941     movw      r1, #0x34d9
+0000343e c8f20240     movt      r0, #0x8402
+00003442 c8f20041     movt      r1, #0x8400
+00003446 fff72dfc     bl        #0x2ca4
+0000344a 40f64405     movw      r5, #0x844
+0000344e 40f64400     movw      r0, #0x844
+00003452 c8f20445     movt      r5, #0x8404
+00003456 c8f20440     movt      r0, #0x8404
+0000345a a842         cmp       r0, r5
+0000345c 0cd0         beq       #0x3478
+0000345e 40f64406     movw      r6, #0x844
+00003462 c8f20446     movt      r6, #0x8404
+00003466 7168         ldr       r1, [r6, #4]
+00003468 0029         cmp       r1, #0
+0000346a 1cbf         itt       ne
+0000346c 3068         ldrne     r0, [r6]
+0000346e fff719fc     blne      #0x2ca4
+00003472 0836         adds      r6, #8
+00003474 b542         cmp       r5, r6
+00003476 f6d1         bne       #0x3466
+00003478 4ef6f931     movw      r1, #0xebf9
+0000347c 01a8         add       r0, sp, #4
+0000347e c8f20241     movt      r1, #0x8402
+00003482 0022         movs      r2, #0
+00003484 19f07dfc     bl        #0x1cd82
+00003488 0028         cmp       r0, #0
+0000348a 4ddd         ble       #0x3528
+0000348c 4bf6ab00     movw      r0, #0xb8ab
+00003490 4ff68a31     movw      r1, #0xfb8a
+00003494 c8f20340     movt      r0, #0x8403
+00003498 c8f20241     movt      r1, #0x8402
+0000349c fff732fc     bl        #0x2d04
+000034a0 4ff68e30     movw      r0, #0xfb8e
+000034a4 01a9         add       r1, sp, #4
+000034a6 c8f20240     movt      r0, #0x8402
+000034aa fff72bfc     bl        #0x2d04
+000034ae 4ff6a030     movw      r0, #0xfba0
+000034b2 4ff6a831     movw      r1, #0xfba8
+000034b6 c8f20240     movt      r0, #0x8402
+000034ba c8f20241     movt      r1, #0x8402
+000034be fff721fc     bl        #0x2d04
+000034c2 00f015fc     bl        #0x3cf0
+000034c6 0146         mov       r1, r0
+000034c8 4ff60a60     movw      r0, #0xfe0a
+000034cc c8f20240     movt      r0, #0x8402
+000034d0 fff718fc     bl        #0x2d04
+000034d4 4ff6b930     movw      r0, #0xfbb9
+000034d8 4ff61061     movw      r1, #0xfe10
+000034dc c8f20240     movt      r0, #0x8402
+000034e0 c8f20241     movt      r1, #0x8402
+000034e4 fff70efc     bl        #0x2d04
+000034e8 0020         movs      r0, #0
+000034ea 18f0befe     bl        #0x1c26a
+000034ee 38b1         cbz       r0, #0x3500
+000034f0 0021         movs      r1, #0
+000034f2 0446         mov       r4, r0
+000034f4 fff7e1fc     bl        #0x2eba
+000034f8 2046         mov       r0, r4
+000034fa 18f00aff     bl        #0x1c312
+000034fe 0be0         b         #0x3518
+00003500 4ff68920     movw      r0, #0xfa89
+00003504 4ff6ab21     movw      r1, #0xfaab
+00003508 c8f20240     movt      r0, #0x8402
+0000350c c8f20241     movt      r1, #0x8402
+00003510 cf22         movs      r2, #0xcf
+00003512 0023         movs      r3, #0
+00003514 1af018fa     bl        #0x1d948
+00003518 fff7b4fb     bl        #0x2c84
+0000351c fff7ddfb     bl        #0x2cda
+00003520 06b0         add       sp, #0x18
+00003522 5df804bb     ldr       fp, [sp], #4
+00003526 f0bd         pop       {r4, r5, r6, r7, pc}
+00003528 4ff68230     movw      r0, #0xfb82
+0000352c 4ef69801     movw      r1, #0xe898
+00003530 4ff66432     movw      r2, #0xfb64
+00003534 c8f20240     movt      r0, #0x8402
+00003538 0090         str       r0, [sp]
+0000353a c8f20341     movt      r1, #0x8403
+0000353e c8f20242     movt      r2, #0x8402
+00003542 2046         mov       r0, r4
+00003544 7423         movs      r3, #0x74
+00003546 18f007fd     bl        #0x1bf58
+
+# file offsets 0x36d8..0x3700
+000036d8 4ff64f40     movw      r0, #0xfc4f
+000036dc c8f20240     movt      r0, #0x8402
+000036e0 fff7b9bb     b.w       #0x2e56
+000036e4 80b5         push      {r7, lr}
+000036e6 6f46         mov       r7, sp
+000036e8 40f28310     movw      r0, #0x183
+000036ec c8f20340     movt      r0, #0x8403
+000036f0 fff7c4fb     bl        #0x2e7c
+000036f4 fff7d5fb     bl        #0x2ea2
+000036f8 bde88040     pop.w     {r7, lr}
+000036fc 01f0cebb     b.w       #0x4e9c

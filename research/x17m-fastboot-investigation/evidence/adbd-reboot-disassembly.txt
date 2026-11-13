@@ -1,0 +1,61 @@
+
+# file offsets 0xd848..0xd8e0
+0000d848 fd7bbea9     stp       x29, x30, [sp, #-0x20]!
+0000d84c fd030091     mov       x29, sp
+0000d850 f35301a9     stp       x19, x20, [sp, #0x10]
+0000d854 f403002a     mov       w20, w0
+0000d858 c00000f0     adrp      x0, #0x28000
+0000d85c f30301aa     mov       x19, x1
+0000d860 002846f9     ldr       x0, [x0, #0xc50]
+0000d864 00003fd6     blr       x0
+0000d868 730300b4     cbz       x19, #0xd8d4
+0000d86c 61024039     ldrb      w1, [x19]
+0000d870 e3ac8852     mov       w3, #0x4567
+0000d874 807a9852     mov       w0, #0xc3d4
+0000d878 6324a072     movk      w3, #0x123, lsl #16
+0000d87c 3f000071     cmp       w1, #0
+0000d880 4036b472     movk      w0, #0xa1b2, lsl #16
+0000d884 6300801a     csel      w3, w3, w0, eq
+0000d888 c50000f0     adrp      x5, #0x28000
+0000d88c 222d8352     mov       w2, #0x1969
+0000d890 a1d59b52     mov       w1, #0xdead
+0000d894 e40313aa     mov       x4, x19
+0000d898 a57444f9     ldr       x5, [x5, #0x8e8]
+0000d89c 4202a572     movk      w2, #0x2812, lsl #16
+0000d8a0 21dcbf72     movk      w1, #0xfee1, lsl #16
+0000d8a4 c01180d2     mov       x0, #0x8e
+0000d8a8 a0003fd6     blr       x5
+0000d8ac c10000f0     adrp      x1, #0x28000
+0000d8b0 e00313aa     mov       x0, x19
+0000d8b4 21f847f9     ldr       x1, [x1, #0xff0]
+0000d8b8 20003fd6     blr       x1
+0000d8bc e003142a     mov       w0, w20
+0000d8c0 c10000f0     adrp      x1, #0x28000
+0000d8c4 f35341a9     ldp       x19, x20, [sp, #0x10]
+0000d8c8 fd7bc2a8     ldp       x29, x30, [sp], #0x20
+0000d8cc 30e447f9     ldr       x16, [x1, #0xfc8]
+0000d8d0 00021fd6     br        x16
+0000d8d4 e3ac8852     mov       w3, #0x4567
+0000d8d8 6324a072     movk      w3, #0x123, lsl #16
+0000d8dc ebffff17     b         #0xd888
+
+# file offsets 0xe658..0xe670
+0000e658 210000b0     adrp      x1, #0x13000
+0000e65c e00313aa     mov       x0, x19
+0000e660 21602a91     add       x1, x1, #0xa98
+0000e664 e20080d2     mov       x2, #7
+0000e668 c0023fd6     blr       x22
+0000e66c e0150034     cbz       w0, #0xe928
+
+# file offsets 0xe928..0xe954
+0000e928 c10000d0     adrp      x1, #0x28000
+0000e92c 601e0091     add       x0, x19, #7
+0000e930 218446f9     ldr       x1, [x1, #0xd08]
+0000e934 20003fd6     blr       x1
+0000e938 e10300aa     mov       x1, x0
+0000e93c 60fcffb4     cbz       x0, #0xe8c8
+0000e940 c00000d0     adrp      x0, #0x28000
+0000e944 003847f9     ldr       x0, [x0, #0xe70]
+0000e948 80feff97     bl        #0xe348
+0000e94c f303002a     mov       w19, w0
+0000e950 8affff17     b         #0xe778

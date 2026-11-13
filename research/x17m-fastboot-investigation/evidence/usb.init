@@ -1,0 +1,151 @@
+#!/bin/sh /etc/rc.common
+
+START=30
+#STOP=99
+
+USE_PROCD=1
+NAME=usb.init
+
+cfg_serialnumber="0123456789ABCDEF"
+cfg_mipcboot="0"
+
+config_usb() {
+    local cfg="$1"
+    case $cfg in
+        adb)
+            config_get cfg_serialnumber $cfg 'serial' '0123456789ABCDEF'
+            echo "SERIAL: $cfg_serialnumber"
+            ;;
+        config)
+            config_get cfg_mipcboot $cfg 'mipcboot' '0'
+            echo "MIPCBOOT: $cfg_mipcboot"
+            ;;
+    esac
+}
+
+start_service() {
+    echo "Force on usb device mode"
+    echo 3 > /sys/devices/platform/11201000.usb/mode
+    echo "Start USB"
+
+    local DI_SYS_FWVERSION_TYPE=`devinfo 102020`
+    config_load usb
+    config_foreach config_usb usb
+
+    if [[ "$cfg_serialnumber" = "0123456789ABCDEF" && -f /proc/device-tree/chosen/serialno ]]
+    then
+        cfg_serialnumber=`cat /proc/device-tree/chosen/serialno`
+    fi
+
+    if [ ! -d "/config/usb_gadget/g1" ]
+    then
+        mkdir -p /config
+        mount -t configfs none /config -o noexec,nosuid,nodev
+        mkdir -p /dev/usb-ffs/
+        mkdir -p /dev/usb-ffs/adb
+
+        mkdir -p /config/usb_gadget/g1
+        echo 0x0e8d > /config/usb_gadget/g1/idVendor
+        echo 0x0223 > /config/usb_gadget/g1/bcdDevice
+        echo 0x0200 > /config/usb_gadget/g1/bcdUSB
+
+        mkdir -p /config/usb_gadget/g1/strings/0x409
+        echo Mediatek > /config/usb_gadget/g1/strings/0x409/manufacturer
+        echo mt6890 > /config/usb_gadget/g1/strings/0x409/product
+
+#       mkdir -p /config/usb_gadget/g1/functions/ffs.adb
+        mkdir -p /config/usb_gadget/g1/functions/acm.gs0
+        mkdir -p /config/usb_gadget/g1/functions/acm.gs1
+        mkdir -p /config/usb_gadget/g1/functions/acm.gs2
+        mkdir -p /config/usb_gadget/g1/functions/rndis.gs4
+        #mkdir -p /config/usb_gadget/g1/functions/ecm.gs8
+        mkdir -p /config/usb_gadget/g1/functions/mass_storage.usb0
+        mkdir -p /config/usb_gadget/g1/configs/b.1
+        mkdir -p /config/usb_gadget/g1/configs/b.1/strings/0x409
+
+        echo 0x1 > /config/usb_gadget/g1/os_desc/b_vendor_code
+        echo "MSFT100" > /config/usb_gadget/g1/os_desc/qw_sign
+        echo 500 > /config/usb_gadget/g1/configs/b.1/MaxPower
+        ln -sf /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
+#       mount -t functionfs adb /dev/usb-ffs/adb -o uid=2000,gid=2000
+    fi
+    echo $cfg_serialnumber > /config/usb_gadget/g1/strings/0x409/serialnumber
+
+    if [ "$DI_SYS_FWVERSION_TYPE" != "usr" ]
+    then
+        echo "Start adbd_usb"
+        mkdir -p /config/usb_gadget/g1/functions/ffs.adb
+        mount -t functionfs adb /dev/usb-ffs/adb -o uid=2000,gid=2000,noexec,nosuid,nodev
+        /sbin/adbd_usb 1000>&- &
+    fi
+
+    echo "Check BootMode"
+    boot_mode=`hexdump -v /proc/device-tree/chosen/atag,boot | awk '{print $6}'`
+
+    echo "BootMode: $boot_mode"
+    case $boot_mode in
+        0000)
+	    echo "MIPCBOOT: $cfg_mipcboot"
+            case $cfg_mipcboot in
+                0)
+                    echo "USB CONFIG: rndis_adb_dualacm"
+                    echo "rndis_adb_dualacm" > /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration
+                    echo 0x2028 > /config/usb_gadget/g1/idProduct
+                    ln -sf /config/usb_gadget/g1/functions/rndis.gs4 /config/usb_gadget/g1/configs/b.1/f1
+                    #ln -sf /config/usb_gadget/g1/functions/ecm.gs8 /config/usb_gadget/g1/configs/b.1/f1
+                    if [ "$DI_SYS_FWVERSION_TYPE" != "usr" ]
+                    then
+                        ln -sf /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
+                        ln -sf /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f3
+                        ln -sf /config/usb_gadget/g1/functions/acm.gs1 /config/usb_gadget/g1/configs/b.1/f4
+                    fi
+
+                    ;;
+                1)
+                    echo "USB CONFIG: adb_3acm"
+                    echo "adb_3acm" > /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration
+                    echo 0x202F > /config/usb_gadget/g1/idProduct
+                    if [ "$DI_SYS_FWVERSION_TYPE" != "usr" ]
+                    then
+                        ln -sf /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1
+                        ln -sf /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f2
+                        ln -sf /config/usb_gadget/g1/functions/acm.gs1 /config/usb_gadget/g1/configs/b.1/f3
+                    fi
+                    ln -sf /config/usb_gadget/g1/functions/acm.gs2 /config/usb_gadget/g1/configs/b.1/f4
+                    ;;
+            esac
+            ;;
+        0001)
+            echo "dualacm" > /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration
+            echo 0x202D > /config/usb_gadget/g1/idProduct
+            ln -sf /config/usb_gadget/g1/functions/mass_storage.usb0 /config/usb_gadget/g1/configs/b.1/f1
+            ln -sf /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f2
+            ln -sf /config/usb_gadget/g1/functions/acm.gs1 /config/usb_gadget/g1/configs/b.1/f3
+            ln -sf /config/usb_gadget/g1/functions/acm.gs2 /config/usb_gadget/g1/configs/b.1/f4
+            ;;
+    esac
+
+    procd_open_instance
+    procd_set_param command /etc/restart_usb.sh
+    procd_close_instance
+}
+
+stop_service() {
+    echo "Stop USB"
+    echo "" > /config/usb_gadget/g1/UDC
+    killall adbd_usb
+
+    echo 0 > /config/usb_gadget/g1/bDeviceClass
+    echo 0 > /config/usb_gadget/g1/bDeviceSubClass
+    echo 0 > /config/usb_gadget/g1/bDeviceProtocol
+    rm -rf /config/usb_gadget/g1/configs/b.1/f1
+    rm -rf /config/usb_gadget/g1/configs/b.1/f2
+    rm -rf /config/usb_gadget/g1/configs/b.1/f3
+    rm -rf /config/usb_gadget/g1/configs/b.1/f4
+}
+
+reload_service() {
+    echo "Restarting USB"
+    stop
+    start
+}

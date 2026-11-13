@@ -1,0 +1,9 @@
+{
+  "required_reports": 9,
+  "report_links": "pass",
+  "source_hashes": "pass",
+  "artifact_hashes": "pass",
+  "selected_offsets": "pass",
+  "lk_bank_equality": "pass",
+  "hardware_operations_performed": false
+}

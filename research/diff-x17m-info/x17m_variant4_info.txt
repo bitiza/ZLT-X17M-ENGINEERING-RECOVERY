@@ -1,0 +1,1370 @@
+===== DATE =====
+Sun Sep 20 01:31:28 UTC 2026
+
+===== IDENTITY =====
+uid=0(root) gid=0(root) groups=1004,1007,1011,1015,1028,3001,3002,3003,3006
+OpenWrt
+DISTRIB_ID='OpenWrt'
+DISTRIB_RELEASE='21.02.7'
+DISTRIB_REVISION='r0-e9413f5'
+DISTRIB_TARGET='gem6xxx/evb6890v1_64_cpe_emmc'
+DISTRIB_ARCH='aarch64_cortex-a55_neon-vfpv4'
+DISTRIB_DESCRIPTION='OpenWrt 21.02.7 r16847-f8282da11e'
+DISTRIB_TAINTS='no-all busybox'
+NAME="OpenWrt"
+VERSION="21.02.7"
+ID="openwrt"
+ID_LIKE="lede openwrt"
+PRETTY_NAME="OpenWrt 21.02.7"
+VERSION_ID="21.02.7"
+HOME_URL="https://openwrt.org/"
+BUG_URL="https://bugs.openwrt.org/"
+SUPPORT_URL="https://forum.openwrt.org/"
+BUILD_ID="r0-e9413f5"
+OPENWRT_BOARD="gem6xxx/evb6890v1_64_cpe_emmc"
+OPENWRT_ARCH="aarch64_cortex-a55_neon-vfpv4"
+OPENWRT_TAINTS="no-all busybox"
+OPENWRT_DEVICE_MANUFACTURER="OpenWrt"
+OPENWRT_DEVICE_MANUFACTURER_URL="https://openwrt.org/"
+OPENWRT_DEVICE_PRODUCT="Generic"
+OPENWRT_DEVICE_REVISION="v0"
+OPENWRT_RELEASE="OpenWrt 21.02.7 r16847-f8282da11e"
+Linux OpenWrt 5.4.238 #0 SMP Thu Mar 27 07:21:46 2025 aarch64 GNU/Linux
+aarch64
+Linux version 5.4.238 (likeqiang@s50-Precision-3640-Tower) (gcc version 9.3.0 (OpenWrt GCC 9.3.0 r0-a729d37)) #0 SMP Thu Mar 27 07:21:46 2025
+
+===== KERNEL CMDLINE =====
+console=tty0 console=ttyS0,921600n1 		init=/etc/preinit root=/dev/mmcblk0p28 rootwait 		loglevel=8 		androidboot.selinux=permissive androidboot.hardware=mt6890 		initcall_debug=1 page_owner=on earlycon=uart8250,mmio32,0x11002000 console=ttyS0,921600n1 mtk_printk_ctrl.disable_uart=0 ramoops.mem_address=0x42880000 ramoops.mem_size=0xe0000 ramoops.pmsg_size=0x10000 ramoops.console_size=0x40000 bootslot=a  bootprof.pl_t=3492 bootprof.logo_t=0 bootprof.lk_t=3320
+
+===== CPU =====
+processor	: 0
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+
+===== MEMORY =====
+MemTotal:         646880 kB
+MemFree:          401776 kB
+MemAvailable:     422108 kB
+Buffers:           18400 kB
+Cached:            41228 kB
+SwapCached:            0 kB
+Active:            68436 kB
+Inactive:          15284 kB
+Active(anon):      13992 kB
+Inactive(anon):    14244 kB
+Active(file):      54444 kB
+Inactive(file):     1040 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        235516 kB
+SwapFree:         235260 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         24008 kB
+Mapped:            20244 kB
+Shmem:              4052 kB
+KReclaimable:      19804 kB
+Slab:              76472 kB
+SReclaimable:      19804 kB
+SUnreclaim:        56668 kB
+KernelStack:        5620 kB
+PageTables:         1172 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      558956 kB
+Committed_AS:      58164 kB
+VmallocTotal:   262930368 kB
+VmallocUsed:       25720 kB
+VmallocChunk:          0 kB
+Percpu:              880 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+              total        used        free      shared  buff/cache   available
+Mem:            632         162         392           4          78         412
+Swap:           230           0         230
+
+===== DEVICE TREE MODEL =====
+MediaTek evb6890v1_64_cpe_emmc
+
+--- compatible ---
+mediatek,evb6890v1_64_cpe_emmc
+mediatek,mt6890
+
+===== DEVICE TREE CHOSEN =====
+--- /proc/device-tree/chosen/aee,enable ---
+full
+--- /proc/device-tree/chosen/atag,boot ---
+--- /proc/device-tree/chosen/atag,chipid ---
+--- /proc/device-tree/chosen/atag,devinfo ---
++i,Yia,_
+Othg
+--- /proc/device-tree/chosen/boardid ---
+--- /proc/device-tree/chosen/bootargs ---
+console=tty0 console=ttyS0,921600n1 		init=/etc/preinit root=/dev/mmcblk0p28 rootwait 		loglevel=8 		androidboot.selinux=permissive androidboot.hardware=mt6890 		initcall_debug=1 page_owner=on earlycon=uart8250,mmio32,0x11002000 console=ttyS0,921600n1 mtk_printk_ctrl.disable_uart=0 ramoops.mem_address=0x42880000 ramoops.mem_size=0xe0000 ramoops.pmsg_size=0x10000 ramoops.console_size=0x40000 bootslot=a  bootprof.pl_t=3492 bootprof.logo_t=0 bootprof.lk_t=3320
+--- /proc/device-tree/chosen/bt_mac ---
+NULL
+--- /proc/device-tree/chosen/fibo_sn ---
+BQ49RG0GGB
+--- /proc/device-tree/chosen/imei ---
+861321070251440
+--- /proc/device-tree/chosen/log_store ---
+--- /proc/device-tree/chosen/mac0 ---
+REDACTED-MAC-54
+--- /proc/device-tree/chosen/mac1 ---
+REDACTED-MAC-40
+--- /proc/device-tree/chosen/mrdump,cblock ---
+--- /proc/device-tree/chosen/mrdump,ddr_rsv ---
+--- /proc/device-tree/chosen/mrdump,lk ---
+MRDUMP10
+--- /proc/device-tree/chosen/name ---
+chosen
+--- /proc/device-tree/chosen/ram_console ---
+--- /proc/device-tree/chosen/rootfs,hashvallist ---
+--- /proc/device-tree/chosen/rootfs,postdata ---
+--- /proc/device-tree/chosen/rootfs,predata ---
+Some-State1
+Mediatek0
+150604031444Z
+350604031444Z051
+Some-State1
+Mediatek0
+?,!_
+{U4	
+GW9[?]S
+f9rb
+QP(+
+--- /proc/device-tree/chosen/rootfs,pubk ---
+?,!_
+{U4	
+GW9[?]S
+f9rb
+QP(+
+--- /proc/device-tree/chosen/rootfs,sigval ---
+=rnh[
+At~n
+--- /proc/device-tree/chosen/sn ---
+NULL
+--- /proc/device-tree/chosen/wifi_mac0 ---
+NULL
+--- /proc/device-tree/chosen/wifi_mac1 ---
+NULL
+--- /proc/device-tree/chosen/wifi_mac2 ---
+NULL
+
+===== /PROC/MTD =====
+dev:    size   erasesize  name
+
+===== BLOCK DEVICES =====
+major minor  #blocks  name
+
+   1        0       4096 ram0
+   7        0     467200 loop0
+ 254        0     235520 zram0
+ 179        0    7634944 mmcblk0
+ 179        1        512 mmcblk0p1
+ 179        2        512 mmcblk0p2
+ 179        3      20480 mmcblk0p3
+ 179        4      32768 mmcblk0p4
+ 179        5      32768 mmcblk0p5
+ 179        6       8192 mmcblk0p6
+ 179        7       8192 mmcblk0p7
+ 179        8       8192 mmcblk0p8
+ 179        9       8192 mmcblk0p9
+ 179       10       8192 mmcblk0p10
+ 179       11       8192 mmcblk0p11
+ 179       12        512 mmcblk0p12
+ 179       13       2048 mmcblk0p13
+ 179       14       3072 mmcblk0p14
+ 179       15      32768 mmcblk0p15
+ 179       16      81920 mmcblk0p16
+ 179       17      10240 mmcblk0p17
+ 179       18       1024 mmcblk0p18
+ 179       19       1024 mmcblk0p19
+ 179       20       1024 mmcblk0p20
+ 179       21       1024 mmcblk0p21
+ 179       22       1024 mmcblk0p22
+ 179       23       1024 mmcblk0p23
+ 179       24       1024 mmcblk0p24
+ 179       25       1024 mmcblk0p25
+ 179       26      32768 mmcblk0p26
+ 179       27        512 mmcblk0p27
+ 179       28     524288 mmcblk0p28
+ 179       29      81920 mmcblk0p29
+ 179       30      10240 mmcblk0p30
+ 179       31       1024 mmcblk0p31
+ 259        0       1024 mmcblk0p32
+ 259        1       1024 mmcblk0p33
+ 259        2       1024 mmcblk0p34
+ 259        3       1024 mmcblk0p35
+ 259        4       1024 mmcblk0p36
+ 259        5       1024 mmcblk0p37
+ 259        6       1024 mmcblk0p38
+ 259        7      32768 mmcblk0p39
+ 259        8        512 mmcblk0p40
+ 259        9     524288 mmcblk0p41
+ 259       10        256 mmcblk0p42
+ 259       11        256 mmcblk0p43
+ 259       12       8192 mmcblk0p44
+ 259       13       2048 mmcblk0p45
+ 259       14      32768 mmcblk0p46
+ 259       15      20480 mmcblk0p47
+ 259       16       4096 mmcblk0p48
+ 259       17    6059968 mmcblk0p49
+ 259       18      16384 mmcblk0p50
+
+--- /sys/class/block ---
+total 0
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 loop0 -> ../../devices/virtual/block/loop0
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0boot0 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0boot0
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0boot1 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0boot1
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p1 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p1
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p10 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p10
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p11 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p11
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p12 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p12
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p13 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p13
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p14 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p14
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p15 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p15
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p16 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p16
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p17 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p17
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p18 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p18
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p19 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p19
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p2 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p2
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p20 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p20
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p21 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p21
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p22 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p22
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p23 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p23
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p24 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p24
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p25 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p25
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p26 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p26
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p27 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p27
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p28 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p28
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p29 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p29
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p3 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p3
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p30 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p30
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p31 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p31
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p32 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p32
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p33 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p33
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p34 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p34
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p35 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p35
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p36 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p36
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p37 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p37
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p38 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p38
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p39 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p39
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p4 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p4
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p40 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p40
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p41 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p41
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p42 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p42
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p43 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p43
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p44 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p44
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p45 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p45
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p46 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p46
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p47 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p47
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p48 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p48
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p49 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p49
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p5 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p5
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p50 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p50
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p6 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p6
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p7 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p7
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p8 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p8
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 mmcblk0p9 -> ../../devices/platform/11230000.mmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p9
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 ram0 -> ../../devices/virtual/block/ram0
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 zram0 -> ../../devices/virtual/block/zram0
+
+--- /dev/block ---
+total 0
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 boot -> /dev/block/boot_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 boot_a -> /dev/mmcblk0p26
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 boot_b -> /dev/mmcblk0p39
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 boot_para -> /dev/mmcblk0p13
+lrwxrwxrwx    1 root     root            16 Jan  1  2010 dpm -> /dev/block/dpm_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 dpm_a -> /dev/mmcblk0p20
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 dpm_b -> /dev/mmcblk0p33
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 expdb -> /dev/mmcblk0p3
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 fibo_para -> /dev/mmcblk0p45
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 fibonv -> /dev/mmcblk0p46
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 flashinfo -> /dev/mmcblk0p50
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 lk -> /dev/block/lk_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 lk_a -> /dev/mmcblk0p24
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 lk_b -> /dev/mmcblk0p37
+lrwxrwxrwx    1 root     root            23 Jan  1  2010 loader_ext -> /dev/block/loader_ext_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 loader_ext_a -> /dev/mmcblk0p42
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 loader_ext_b -> /dev/mmcblk0p43
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 logo -> /dev/mmcblk0p44
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 mcf1 -> /dev/block/mcf1_a
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 mcf1_a -> /dev/mmcblk0p8
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcf1_b -> /dev/mmcblk0p10
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 mcf2 -> /dev/block/mcf2_a
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 mcf2_a -> /dev/mmcblk0p9
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcf2_b -> /dev/mmcblk0p11
+lrwxrwxrwx    1 root     root            18 Jan  1  2010 mcupm -> /dev/block/mcupm_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcupm_a -> /dev/mmcblk0p23
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 mcupm_b -> /dev/mmcblk0p36
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 md1dsp -> /dev/block/md1dsp_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1dsp_a -> /dev/mmcblk0p17
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1dsp_b -> /dev/mmcblk0p30
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 md1img -> /dev/block/md1img_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1img_a -> /dev/mmcblk0p16
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 md1img_b -> /dev/mmcblk0p29
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 medmcu -> /dev/block/medmcu_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 medmcu_a -> /dev/mmcblk0p21
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 medmcu_b -> /dev/mmcblk0p34
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 misc -> /dev/mmcblk0p1
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 nvcfg -> /dev/mmcblk0p4
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 nvdata -> /dev/mmcblk0p5
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 nvram -> /dev/mmcblk0p15
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 para -> /dev/mmcblk0p2
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 pi_img -> /dev/block/pi_img_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 pi_img_a -> /dev/mmcblk0p19
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 pi_img_b -> /dev/mmcblk0p32
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 productinfo -> /dev/mmcblk0p48
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 proinfo -> /dev/mmcblk0p14
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 protect1 -> /dev/mmcblk0p6
+lrwxrwxrwx    1 root     root            14 Jan  1  2010 protect2 -> /dev/mmcblk0p7
+lrwxrwxrwx    1 root     root            19 Jan  1  2010 rootfs -> /dev/block/rootfs_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_a -> /dev/mmcblk0p28
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_b -> /dev/mmcblk0p41
+lrwxrwxrwx    1 root     root            23 Jan  1  2010 rootfs_sig -> /dev/block/rootfs_sig_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_sig_a -> /dev/mmcblk0p27
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 rootfs_sig_b -> /dev/mmcblk0p40
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 seccfg -> /dev/mmcblk0p12
+lrwxrwxrwx    1 root     root            18 Jan  1  2010 spmfw -> /dev/block/spmfw_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 spmfw_a -> /dev/mmcblk0p18
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 spmfw_b -> /dev/mmcblk0p31
+lrwxrwxrwx    1 root     root            17 Jan  1  2010 sspm -> /dev/block/sspm_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 sspm_a -> /dev/mmcblk0p22
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 sspm_b -> /dev/mmcblk0p35
+lrwxrwxrwx    1 root     root            16 Jan  1  2010 tee -> /dev/block/tee_a
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 tee_a -> /dev/mmcblk0p25
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 tee_b -> /dev/mmcblk0p38
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 user_config -> /dev/mmcblk0p47
+lrwxrwxrwx    1 root     root            15 Jan  1  2010 user_data -> /dev/mmcblk0p49
+
+--- mmc devices ---
+brw-------    1 root     root      179,   0 Jan  1  2010 /dev/mmcblk0
+brw-------    1 root     root      179,  32 Jan  1  2010 /dev/mmcblk0boot0
+brw-------    1 root     root      179,  64 Jan  1  2010 /dev/mmcblk0boot1
+brw-------    1 root     root      179,   1 Jan  1  2010 /dev/mmcblk0p1
+brw-------    1 root     root      179,  10 Jan  1  2010 /dev/mmcblk0p10
+brw-------    1 root     root      179,  11 Jan  1  2010 /dev/mmcblk0p11
+brw-------    1 root     root      179,  12 Jan  1  2010 /dev/mmcblk0p12
+brw-------    1 root     root      179,  13 Jan  1  2010 /dev/mmcblk0p13
+brw-------    1 root     root      179,  14 Jan  1  2010 /dev/mmcblk0p14
+brw-------    1 root     root      179,  15 Jan  1  2010 /dev/mmcblk0p15
+brw-------    1 root     root      179,  16 Jan  1  2010 /dev/mmcblk0p16
+brw-------    1 root     root      179,  17 Jan  1  2010 /dev/mmcblk0p17
+brw-------    1 root     root      179,  18 Jan  1  2010 /dev/mmcblk0p18
+brw-------    1 root     root      179,  19 Jan  1  2010 /dev/mmcblk0p19
+brw-------    1 root     root      179,   2 Jan  1  2010 /dev/mmcblk0p2
+brw-------    1 root     root      179,  20 Jan  1  2010 /dev/mmcblk0p20
+brw-------    1 root     root      179,  21 Jan  1  2010 /dev/mmcblk0p21
+brw-------    1 root     root      179,  22 Jan  1  2010 /dev/mmcblk0p22
+brw-------    1 root     root      179,  23 Jan  1  2010 /dev/mmcblk0p23
+brw-------    1 root     root      179,  24 Jan  1  2010 /dev/mmcblk0p24
+brw-------    1 root     root      179,  25 Jan  1  2010 /dev/mmcblk0p25
+brw-------    1 root     root      179,  26 Jan  1  2010 /dev/mmcblk0p26
+brw-------    1 root     root      179,  27 Jan  1  2010 /dev/mmcblk0p27
+brw-------    1 root     root      179,  28 Jan  1  2010 /dev/mmcblk0p28
+brw-------    1 root     root      179,  29 Jan  1  2010 /dev/mmcblk0p29
+brw-------    1 root     root      179,   3 Jan  1  2010 /dev/mmcblk0p3
+brw-------    1 root     root      179,  30 Jan  1  2010 /dev/mmcblk0p30
+brw-------    1 root     root      179,  31 Jan  1  2010 /dev/mmcblk0p31
+brw-------    1 root     root      259,   0 Jan  1  2010 /dev/mmcblk0p32
+brw-------    1 root     root      259,   1 Jan  1  2010 /dev/mmcblk0p33
+brw-------    1 root     root      259,   2 Jan  1  2010 /dev/mmcblk0p34
+brw-------    1 root     root      259,   3 Jan  1  2010 /dev/mmcblk0p35
+brw-------    1 root     root      259,   4 Jan  1  2010 /dev/mmcblk0p36
+brw-------    1 root     root      259,   5 Jan  1  2010 /dev/mmcblk0p37
+brw-------    1 root     root      259,   6 Jan  1  2010 /dev/mmcblk0p38
+brw-------    1 root     root      259,   7 Jan  1  2010 /dev/mmcblk0p39
+brw-------    1 root     root      179,   4 Jan  1  2010 /dev/mmcblk0p4
+brw-------    1 root     root      259,   8 Jan  1  2010 /dev/mmcblk0p40
+brw-------    1 root     root      259,   9 Jan  1  2010 /dev/mmcblk0p41
+brw-------    1 root     root      259,  10 Jan  1  2010 /dev/mmcblk0p42
+brw-------    1 root     root      259,  11 Jan  1  2010 /dev/mmcblk0p43
+brw-------    1 root     root      259,  12 Jan  1  2010 /dev/mmcblk0p44
+brw-------    1 root     root      259,  13 Jan  1  2010 /dev/mmcblk0p45
+brw-------    1 root     root      259,  14 Jan  1  2010 /dev/mmcblk0p46
+brw-------    1 root     root      259,  15 Jan  1  2010 /dev/mmcblk0p47
+brw-------    1 root     root      259,  16 Jan  1  2010 /dev/mmcblk0p48
+brw-------    1 root     root      259,  17 Jan  1  2010 /dev/mmcblk0p49
+brw-------    1 root     root      179,   5 Jan  1  2010 /dev/mmcblk0p5
+brw-------    1 root     root      259,  18 Jan  1  2010 /dev/mmcblk0p50
+brw-------    1 root     root      179,   6 Jan  1  2010 /dev/mmcblk0p6
+brw-------    1 root     root      179,   7 Jan  1  2010 /dev/mmcblk0p7
+brw-------    1 root     root      179,   8 Jan  1  2010 /dev/mmcblk0p8
+brw-------    1 root     root      179,   9 Jan  1  2010 /dev/mmcblk0p9
+crw-------    1 root     root      237,   0 Jan  1  2010 /dev/mmcblk0rpmb
+
+--- mtd devices ---
+
+===== MOUNTS =====
+/dev/root /rom squashfs ro,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,noatime 0 0
+sysfs /sys sysfs rw,nosuid,nodev,noexec,noatime 0 0
+cgroup2 /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noatime,size=311920k,nr_inodes=77980 0 0
+/dev/loop0 /overlay ext4 rw,noatime 0 0
+overlayfs:/overlay / overlay rw,noatime,lowerdir=/,upperdir=/overlay/upper,workdir=/overlay/work 0 0
+tmpfs /dev tmpfs rw,nosuid,noexec,relatime,size=512k,nr_inodes=77980,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,mode=600,ptmxmode=000 0 0
+/dev/block/nvcfg /mnt/vendor/nvcfg ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/nvdata /mnt/vendor/nvdata ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/protect1 /mnt/vendor/protect_f ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/protect2 /mnt/vendor/protect_s ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/mcf1 /mnt/vendor/mdota ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/mcf2 /mnt/vendor/mdota2 ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/user_config /mnt/data ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/productinfo /productinfo ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/user_data /data ext4 rw,nosuid,nodev,noexec,relatime 0 0
+/dev/block/fibonv /mnt/vendor/fibonv ext4 rw,nosuid,nodev,noexec,relatime 0 0
+debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,noatime 0 0
+none /sys/fs/bpf bpf rw,nosuid,nodev,noexec,noatime,mode=700 0 0
+pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,noatime 0 0
+tracefs /sys/kernel/debug/tracing tracefs rw,nosuid,nodev,noexec,noatime 0 0
+none /config configfs rw,nosuid,nodev,noexec,relatime 0 0
+
+===== DF =====
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                55.8M     55.8M         0 100% /rom
+tmpfs                   304.6M      4.0M    300.6M   1% /tmp
+/dev/loop0              431.3M    147.0K    404.3M   0% /overlay
+overlayfs:/overlay      431.3M    147.0K    404.3M   0% /
+tmpfs                   512.0K         0    512.0K   0% /dev
+/dev/block/nvcfg         26.2M    654.0K     23.4M   3% /mnt/vendor/nvcfg
+/dev/block/nvdata        26.2M     14.4M      9.6M  60% /mnt/vendor/nvdata
+/dev/block/protect1       6.7M     89.0K      6.0M   1% /mnt/vendor/protect_f
+/dev/block/protect2       6.7M     87.0K      6.0M   1% /mnt/vendor/protect_s
+/dev/block/mcf1           6.7M     15.0K      6.1M   0% /mnt/vendor/mdota
+/dev/block/mcf2           6.7M    287.0K      5.8M   5% /mnt/vendor/mdota2
+/dev/block/user_config
+                         18.1M    315.0K     16.3M   2% /mnt/data
+/dev/block/productinfo
+                          2.8M     21.0K      2.5M   1% /productinfo
+/dev/block/user_data      5.6G     76.8M      5.2G   1% /data
+/dev/block/fibonv        26.2M     16.0K     24.0M   0% /mnt/vendor/fibonv
+Filesystem           Type       1K-blocks      Used Available Use% Mounted on
+/dev/root            squashfs       57088     57088         0 100% /rom
+tmpfs                tmpfs         311920      4084    307836   1% /tmp
+/dev/loop0           ext4          441640       147    414050   0% /overlay
+overlayfs:/overlay   overlay       441640       147    414050   0% /
+tmpfs                tmpfs            512         0       512   0% /dev
+/dev/block/nvcfg     ext4           26868       654     23921   3% /mnt/vendor/nvcfg
+/dev/block/nvdata    ext4           26868     14715      9860  60% /mnt/vendor/nvdata
+/dev/block/protect1  ext4            6844        89      6183   1% /mnt/vendor/protect_f
+/dev/block/protect2  ext4            6844        87      6185   1% /mnt/vendor/protect_s
+/dev/block/mcf1      ext4            6844        15      6257   0% /mnt/vendor/mdota
+/dev/block/mcf2      ext4            6844       287      5985   5% /mnt/vendor/mdota2
+/dev/block/user_config
+                     ext4           18485       315     16737   2% /mnt/data
+/dev/block/productinfo
+                     ext4            2908        21      2602   1% /productinfo
+/dev/block/user_data ext4         5875592     78592   5477620   1% /data
+/dev/block/fibonv    ext4           26868        16     24559   0% /mnt/vendor/fibonv
+
+===== MTD SYSFS =====
+
+===== NAND SYSFS =====
+--- /sys/firmware/devicetree/base/audio_sram@11211000/block_size
+   
+===== UBI =====
+dev:    size   erasesize  name
+UBI version:                    1
+Count of UBI devices:           0
+UBI control device major/minor: 10:52
+total 0
+-r--r--r--    1 root     root          4096 Sep 20 01:31 version
+
+===== MMC / EMMC SYSFS =====
+--- /sys/class/mmc_host/mmc0/mmc0:0001 ---
+name=33BGAX
+type=MMC
+manfid=0x00000b
+oemid=0x0d00
+serial=0x000028bd
+date=06/2023
+cid=0b0d0033334247415800000028bd6a8b
+csd=d02701320f5903ffffffffef8a4040d3
+preferred_erase_size=4194304
+fwrev=0x0000000000000000
+hwrev=0x0
+
+===== NETWORK INTERFACES =====
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+ccmni2:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni10:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni9:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+erspan0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni14:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni7:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  gre0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni18:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+   br0:  349230    3344    0    5    0     0          0       173  3205186    2183    0    0    0     0       0          0
+ccmni11:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni5:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+rndis0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni15:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  eth1:  419534    3477    0    0    0     0          0         0  3311978    3750    0    0    0     0       0          0
+ccmni3:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni20:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6gre0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni19:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni12:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni1:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni8:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni16:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni6:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  eth0:       0       0    0    0    0     0          0         0     2634       8    0    0    0     0       0          0
+ccmni13:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+gretap0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni4:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ tunl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ccmni17:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+    lo:  113869    1843    0    0    0     0          0         0   113869    1843    0    0    0     0       0          0
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet 127.0.0.1/32 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ccmni0: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-48 brd ff:ff:ff:ff:ff:ff
+3: ccmni1: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-31 brd ff:ff:ff:ff:ff:ff
+4: ccmni2: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-46 brd ff:ff:ff:ff:ff:ff
+5: ccmni3: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-49 brd ff:ff:ff:ff:ff:ff
+6: ccmni4: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-47 brd ff:ff:ff:ff:ff:ff
+7: ccmni5: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-29 brd ff:ff:ff:ff:ff:ff
+8: ccmni6: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-30 brd ff:ff:ff:ff:ff:ff
+9: ccmni7: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-34 brd ff:ff:ff:ff:ff:ff
+10: ccmni8: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-37 brd ff:ff:ff:ff:ff:ff
+11: ccmni9: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-32 brd ff:ff:ff:ff:ff:ff
+12: ccmni10: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-44 brd ff:ff:ff:ff:ff:ff
+13: ccmni11: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-41 brd ff:ff:ff:ff:ff:ff
+14: ccmni12: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-53 brd ff:ff:ff:ff:ff:ff
+15: ccmni13: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-43 brd ff:ff:ff:ff:ff:ff
+16: ccmni14: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-51 brd ff:ff:ff:ff:ff:ff
+17: ccmni15: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-33 brd ff:ff:ff:ff:ff:ff
+18: ccmni16: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-45 brd ff:ff:ff:ff:ff:ff
+19: ccmni17: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-52 brd ff:ff:ff:ff:ff:ff
+20: ccmni18: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-42 brd ff:ff:ff:ff:ff:ff
+21: ccmni19: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-36 brd ff:ff:ff:ff:ff:ff
+22: ccmni20: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-35 brd ff:ff:ff:ff:ff:ff
+23: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel qlen 1000
+    link/ether REDACTED-MAC-38 brd ff:ff:ff:ff:ff:ff
+24: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master br0 qlen 1000
+    link/ether REDACTED-MAC-39 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::fe3f:fcff:fe56:4b15/64 scope link 
+       valid_lft forever preferred_lft forever
+25: tunl0@NONE: <NOARP> mtu 1480 qdisc noop qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+26: gre0@NONE: <NOARP> mtu 1476 qdisc noop qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+27: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+28: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+29: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop qlen 1000
+    link/ipip 0.0.0.0 brd 0.0.0.0
+30: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+31: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop qlen 1000
+    link/[823] 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+32: rndis0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop qlen 1000
+    link/ether REDACTED-MAC-50 brd ff:ff:ff:ff:ff:ff
+33: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue qlen 1000
+    link/ether REDACTED-MAC-39 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.1/24 brd 192.168.1.255 scope global br0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::fe3f:fcff:fe56:4b15/64 scope link 
+       valid_lft forever preferred_lft forever
+192.168.1.0/24 dev br0 scope link  src 192.168.1.1 
+broadcast 127.0.0.0 dev lo table local scope link  src 127.0.0.1 
+local 127.0.0.0/8 dev lo table local scope host  src 127.0.0.1 
+local 127.0.0.1 dev lo table local scope host  src 127.0.0.1 
+broadcast 127.255.255.255 dev lo table local scope link  src 127.0.0.1 
+broadcast 192.168.1.0 dev br0 table local scope link  src 192.168.1.1 
+local 192.168.1.1 dev br0 table local scope host  src 192.168.1.1 
+broadcast 192.168.1.255 dev br0 table local scope link  src 192.168.1.1 
+fe80::/64 dev br0  metric 256 
+fe80::/64 dev eth1  metric 256 
+local ::1 dev lo table local  metric 0 
+anycast fe80:: dev eth1 table local  metric 0 
+anycast fe80:: dev br0 table local  metric 0 
+local fe80::fe3f:fcff:fe56:4b15 dev eth1 table local  metric 0 
+local fe80::fe3f:fcff:fe56:4b15 dev br0 table local  metric 0 
+multicast ff00::/8 dev br0 table local  metric 256 
+multicast ff00::/8 dev eth1 table local  metric 256 
+
+===== USB =====
+total 0
+lrwxrwxrwx    1 root     root             0 Sep 20 01:31 11201000.usb -> ../../devices/platform/11201000.usb/udc/11201000.usb
+
+===== PROCESSES =====
+PID   USER     COMMAND
+    1 root     /sbin/procd
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-eve]
+    6 root     [kworker/0:0H-kb]
+    7 root     [kworker/u8:0-ev]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   17 root     [kworker/1:0H-kb]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H-kb]
+   23 root     [cpuhp/3]
+   24 root     [migration/3]
+   25 root     [ksoftirqd/3]
+   27 root     [kworker/3:0H-kb]
+   28 root     [netns]
+   35 root     [kworker/1:1-rcu]
+   41 root     [kworker/3:1-mm_]
+  175 root     [irq/15-event_0]
+  176 root     [irq/15-event_1]
+  177 root     [irq/15-event_2]
+  178 root     [irq/15-event_3]
+  179 root     [irq/15-event_4]
+  180 root     [irq/249-rcs_irq]
+  187 root     [irq/16-event_0]
+  188 root     [irq/16-event_1]
+  189 root     [irq/16-event_2]
+  190 root     [irq/16-event_3]
+  191 root     [irq/16-event_4]
+  641 root     [kworker/2:1-mm_]
+  642 root     [oom_reaper]
+  643 root     [writeback]
+  645 root     [kcompactd0]
+  646 root     [ksmd]
+  647 root     [khugepaged]
+  685 root     [kintegrityd]
+  687 root     [kblockd]
+  688 root     [blkcg_punt_bio]
+  710 root     [tpm_dev_wq]
+  718 root     [pool_reload_wor]
+  721 root     [hf_manager]
+  724 root     [pd_dbg_info]
+  726 root     [SSPM_WQ]
+  728 root     [sspm_ts_wq]
+  756 root     [devfreq_wq]
+  771 root     [watchdogd]
+  824 root     [kswapd0]
+  920 root     [kthrotld]
+  995 root     [ged_notify_sw_v]
+ 1000 root     [mali-simple-pow]
+ 1001 root     [kbase_event]
+ 1003 root     [kworker/u9:1-rx]
+ 1004 root     [kbase_job_fault]
+ 1005 root     [mali_aeewp]
+ 1018 root     [irq/346-amms_ir]
+ 1032 root     [ccci_fsm1]
+ 1033 root     [ccci_poll1]
+ 1049 root     [ccci_sys]
+ 1051 root     [ccci_ctrl]
+ 1102 root     [ccci_rpc_k]
+ 1118 root     [ccmni0_rx_q_wor]
+ 1122 root     [ccmni1_rx_q_wor]
+ 1126 root     [ccmni2_rx_q_wor]
+ 1130 root     [ccmni3_rx_q_wor]
+ 1134 root     [ccmni4_rx_q_wor]
+ 1138 root     [ccmni5_rx_q_wor]
+ 1142 root     [ccmni6_rx_q_wor]
+ 1146 root     [ccmni7_rx_q_wor]
+ 1150 root     [ccmni8_rx_q_wor]
+ 1154 root     [ccmni9_rx_q_wor]
+ 1158 root     [ccmni10_rx_q_wo]
+ 1162 root     [ccmni11_rx_q_wo]
+ 1166 root     [ccmni12_rx_q_wo]
+ 1170 root     [ccmni13_rx_q_wo]
+ 1174 root     [ccmni14_rx_q_wo]
+ 1178 root     [ccmni15_rx_q_wo]
+ 1182 root     [ccmni16_rx_q_wo]
+ 1186 root     [ccmni17_rx_q_wo]
+ 1190 root     [ccmni18_rx_q_wo]
+ 1194 root     [ccmni19_rx_q_wo]
+ 1198 root     [ccmni20_rx_q_wo]
+ 1235 root     [mt-wdk]
+ 1236 root     [wdtk-0]
+ 1237 root     [wdtk-1]
+ 1238 root     [wdtk-2]
+ 1239 root     [wdtk-3]
+ 1362 root     [nvme-wq]
+ 1364 root     [nvme-reset-wq]
+ 1366 root     [nvme-delete-wq]
+ 1376 root     [spi0]
+ 1382 root     [spi1]
+ 1385 root     [spi2]
+ 1387 root     [spi3]
+ 1438 root     [vfio-irqfd-clea]
+ 1440 root     [isr_count_polli]
+ 1540 root     [sspm_to_thermal]
+ 1542 root     [sspm_to_thermal]
+ 1561 root     [irq/44-11240000]
+ 1568 root     [irq/310-1032000]
+ 1569 root     [kworker/1:3-eve]
+ 1570 root     [wq_ring0]
+ 1571 root     [irq/311-1032000]
+ 1572 root     [wq_ring1]
+ 1573 root     [irq/312-1032000]
+ 1574 root     [wq_ring2]
+ 1575 root     [irq/313-1032000]
+ 1576 root     [wq_ring3]
+ 1695 root     [ipv6_addrconf]
+ 1707 root     [SCP_WQ]
+ 1709 root     [SCP_LOG_WQ]
+ 1710 root     [SCP_RESET_WQ]
+ 1711 root     [SCP_DELAY_RESET]
+ 1722 root     [mmc_complete]
+ 1726 root     [kworker/1:1H-kb]
+ 1788 root     [extcon_usb]
+ 1815 root     [kworker/3:1H-kb]
+ 1816 root     [kworker/0:1H-kb]
+ 1817 root     [kworker/2:1H-kb]
+ 1823 root     [kworker/3:2-rcu]
+ 1860 root     [conninfra_cored]
+ 1861 root     [conninfra_cb]
+ 1862 root     [sub_bt_thrd]
+ 1863 root     [sub_fm_thrd]
+ 1864 root     [sub_gps_thrd]
+ 1865 root     [sub_wifi_thrd]
+ 1866 root     [sub_conninfra_t]
+ 1878 root     [gps_kctrld]
+ 1879 root     [irq/352-gps_da0]
+ 1880 root     [irq/353-gps_nd0]
+ 1881 root     [irq/354-gps_mb0]
+ 1882 root     [irq/355-gps_da1]
+ 1883 root     [irq/356-gps_nd1]
+ 1884 root     [irq/357-gps_mb1]
+ 1885 root     [irq/358-gps_dma]
+ 1943 root     [loop0]
+ 1946 root     [jbd2/loop0-8]
+ 1947 root     [ext4-rsv-conver]
+ 2415 ubus     /sbin/ubusd
+ 2636 root     [jbd2/mmcblk0p4-]
+ 2637 root     [ext4-rsv-conver]
+ 2638 root     [jbd2/mmcblk0p5-]
+ 2639 root     [ext4-rsv-conver]
+ 2640 root     [jbd2/mmcblk0p6-]
+ 2641 root     [ext4-rsv-conver]
+ 2642 root     [jbd2/mmcblk0p7-]
+ 2643 root     [ext4-rsv-conver]
+ 2644 root     [jbd2/mmcblk0p8-]
+ 2645 root     [ext4-rsv-conver]
+ 2646 root     [jbd2/mmcblk0p9-]
+ 2647 root     [ext4-rsv-conver]
+ 2648 root     [jbd2/mmcblk0p47]
+ 2649 root     [ext4-rsv-conver]
+ 2650 root     [jbd2/mmcblk0p48]
+ 2651 root     [ext4-rsv-conver]
+ 2652 root     [jbd2/mmcblk0p49]
+ 2653 root     [ext4-rsv-conver]
+ 2655 root     [jbd2/mmcblk0p46]
+ 2656 root     [ext4-rsv-conver]
+ 2747 root     /usr/bin/ccci_fsd 0 2 0
+ 2792 root     /usr/bin/ccci_mdinit 0
+ 2824 root     [rx0_worker]
+ 2825 root     [rx1_worker]
+ 2826 root     [rx2_worker]
+ 2827 root     [rx3_worker]
+ 2828 root     [rx4_worker]
+ 2829 root     [rx5_worker]
+ 2830 root     [rx6_worker]
+ 2831 root     [rx7_worker]
+ 2832 root     [rx8_worker]
+ 2834 root     [rx9_worker]
+ 2835 root     [rx10_worker]
+ 2836 root     [rx11_worker]
+ 2837 root     [rx12_worker]
+ 2839 root     [rx13_worker]
+ 2840 root     [rx14_worker]
+ 2841 root     [rx15_worker]
+ 2846 root     [ccci_dpmaif_rx0]
+ 2847 root     [dpmaif_rx_push]
+ 2848 root     [md1_tx0_worker]
+ 2849 root     [md1_tx1_worker]
+ 2850 root     [md1_tx2_worker]
+ 2851 root     [md1_tx3_worker]
+ 2859 root     /usr/bin/aqrd -L 255
+ 2922 root     /sbin/urngd
+ 2976 root     [kworker/0:2+eve]
+ 3016 root     [cryptodev_queue]
+ 3034 root     [uether]
+ 3035 root     [uether_rx1]
+ 3036 root     [uether_rps]
+ 3068 root     [kworker/0:3-eve]
+ 3101 root     [fw2apccci_ctrl_]
+ 3107 root     [apccci2fw_task]
+ 3270 logd     /sbin/logd -S 2048
+ 3330 root     /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+ 3441 root     /usr/bin/mtk_netagent
+ 3597 root     /usr/sbin/crond -f -c /etc/crontabs -l 5
+ 3649 root     /usr/bin/lppe_service
+ 3708 root     /usr/bin/mnld
+ 3749 root     [kworker/u9:2-rx]
+ 3762 root     /usr/bin/scd 1 1 1
+ 3830 root     /usr/bin/speech_daemon
+ 3880 root     /usr/bin/libmodem-afe-ctrl-server-bin
+ 3923 root     /usr/bin/audio-ctrl-service
+ 4096 root     /usr/sbin/collectd -C /tmp/collectd.conf -f
+ 4580 root     /sbin/aee_aed
+ 4628 root     sh /etc/rc.local
+ 4631 root     /bin/busybox_full telnetd -p 23 -l /bin/sh
+ 4633 root     /sbin/dialer_patched
+ 4671 root     /usr/bin/atci_service
+ 4967 root     /usr/bin/log_controld
+ 5223 root     /usr/bin/mdlcfgd
+ 5847 root     /usr/bin/flagd
+ 5894 root     /usr/bin/log_backup_daemon
+ 5983 root     /usr/bin/firewalltools
+ 6003 root     /usr/bin/tz_powerkey_test
+ 6056 root     /usr/bin/gpiod
+ 6060 root     {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.sh
+ 6080 root     ip -4 monitor neigh
+ 6081 root     {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.sh
+ 6122 root     /usr/bin/lan_mgr
+ 6223 root     /usr/bin/flow_control
+ 6326 root     /usr/bin/configtools -i br0
+ 6452 admin    dnsmasq -C /tmp/dnsmasq.conf -x /tmp/dnsmasq.pid
+ 6478 root     /usr/bin/cron_controller
+ 6652 root     /usr/bin/tzphonebook
+ 7435 root     /sbin/adbd_usb
+ 7719 root     /usr/bin/atcid
+ 7820 root     /usr/bin/sms_mgr
+ 7869 root     /usr/bin/lanrecord
+ 8124 root     /usr/bin/tz_phone
+ 8325 root     /usr/bin/mini_httpd -C /tmp/mini_httpd.conf
+ 8335 root     /usr/bin/mini_httpd -C /tmp/mini_httpd_s.conf
+ 8408 root     /usr/bin/fota
+ 8569 root     /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p cn.pool.ntp.org -p 0.openwrt.pool.ntp.org -p 1.openwrt.pool.ntp.org -p 2.openwrt.pool.ntp.org
+ 8617 root     /usr/bin/vpn_mgr
+ 8661 root     /usr/bin/atcmd_daemon
+ 9527 root     /usr/bin/sys_monitor
+ 9544 root     {temperature_con} /bin/sh /etc/tzscript/temperature_control.sh
+10804 root     /sbin/adbd_usb
+12883 root     [kworker/u8:1-ev]
+15846 root     [kworker/u8:2-ev]
+18074 root     {login.sh} /bin/sh /etc/tzscript/login.sh -
+18076 root     /bin/sh
+18704 root     sleep 10
+18731 root     [kworker/u8:3-ev]
+18784 root     sleep 1
+18807 root     ps w
+PID   USER     COMMAND
+    1 root     /sbin/procd
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-eve]
+    6 root     [kworker/0:0H-kb]
+    7 root     [kworker/u8:0-ev]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   17 root     [kworker/1:0H-kb]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H-kb]
+   23 root     [cpuhp/3]
+   24 root     [migration/3]
+   25 root     [ksoftirqd/3]
+   27 root     [kworker/3:0H-kb]
+   28 root     [netns]
+   35 root     [kworker/1:1-rcu]
+   41 root     [kworker/3:1-mm_]
+  175 root     [irq/15-event_0]
+  176 root     [irq/15-event_1]
+  177 root     [irq/15-event_2]
+  178 root     [irq/15-event_3]
+  179 root     [irq/15-event_4]
+  180 root     [irq/249-rcs_irq]
+  187 root     [irq/16-event_0]
+  188 root     [irq/16-event_1]
+  189 root     [irq/16-event_2]
+  190 root     [irq/16-event_3]
+  191 root     [irq/16-event_4]
+  641 root     [kworker/2:1-mm_]
+  642 root     [oom_reaper]
+  643 root     [writeback]
+  645 root     [kcompactd0]
+  646 root     [ksmd]
+  647 root     [khugepaged]
+  685 root     [kintegrityd]
+  687 root     [kblockd]
+  688 root     [blkcg_punt_bio]
+  710 root     [tpm_dev_wq]
+  718 root     [pool_reload_wor]
+  721 root     [hf_manager]
+  724 root     [pd_dbg_info]
+  726 root     [SSPM_WQ]
+  728 root     [sspm_ts_wq]
+  756 root     [devfreq_wq]
+  771 root     [watchdogd]
+  824 root     [kswapd0]
+  920 root     [kthrotld]
+  995 root     [ged_notify_sw_v]
+ 1000 root     [mali-simple-pow]
+ 1001 root     [kbase_event]
+ 1003 root     [kworker/u9:1-rx]
+ 1004 root     [kbase_job_fault]
+ 1005 root     [mali_aeewp]
+ 1018 root     [irq/346-amms_ir]
+ 1032 root     [ccci_fsm1]
+ 1033 root     [ccci_poll1]
+ 1049 root     [ccci_sys]
+ 1051 root     [ccci_ctrl]
+ 1102 root     [ccci_rpc_k]
+ 1118 root     [ccmni0_rx_q_wor]
+ 1122 root     [ccmni1_rx_q_wor]
+ 1126 root     [ccmni2_rx_q_wor]
+ 1130 root     [ccmni3_rx_q_wor]
+ 1134 root     [ccmni4_rx_q_wor]
+ 1138 root     [ccmni5_rx_q_wor]
+ 1142 root     [ccmni6_rx_q_wor]
+ 1146 root     [ccmni7_rx_q_wor]
+ 1150 root     [ccmni8_rx_q_wor]
+ 1154 root     [ccmni9_rx_q_wor]
+ 1158 root     [ccmni10_rx_q_wo]
+ 1162 root     [ccmni11_rx_q_wo]
+ 1166 root     [ccmni12_rx_q_wo]
+ 1170 root     [ccmni13_rx_q_wo]
+ 1174 root     [ccmni14_rx_q_wo]
+ 1178 root     [ccmni15_rx_q_wo]
+ 1182 root     [ccmni16_rx_q_wo]
+ 1186 root     [ccmni17_rx_q_wo]
+ 1190 root     [ccmni18_rx_q_wo]
+ 1194 root     [ccmni19_rx_q_wo]
+ 1198 root     [ccmni20_rx_q_wo]
+ 1235 root     [mt-wdk]
+ 1236 root     [wdtk-0]
+ 1237 root     [wdtk-1]
+ 1238 root     [wdtk-2]
+ 1239 root     [wdtk-3]
+ 1362 root     [nvme-wq]
+ 1364 root     [nvme-reset-wq]
+ 1366 root     [nvme-delete-wq]
+ 1376 root     [spi0]
+ 1382 root     [spi1]
+ 1385 root     [spi2]
+ 1387 root     [spi3]
+ 1438 root     [vfio-irqfd-clea]
+ 1440 root     [isr_count_polli]
+ 1540 root     [sspm_to_thermal]
+ 1542 root     [sspm_to_thermal]
+ 1561 root     [irq/44-11240000]
+ 1568 root     [irq/310-1032000]
+ 1569 root     [kworker/1:3-eve]
+ 1570 root     [wq_ring0]
+ 1571 root     [irq/311-1032000]
+ 1572 root     [wq_ring1]
+ 1573 root     [irq/312-1032000]
+ 1574 root     [wq_ring2]
+ 1575 root     [irq/313-1032000]
+ 1576 root     [wq_ring3]
+ 1695 root     [ipv6_addrconf]
+ 1707 root     [SCP_WQ]
+ 1709 root     [SCP_LOG_WQ]
+ 1710 root     [SCP_RESET_WQ]
+ 1711 root     [SCP_DELAY_RESET]
+ 1722 root     [mmc_complete]
+ 1726 root     [kworker/1:1H-kb]
+ 1788 root     [extcon_usb]
+ 1815 root     [kworker/3:1H-kb]
+ 1816 root     [kworker/0:1H-kb]
+ 1817 root     [kworker/2:1H-kb]
+ 1823 root     [kworker/3:2-rcu]
+ 1860 root     [conninfra_cored]
+ 1861 root     [conninfra_cb]
+ 1862 root     [sub_bt_thrd]
+ 1863 root     [sub_fm_thrd]
+ 1864 root     [sub_gps_thrd]
+ 1865 root     [sub_wifi_thrd]
+ 1866 root     [sub_conninfra_t]
+ 1878 root     [gps_kctrld]
+ 1879 root     [irq/352-gps_da0]
+ 1880 root     [irq/353-gps_nd0]
+ 1881 root     [irq/354-gps_mb0]
+ 1882 root     [irq/355-gps_da1]
+ 1883 root     [irq/356-gps_nd1]
+ 1884 root     [irq/357-gps_mb1]
+ 1885 root     [irq/358-gps_dma]
+ 1943 root     [loop0]
+ 1946 root     [jbd2/loop0-8]
+ 1947 root     [ext4-rsv-conver]
+ 2415 ubus     /sbin/ubusd
+ 2636 root     [jbd2/mmcblk0p4-]
+ 2637 root     [ext4-rsv-conver]
+ 2638 root     [jbd2/mmcblk0p5-]
+ 2639 root     [ext4-rsv-conver]
+ 2640 root     [jbd2/mmcblk0p6-]
+ 2641 root     [ext4-rsv-conver]
+ 2642 root     [jbd2/mmcblk0p7-]
+ 2643 root     [ext4-rsv-conver]
+ 2644 root     [jbd2/mmcblk0p8-]
+ 2645 root     [ext4-rsv-conver]
+ 2646 root     [jbd2/mmcblk0p9-]
+ 2647 root     [ext4-rsv-conver]
+ 2648 root     [jbd2/mmcblk0p47]
+ 2649 root     [ext4-rsv-conver]
+ 2650 root     [jbd2/mmcblk0p48]
+ 2651 root     [ext4-rsv-conver]
+ 2652 root     [jbd2/mmcblk0p49]
+ 2653 root     [ext4-rsv-conver]
+ 2655 root     [jbd2/mmcblk0p46]
+ 2656 root     [ext4-rsv-conver]
+ 2747 root     /usr/bin/ccci_fsd 0 2 0
+ 2792 root     /usr/bin/ccci_mdinit 0
+ 2824 root     [rx0_worker]
+ 2825 root     [rx1_worker]
+ 2826 root     [rx2_worker]
+ 2827 root     [rx3_worker]
+ 2828 root     [rx4_worker]
+ 2829 root     [rx5_worker]
+ 2830 root     [rx6_worker]
+ 2831 root     [rx7_worker]
+ 2832 root     [rx8_worker]
+ 2834 root     [rx9_worker]
+ 2835 root     [rx10_worker]
+ 2836 root     [rx11_worker]
+ 2837 root     [rx12_worker]
+ 2839 root     [rx13_worker]
+ 2840 root     [rx14_worker]
+ 2841 root     [rx15_worker]
+ 2846 root     [ccci_dpmaif_rx0]
+ 2847 root     [dpmaif_rx_push]
+ 2848 root     [md1_tx0_worker]
+ 2849 root     [md1_tx1_worker]
+ 2850 root     [md1_tx2_worker]
+ 2851 root     [md1_tx3_worker]
+ 2859 root     /usr/bin/aqrd -L 255
+ 2922 root     /sbin/urngd
+ 2976 root     [kworker/0:2+eve]
+ 3016 root     [cryptodev_queue]
+ 3034 root     [uether]
+ 3035 root     [uether_rx1]
+ 3036 root     [uether_rps]
+ 3068 root     [kworker/0:3-eve]
+ 3101 root     [fw2apccci_ctrl_]
+ 3107 root     [apccci2fw_task]
+ 3270 logd     /sbin/logd -S 2048
+ 3330 root     /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+ 3441 root     /usr/bin/mtk_netagent
+ 3597 root     /usr/sbin/crond -f -c /etc/crontabs -l 5
+ 3649 root     /usr/bin/lppe_service
+ 3708 root     /usr/bin/mnld
+ 3749 root     [kworker/u9:2-rx]
+ 3762 root     /usr/bin/scd 1 1 1
+ 3830 root     /usr/bin/speech_daemon
+ 3880 root     /usr/bin/libmodem-afe-ctrl-server-bin
+ 3923 root     /usr/bin/audio-ctrl-service
+ 4096 root     /usr/sbin/collectd -C /tmp/collectd.conf -f
+ 4580 root     /sbin/aee_aed
+ 4628 root     sh /etc/rc.local
+ 4631 root     /bin/busybox_full telnetd -p 23 -l /bin/sh
+ 4633 root     /sbin/dialer_patched
+ 4671 root     /usr/bin/atci_service
+ 4967 root     /usr/bin/log_controld
+ 5223 root     /usr/bin/mdlcfgd
+ 5847 root     /usr/bin/flagd
+ 5894 root     /usr/bin/log_backup_daemon
+ 5983 root     /usr/bin/firewalltools
+ 6003 root     /usr/bin/tz_powerkey_test
+ 6056 root     /usr/bin/gpiod
+ 6060 root     {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.sh
+ 6080 root     ip -4 monitor neigh
+ 6081 root     {arp_polling.sh} /bin/sh /etc/tzscript/arp_polling.sh
+ 6122 root     /usr/bin/lan_mgr
+ 6223 root     /usr/bin/flow_control
+ 6326 root     /usr/bin/configtools -i br0
+ 6452 admin    dnsmasq -C /tmp/dnsmasq.conf -x /tmp/dnsmasq.pid
+ 6478 root     /usr/bin/cron_controller
+ 6652 root     /usr/bin/tzphonebook
+ 7435 root     /sbin/adbd_usb
+ 7719 root     /usr/bin/atcid
+ 7820 root     /usr/bin/sms_mgr
+ 7869 root     /usr/bin/lanrecord
+ 8124 root     /usr/bin/tz_phone
+ 8325 root     /usr/bin/mini_httpd -C /tmp/mini_httpd.conf
+ 8335 root     /usr/bin/mini_httpd -C /tmp/mini_httpd_s.conf
+ 8408 root     /usr/bin/fota
+ 8569 root     /usr/sbin/ntpd -n -N -S /usr/sbin/ntpd-hotplug -p cn.pool.ntp.org -p 0.openwrt.pool.ntp.org -p 1.openwrt.pool.ntp.org -p 2.openwrt.pool.ntp.org
+ 8617 root     /usr/bin/vpn_mgr
+ 8661 root     /usr/bin/atcmd_daemon
+ 9527 root     /usr/bin/sys_monitor
+ 9544 root     {temperature_con} /bin/sh /etc/tzscript/temperature_control.sh
+10804 root     /sbin/adbd_usb
+12883 root     [kworker/u8:1-ev]
+15846 root     [kworker/u8:2-ev]
+18074 root     {login.sh} /bin/sh /etc/tzscript/login.sh -
+18076 root     /bin/sh
+18704 root     sleep 10
+18731 root     [kworker/u8:3-ev]
+18784 root     sleep 1
+18808 root     ps
+
+===== INIT SCRIPTS =====
+total 133
+drwxr-xr-x    2 root     root          1535 Mar 27  2025 .
+drwxr-xr-x    1 root     root          1024 Sep 20 01:12 ..
+-rwxrwxr-x    1 root     root          3129 Mar 27  2025 0mount_all
+-rwxr-xr-x    1 root     root           297 Mar 27  2025 1nvram_daemon
+-rwxrwxr-x    1 root     root           274 Mar 27  2025 1restore
+-rwxr-xr-x    1 root     root           324 Mar 27  2025 2ccci_fsd
+-rwxr-xr-x    1 root     root           301 Mar 27  2025 3ccci_mdinit
+-rwxr-xr-x    1 root     root          1285 Mar 27  2025 aee_aed
+-rwxr-xr-x    1 root     root           363 Mar 27  2025 aqrd
+-rwxr-xr-x    1 root     root           455 Mar 27  2025 atci_service
+-rwxr-xr-x    1 root     root          3778 Mar 27  2025 atcid
+-rwxr-xr-x    1 root     root           388 Mar 27  2025 atcmd_daemon
+-rwxr-xr-x    1 root     root           505 Mar 27  2025 audio-ctrl-service
+-rwxrwxr-x    1 root     root          1379 Mar 27  2025 boot
+-rwxr-xr-x    1 root     root          9094 Mar 27  2025 collectd
+-rwxr-xr-x    1 root     root           329 Mar 27  2025 configtools
+-rwxr-xr-x    1 root     root           995 Mar 27  2025 cron
+-rwxr-xr-x    1 root     root           337 Mar 27  2025 cron_controller
+-rwxr-xr-x    1 root     root           333 Mar 27  2025 cron_master
+-rwxr-xr-x    1 root     root           405 Mar 27  2025 ddns
+-rwxr-xr-x    1 root     root           307 Mar 27  2025 dialer
+-rwxrwxr-x    1 root     root           263 Mar 27  2025 done
+-rwxr-xr-x    1 root     root           657 Mar 27  2025 fibo_rndis.init
+-rwxr-xr-x    1 root     root          1457 Mar 27  2025 firewall
+-rwxr-xr-x    1 root     root           333 Mar 27  2025 firewalltools
+-rwxr-xr-x    1 root     root           227 Mar 27  2025 firmware.sh
+-rwxr-xr-x    1 root     root           327 Mar 27  2025 flagd
+-rwxr-xr-x    1 root     root           313 Mar 27  2025 flow_control
+-rwxr-xr-x    1 root     root           305 Mar 27  2025 fota
+-rwxr-xr-x    1 root     root           596 Mar 27  2025 ght-slic
+-rwxrwxr-x    1 root     root          1379 Mar 27  2025 gpio_switch
+-rwxr-xr-x    1 root     root           306 Mar 27  2025 gpiod
+-rwxr-xr-x    1 root     root           363 Mar 27  2025 jingdongwuliu
+-rwxr-xr-x    1 root     root           308 Mar 27  2025 lan_mgr
+-rwxr-xr-x    1 root     root           310 Mar 27  2025 lanrecord
+-rwxrwxr-x    1 root     root          3502 Mar 27  2025 led
+-rwxr-xr-x    1 root     root           538 Mar 27  2025 libmodem_afe_service
+-rwxr-xr-x    1 root     root          3036 Mar 27  2025 log
+-rwxr-xr-x    1 root     root           367 Mar 27  2025 log_backup_daemon
+-rwxr-xr-x    1 root     root           869 Mar 27  2025 log_controld
+-rwxr-xr-x    1 root     root           833 Mar 27  2025 lppe_service
+-rwxrwxr-x    1 root     root           652 Mar 27  2025 luci_statistics
+-rwxr-xr-x    1 root     root           216 Mar 27  2025 mac_update
+-rwxr-xr-x    1 root     root           478 Mar 27  2025 macwriter
+-rwxr-xr-x    1 root     root           329 Mar 27  2025 mdlcfgd
+-rwxr-xr-x    1 root     root           433 Mar 27  2025 mdlogger
+-rwxr-xr-x    1 root     root           267 Mar 27  2025 meta_tst
+-rwxr-xr-x    1 root     root           158 Mar 27  2025 mini_httpd
+-rwxr-xr-x    1 root     root          6025 Mar 27  2025 miniupnpd
+-rwxr-xr-x    1 root     root          4049 Mar 27  2025 mipc_wan.init
+-rwxr-xr-x    1 root     root           723 Mar 27  2025 mnld
+-rwxr-xr-x    1 root     root           251 Mar 27  2025 mtk_bridge
+-rwxrwxr-x    1 root     root          1067 Mar 27  2025 mtk_mem
+-rwxr-xr-x    1 root     root           760 Mar 27  2025 mtk_netagent
+-rwxr-xr-x    1 root     root           278 Mar 27  2025 net_monitor
+-rwxr-xr-x    1 root     root           358 Mar 27  2025 netcwmpd
+-rwxrwxr-x    1 root     root          2830 Mar 27  2025 network
+-rwxr-xr-x    1 root     root          3593 Mar 27  2025 omcproxy
+-rwxr-xr-x    1 root     root          6025 Mar 27  2025 openvpn
+-rwxr-xr-x    1 root     root           349 Mar 27  2025 pcm_loopback
+-rwxr-xr-x    1 root     root           197 Mar 27  2025 power_daemon
+-rwxr-xr-x    1 root     root          1018 Mar 27  2025 power_mgr
+-rwxr-xr-x    1 root     root          2947 Mar 27  2025 radvd
+-rwxr-xr-x    1 root     root           358 Mar 27  2025 redTea_SDK
+-rwxr-xr-x    1 root     root           393 Mar 27  2025 rpcd
+-rwxr-xr-x    1 root     root           722 Mar 27  2025 scd
+-rwxr-xr-x    1 root     root           816 Mar 27  2025 sigma
+-rwxr-xr-x    1 root     root           430 Mar 27  2025 slic_loopback
+-rwxr-xr-x    1 root     root           308 Mar 27  2025 sms_mgr
+-rwxr-xr-x    1 root     root           490 Mar 27  2025 speech_daemon
+-rwxr-xr-x    1 root     root           330 Mar 27  2025 sys_monitor
+-rwxrwxr-x    1 root     root          1212 Mar 27  2025 sysctl
+-rwxrwxr-x    1 root     root           652 Mar 27  2025 sysfixtime
+-rwxr-xr-x    1 root     root          3776 Mar 27  2025 sysntpd
+-rwxrwxr-x    1 root     root          1096 Mar 27  2025 system
+-rwxr-xr-x    1 root     root           309 Mar 27  2025 tz_phone
+-rwxr-xr-x    1 root     root           228 Mar 27  2025 tz_powerkey_test
+-rwxr-xr-x    1 root     root           361 Mar 27  2025 tzphonebook
+-rwxr-xr-x    1 root     root          3960 Mar 27  2025 tzproc
+-rwxrwxr-x    1 root     root          1339 Mar 27  2025 ucitrack
+-rwxr-xr-x    1 root     root          6243 Mar 27  2025 uhttpd
+-rwxrwxr-x    1 root     root           125 Mar 27  2025 umount
+-rwxrwxr-x    1 root     root           239 Mar 27  2025 urandom_seed
+-rwxr-xr-x    1 root     root           220 Mar 27  2025 urngd
+-rwxr-xr-x    1 root     root          5878 Mar 27  2025 usb.init
+-rwxr-xr-x    1 root     root          1417 Mar 27  2025 vnstat
+-rwxr-xr-x    1 root     root           483 Mar 27  2025 vpn_mgr
+-rwxr-xr-x    1 root     root          5983 Mar 27  2025 vpnbypass
+-rwxr-xr-x    1 root     root           509 Mar 27  2025 wfa_dut
+-rwxr-xr-x    1 root     root           404 Mar 27  2025 xl2tpd
+-rwxrwxr-x    1 root     root          3382 Mar 27  2025 zmtk_boot_done
+total 2
+drwxr-xr-x    2 root     root          1288 Mar 27  2025 .
+drwxr-xr-x    1 root     root          1024 Sep 20 01:12 ..
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 K10collectd -> ../init.d/collectd
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 K10ddns -> ../init.d/ddns
+lrwxrwxrwx    1 root     root            21 Mar 27  2025 K10gpio_switch -> ../init.d/gpio_switch
+lrwxrwxrwx    1 root     root            17 Mar 27  2025 K10openvpn -> ../init.d/openvpn
+lrwxrwxrwx    1 root     root            21 Mar 27  2025 K15firmware.sh -> ../init.d/firmware.sh
+lrwxrwxrwx    1 root     root            19 Mar 27  2025 K15miniupnpd -> ../init.d/miniupnpd
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 K1mdlogger -> ../init.d/mdlogger
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 K46mnld -> ../init.d/mnld
+lrwxrwxrwx    1 root     root            13 Mar 27  2025 K46scd -> ../init.d/scd
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 K473ccci_mdinit -> ../init.d/3ccci_mdinit
+lrwxrwxrwx    1 root     root            19 Mar 27  2025 K482ccci_fsd -> ../init.d/2ccci_fsd
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 K48aqrd -> ../init.d/aqrd
+lrwxrwxrwx    1 root     root            13 Mar 27  2025 K89log -> ../init.d/log
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 K90boot -> ../init.d/boot
+lrwxrwxrwx    1 root     root            20 Mar 27  2025 K90sysfixtime -> ../init.d/sysfixtime
+lrwxrwxrwx    1 root     root            16 Mar 27  2025 K90umount -> ../init.d/umount
+lrwxrwxrwx    1 root     root            20 Mar 27  2025 S000mount_all -> ../init.d/0mount_all
+lrwxrwxrwx    1 root     root            23 Mar 27  2025 S001nvram_daemon -> ../init.d/1nvram_daemon
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S001restore -> ../init.d/1restore
+lrwxrwxrwx    1 root     root            19 Mar 27  2025 S002ccci_fsd -> ../init.d/2ccci_fsd
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S003ccci_mdinit -> ../init.d/3ccci_mdinit
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S00aqrd -> ../init.d/aqrd
+lrwxrwxrwx    1 root     root            20 Mar 27  2025 S00sysfixtime -> ../init.d/sysfixtime
+lrwxrwxrwx    1 root     root            15 Mar 27  2025 S00urngd -> ../init.d/urngd
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S10boot -> ../init.d/boot
+lrwxrwxrwx    1 root     root            16 Mar 27  2025 S11sysctl -> ../init.d/sysctl
+lrwxrwxrwx    1 root     root            13 Mar 27  2025 S12log -> ../init.d/log
+lrwxrwxrwx    1 root     root            20 Mar 27  2025 S12mtk_bridge -> ../init.d/mtk_bridge
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S12rpcd -> ../init.d/rpcd
+lrwxrwxrwx    1 root     root            17 Mar 27  2025 S13mtk_mem -> ../init.d/mtk_mem
+lrwxrwxrwx    1 root     root            21 Mar 27  2025 S15firmware.sh -> ../init.d/firmware.sh
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S22mtk_netagent -> ../init.d/mtk_netagent
+lrwxrwxrwx    1 root     root            23 Mar 27  2025 S30mipc_wan.init -> ../init.d/mipc_wan.init
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S30usb.init -> ../init.d/usb.init
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S50cron -> ../init.d/cron
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S53lppe_service -> ../init.d/lppe_service
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S53mnld -> ../init.d/mnld
+lrwxrwxrwx    1 root     root            13 Mar 27  2025 S53scd -> ../init.d/scd
+lrwxrwxrwx    1 root     root            23 Mar 27  2025 S55speech_daemon -> ../init.d/speech_daemon
+lrwxrwxrwx    1 root     root            30 Mar 27  2025 S56libmodem_afe_service -> ../init.d/libmodem_afe_service
+lrwxrwxrwx    1 root     root            28 Mar 27  2025 S57audio-ctrl-service -> ../init.d/audio-ctrl-service
+lrwxrwxrwx    1 root     root            16 Mar 27  2025 S60xl2tpd -> ../init.d/xl2tpd
+lrwxrwxrwx    1 root     root            25 Mar 27  2025 S79luci_statistics -> ../init.d/luci_statistics
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S80collectd -> ../init.d/collectd
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S80ucitrack -> ../init.d/ucitrack
+lrwxrwxrwx    1 root     root            17 Mar 27  2025 S90openvpn -> ../init.d/openvpn
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S94ght-slic -> ../init.d/ght-slic
+lrwxrwxrwx    1 root     root            21 Mar 27  2025 S94gpio_switch -> ../init.d/gpio_switch
+lrwxrwxrwx    1 root     root            19 Mar 27  2025 S94miniupnpd -> ../init.d/miniupnpd
+lrwxrwxrwx    1 root     root            19 Mar 27  2025 S94vpnbypass -> ../init.d/vpnbypass
+lrwxrwxrwx    1 root     root            17 Mar 27  2025 S95aee_aed -> ../init.d/aee_aed
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S95ddns -> ../init.d/ddns
+lrwxrwxrwx    1 root     root            14 Mar 27  2025 S95done -> ../init.d/done
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S96atci_service -> ../init.d/atci_service
+lrwxrwxrwx    1 root     root            15 Mar 27  2025 S96atcid -> ../init.d/atcid
+lrwxrwxrwx    1 root     root            13 Mar 27  2025 S96led -> ../init.d/led
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S98mdlogger -> ../init.d/mdlogger
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S98meta_tst -> ../init.d/meta_tst
+lrwxrwxrwx    1 root     root            25 Mar 27  2025 S99fibo_rndis.init -> ../init.d/fibo_rndis.init
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S99log_controld -> ../init.d/log_controld
+lrwxrwxrwx    1 root     root            18 Mar 27  2025 S99omcproxy -> ../init.d/omcproxy
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S99power_daemon -> ../init.d/power_daemon
+lrwxrwxrwx    1 root     root            16 Mar 27  2025 S99tzproc -> ../init.d/tzproc
+lrwxrwxrwx    1 root     root            22 Mar 27  2025 S99urandom_seed -> ../init.d/urandom_seed
+lrwxrwxrwx    1 root     root            24 Mar 27  2025 S99zmtk_boot_done -> ../init.d/zmtk_boot_done
+
+===== IMPORTANT BINARIES =====
+--- /bin/busybox ---
+-rwxr-xr-x    1 root     root        595744 Mar 27  2025 /bin/busybox
+19c2b3911e5d18cd7a6cccac2a90747907ee4d62dbd4cacf5381f08f07ff45c6  /bin/busybox
+--- /usr/bin/dialer ---
+-rwxr-xr-x    1 root     root             0 Sep 20 00:53 /usr/bin/dialer
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /usr/bin/dialer
+--- /usr/bin/mtk_netagent ---
+-rwxr-xr-x    1 root     root        158168 Mar 27  2025 /usr/bin/mtk_netagent
+5905b8cbc4d38f2511a400ba649ddd6cf1fff3f497fa524a0d91d848ef31dede  /usr/bin/mtk_netagent
+--- /usr/bin/meta_tst ---
+-rwxr-xr-x    1 root     root        219128 Mar 27  2025 /usr/bin/meta_tst
+c7d734b5d23d5422d3474066b2fb5d2b4bed2240fbddbf3b9bc2c200a40e6660  /usr/bin/meta_tst
+--- /sbin/firstboot ---
+-rwxrwxr-x    1 root     root          2410 Mar 27  2025 /sbin/firstboot
+d0a5164626057e5e76b047b522aacdee33274d860280f0657d47369cdc0629eb  /sbin/firstboot
+--- /sbin/mtd ---
+-rwxr-xr-x    1 root     root         26312 Mar 27  2025 /sbin/mtd
+4f0aa735c274241a611e86f684de2b9db5662a8818e921e41378f6c94666e762  /sbin/mtd
+
+===== VERSION STRINGS =====
+.gnu.version
+.gnu.version_r
+
+===== END =====

@@ -1,0 +1,110 @@
+[
+  {
+    "source": "/home/kali/Desktop/x17m/X17M_1GB_PRELOADER_LK_RECOVERY_SURFACE.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_1GB_PRELOADER_LK_RECOVERY_SURFACE.md",
+    "sha256": "bf9b3bb2f95f9bbde80d50c7381cbb20ffe74cac32ba578f9fc271a615d2642e"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/X17M_1GB_FACTORY_META_BOOT_CHAIN.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_1GB_FACTORY_META_BOOT_CHAIN.md",
+    "sha256": "11fb58311f57a75ffc74fa9ad8264e24280fc91ffeabe848f2d12a556c7b2fc9"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/X17M_1GB_META_LIVE_CHARACTERIZATION.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_1GB_META_LIVE_CHARACTERIZATION.md",
+    "sha256": "31a5c8f6bf06475484bc3c14d77bb5d571ef13e81aac9f8979f318788746fec6"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/analysis/X17M_RECOVERY_AUDIT_20261020.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_RECOVERY_AUDIT_20261020.md",
+    "sha256": "4787d4089ecdeafdff8695fac89bc9a42683d768f54bcbb9996954aee8d45d36"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/analysis/X17M_PRELOADER_SOURCE_CORRELATION.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_PRELOADER_SOURCE_CORRELATION.md",
+    "sha256": "979b0e5adf9b6c1594b7df91464523264c25d176d4607d765934e3005b8a227d"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/analysis/X17M_USB_ENUMERATION_FINDINGS.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_USB_ENUMERATION_FINDINGS.md",
+    "sha256": "eeab66b791081c1b85178d1ae01cd8e2e680b6e1e43c1b4ba162977f33adc78e"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/analysis/X17M_PRELOADER_DESCRIPTOR_DIAGNOSTIC.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/X17M_PRELOADER_DESCRIPTOR_DIAGNOSTIC.md",
+    "sha256": "094dce16d512f21e30bb036d07433272060fd4ef3af76bb739e4d3539d7e6d1d"
+  },
+  {
+    "source": "/home/kali/Desktop/bozax17/openwrt-port-feasibility/reports/hardware-boot-architecture.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/hardware-boot-architecture.md",
+    "sha256": "ab5a71f5dd969c69d3c258a89de016cd204bf81fc83bc76c7e7551307a23d6b9"
+  },
+  {
+    "source": "/home/kali/Desktop/bozax17/openwrt-port-feasibility/reports/vendor-dependencies.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/vendor-dependencies.md",
+    "sha256": "c0e1cd3ed76cbd45b573690d61ce5205678e40f40ed0a243d362675f5af1ae6a"
+  },
+  {
+    "source": "/home/kali/Desktop/bozax17/openwrt-port-feasibility/reports/partition-recovery-map.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/partition-recovery-map.md",
+    "sha256": "883a0e171d3f08ba3d071911e34adc18489e3126a025a864f27b96ae958c1535"
+  },
+  {
+    "source": "/home/kali/Desktop/bozax17/openwrt-port-feasibility/reports/migration-plan.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/migration-plan.md",
+    "sha256": "9ef191d1705ce9e44b640789c0c48d53472cf1eb00b185d727ca56b27ee949ca"
+  },
+  {
+    "source": "/home/kali/Desktop/bozax17/openwrt-port-feasibility/README.md",
+    "copy": "x17m-fastboot-investigation/evidence/prior-reports/openwrt-feasibility-README.md",
+    "sha256": "85b3bddbd0434e071fb176efeb16fd69206849723edd86bacfadcca574c4ab17"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/work/uart_fastprobe.log",
+    "copy": "x17m-fastboot-investigation/evidence/uart_fastprobe.log",
+    "sha256": "3449fef01cf0924a43eae33bafb8b4e50da27e2929bfda14147a3cb06bab01ef",
+    "qualification": "snapshot; prior-session log, not acquired in this investigation"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/work/uart_combined.log",
+    "copy": "x17m-fastboot-investigation/evidence/uart_combined.log",
+    "sha256": "a38cd537643d5dfd14c2ef1e3a3e09ba1eda179f7fe3bf4636b9375060661882",
+    "qualification": "snapshot; prior-session log, not acquired in this investigation"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/work/fastprobe.log",
+    "copy": "x17m-fastboot-investigation/evidence/fastprobe.log",
+    "sha256": "44ef99fef2157a755aeb066cecd5b6ed849e8364a8272020c1f2d3ed36f199a3",
+    "qualification": "snapshot; prior-session log, not acquired in this investigation"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/work/fastprobe2.log",
+    "copy": "x17m-fastboot-investigation/evidence/fastprobe2.log",
+    "sha256": "e7031a34dcfafc43264e51108c75f66138113d3919779003026e05edfac05184",
+    "qualification": "snapshot; prior-session log, not acquired in this investigation"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/work/combined.log",
+    "copy": "x17m-fastboot-investigation/evidence/combined.log",
+    "sha256": "e7031a34dcfafc43264e51108c75f66138113d3919779003026e05edfac05184",
+    "qualification": "snapshot; prior-session log, not acquired in this investigation"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/rootfs.original/sbin/adbd_usb",
+    "copy": "x17m-fastboot-investigation/evidence/adbd_usb",
+    "sha256": "343345dd857be529bfb2afc6984d69c7a7e78968fda0e41ccc19eef1af843e6f",
+    "qualification": "local extracted vendor rootfs; not proven current bench binary"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/rootfs.original/etc/init.d/usb.init",
+    "copy": "x17m-fastboot-investigation/evidence/usb.init",
+    "sha256": "21077ebe11877101ba41be6eab15d7159fa91b50b30d8a9b08648c9b406df6d7",
+    "qualification": "local extracted vendor rootfs; not proven current bench binary"
+  },
+  {
+    "source": "/home/kali/Desktop/x17m/rootfs.original/lib/upgrade/bootctrl.sh",
+    "copy": "x17m-fastboot-investigation/evidence/bootctrl.sh",
+    "sha256": "a4675b29872125217ee1312b83d9794d88f65deb2a9d70599d757d741f6353bc",
+    "qualification": "local extracted vendor rootfs; not proven current bench binary"
+  }
+]

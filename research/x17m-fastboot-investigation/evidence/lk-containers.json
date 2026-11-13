@@ -1,0 +1,56 @@
+[
+  {
+    "header": "0x0",
+    "payload": "0x200",
+    "size": "0x449e8",
+    "name": "lk"
+  },
+  {
+    "header": "0x44bf0",
+    "payload": "0x44df0",
+    "size": "0x6ad",
+    "name": "cert1"
+  },
+  {
+    "header": "0x454a0",
+    "payload": "0x456a0",
+    "size": "0x3c9",
+    "name": "cert2"
+  },
+  {
+    "header": "0x45a70",
+    "payload": "0x45c70",
+    "size": "0x40078",
+    "name": "aee_lk"
+  },
+  {
+    "header": "0x85cf0",
+    "payload": "0x85ef0",
+    "size": "0x6ad",
+    "name": "cert1"
+  },
+  {
+    "header": "0x865a0",
+    "payload": "0x867a0",
+    "size": "0x3c9",
+    "name": "cert2"
+  },
+  {
+    "header": "0x86b70",
+    "payload": "0x86d70",
+    "size": "0x1997a",
+    "name": "lk_main_dtb"
+  },
+  {
+    "header": "0xa06f0",
+    "payload": "0xa08f0",
+    "size": "0x6ad",
+    "name": "cert1"
+  },
+  {
+    "header": "0xa0fa0",
+    "payload": "0xa11a0",
+    "size": "0x3c9",
+    "name": "cert2"
+  }
+]
